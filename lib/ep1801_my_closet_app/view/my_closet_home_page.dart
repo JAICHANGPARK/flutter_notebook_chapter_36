@@ -13,22 +13,28 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Feed"),
+        title: const Text("Feed"),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
         leading: IconButton(
-          icon: Icon(Icons.notifications),
+          icon: const Icon(Icons.notifications),
           onPressed: () {},
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.shopping_cart_outlined),
+            icon: const Icon(Icons.shopping_cart_outlined),
           ),
         ],
       ),
-      body: Column(
-        children: [],
+      body: Stack(
+        children: [
+          const Column(
+            children: [
+
+            ],
+          ),
+        ],
       ),
     );
   }
