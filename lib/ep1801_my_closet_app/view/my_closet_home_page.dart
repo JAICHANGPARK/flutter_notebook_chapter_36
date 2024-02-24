@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MyClosetHomePage extends StatefulWidget {
   const MyClosetHomePage({super.key});
@@ -74,8 +75,11 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         )
                       ],
                     ),
-                    CircleAvatar(
-                      radius: 32,
+                    Align(
+                      alignment: Alignment.topCenter,
+                      child: CircleAvatar(
+                        radius: 32,
+                      ),
                     ),
                     Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
