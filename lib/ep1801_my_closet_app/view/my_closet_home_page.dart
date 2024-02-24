@@ -40,8 +40,10 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               left: 16,
               right: 16,
               child: Container(
+                color: Colors.blue,
                 height: 100,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -72,7 +74,9 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         )
                       ],
                     ),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      radius: 32,
+                    ),
                     Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
