@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyClosetHomePage extends StatefulWidget {
@@ -29,11 +30,80 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
       ),
       body: Stack(
         children: [
-          const Column(
-            children: [
-
-            ],
+          Positioned.fill(
+            child: const Column(
+              children: [],
+            ),
           ),
+          Positioned(
+              bottom: 0,
+              left: 16,
+              right: 16,
+              child: Container(
+                height: 100,
+                child: Row(
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.dynamic_feed_rounded,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Feed",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.dynamic_feed_rounded,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Feed",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    CircleAvatar(),
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.dynamic_feed_rounded,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Feed",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.dynamic_feed_rounded,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Feed",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ))
         ],
       ),
     );
