@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MyClosetHomePage extends StatefulWidget {
   const MyClosetHomePage({super.key});
@@ -46,34 +44,39 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.dynamic_feed_rounded,
-                          color: Colors.white,
-                        ),
-                        Text(
-                          "Feed",
-                          style: TextStyle(
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.dynamic_feed_rounded,
                             color: Colors.white,
                           ),
-                        )
-                      ],
+                          Text(
+                            "Feed",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.bookmark,
-                          color: Colors.grey,
-                        ),
-                        Text(
-                          "Closet",
-                          style: TextStyle(
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.bookmark,
                             color: Colors.grey,
                           ),
-                        )
-                      ],
+                          Text(
+                            "Closet",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Align(
                       alignment: Alignment.topCenter,
@@ -81,7 +84,8 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         radius: 32,
                       ),
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.person_outline,
@@ -95,7 +99,8 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         )
                       ],
                     ),
-                    Column( mainAxisAlignment: MainAxisAlignment.center,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.settings_outlined,
