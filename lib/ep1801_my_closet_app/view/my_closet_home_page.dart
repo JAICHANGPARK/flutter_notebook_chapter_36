@@ -39,7 +39,6 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               left: 16,
               right: 16,
               child: Container(
-                color: Colors.blue,
                 height: 100,
                 child: Row(
                   children: [
@@ -82,6 +81,8 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         alignment: Alignment.topCenter,
                         child: CircleAvatar(
                           radius: 32,
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.add_circle_outline),
                         ),
                       ),
                     ),
