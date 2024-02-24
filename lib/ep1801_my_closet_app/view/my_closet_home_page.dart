@@ -42,7 +42,6 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                 color: Colors.blue,
                 height: 100,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Expanded(
                       child: Column(
@@ -78,41 +77,47 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         ],
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.topCenter,
-                      child: CircleAvatar(
-                        radius: 32,
+                    Expanded(
+                      child: Align(
+                        alignment: Alignment.topCenter,
+                        child: CircleAvatar(
+                          radius: 32,
+                        ),
                       ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.person_outline,
-                          color: Colors.grey,
-                        ),
-                        Text(
-                          "Profile",
-                          style: TextStyle(
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person_outline,
                             color: Colors.grey,
                           ),
-                        )
-                      ],
+                          Text(
+                            "Profile",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.settings_outlined,
-                          color: Colors.grey,
-                        ),
-                        Text(
-                          "Settings",
-                          style: TextStyle(
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.settings_outlined,
                             color: Colors.grey,
                           ),
-                        )
-                      ],
+                          Text(
+                            "Settings",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
