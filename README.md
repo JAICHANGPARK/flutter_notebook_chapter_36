@@ -2,11 +2,11 @@
 
 ## EP1801
 
-- Surya - Health Tracker Apps
-- by Bayu Sasmita🍃 for Caraka
-- https://dribbble.com/shots/23642116-Surya-Health-Tracker-Apps
+- Shop My Closet App Design Concept
+- by Conceptzilla
+- https://dribbble.com/shots/23637860-Shop-My-Closet-App-Design-Concept
 
-<img src="https://cdn.dribbble.com/userupload/13051131/file/original-8ad112a8fd78e0e990797bc2f1029764.jpg?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/13039267/file/original-5e4c232193df20bcd8b289356e21d516.png?resize=1905x1429"/>
 
 
 A new Flutter project.
