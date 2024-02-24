@@ -64,13 +64,13 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.dynamic_feed_rounded,
-                          color: Colors.white,
+                          Icons.bookmark,
+                          color: Colors.grey,
                         ),
                         Text(
-                          "Feed",
+                          "Closet",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey,
                           ),
                         )
                       ],
