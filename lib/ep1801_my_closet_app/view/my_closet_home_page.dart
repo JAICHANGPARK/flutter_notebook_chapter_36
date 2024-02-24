@@ -39,7 +39,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               left: 16,
               right: 16,
               child: Container(
-                height: 100,
+                height: 120,
                 child: Row(
                   children: [
                     Expanded(
