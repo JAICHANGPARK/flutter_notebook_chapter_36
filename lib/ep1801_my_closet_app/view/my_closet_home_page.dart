@@ -84,13 +84,13 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.dynamic_feed_rounded,
-                          color: Colors.white,
+                          Icons.person_outline,
+                          color: Colors.grey,
                         ),
                         Text(
-                          "Feed",
+                          "Profile",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey,
                           ),
                         )
                       ],
@@ -98,13 +98,13 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     Column( mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.dynamic_feed_rounded,
-                          color: Colors.white,
+                          Icons.settings_outlined,
+                          color: Colors.grey,
                         ),
                         Text(
-                          "Feed",
+                          "Settings",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey,
                           ),
                         )
                       ],
