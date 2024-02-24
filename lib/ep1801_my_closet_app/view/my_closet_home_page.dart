@@ -11,7 +11,25 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Feed"),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.notifications),
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.shopping_cart_outlined),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [],
+      ),
     );
   }
 }
