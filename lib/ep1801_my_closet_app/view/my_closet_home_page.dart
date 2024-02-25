@@ -100,16 +100,23 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                             Container(
                               margin: EdgeInsets.all(16),
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: Colors.white.withOpacity(.2),
                               ),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Icon(
                                     Icons.shopping_basket,
+                                    size: 16,
+                                    color: Colors.white,
                                   ),
+                                  Gap(4),
                                   Text(
                                     "View items in this look",
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ],
                               ),
@@ -159,6 +166,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               right: 16,
               child: Container(
                 height: 120,
+                color: Colors.black,
                 child: Row(
                   children: [
                     Expanded(
