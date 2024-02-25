@@ -136,6 +136,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   icon: const Icon(
                                     Icons.favorite_border,
                                   ),
+                                  color: Colors.white,
                                 ),
                                 IconButton(
                                   onPressed: () {},
@@ -147,7 +148,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.send_outlined,
-                                  ),
+                                  ),   color: Colors.white,
                                 ),
                                 const Spacer(),
                                 IconButton(
