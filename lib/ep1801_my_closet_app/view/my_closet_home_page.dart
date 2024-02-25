@@ -37,6 +37,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                   height: 140,
                   color: Colors.blue,
                 ),
+
                 Expanded(
                     child: SingleChildScrollView(
                   child: Column(
