@@ -126,7 +126,20 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                 IconButton(
                                   onPressed: () {},
                                   icon: Icon(
-                                    Icons.favorite_border,
+                                    Icons.chat_bubble_outline,
+                                  ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.send_outlined,
+                                  ),
+                                ),
+                                Spacer(),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.bookmark_border_outlined,
                                   ),
                                 ),
                               ],
