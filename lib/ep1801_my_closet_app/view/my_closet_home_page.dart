@@ -37,6 +37,20 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                 Container(
                   height: 120,
                   color: Colors.blue,
+                  padding: EdgeInsets.only(left: 16),
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        child: Column(
+                          children: [
+                            CircleAvatar(),
+                            Text("Human")
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
                 const Gap(16),
                 Expanded(
@@ -94,14 +108,12 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                             ),
                             Container(
                               height: 340,
-
                               child: const Stack(
                                 children: [],
                               ),
                             ),
                             Container(
-                              margin: const EdgeInsets.symmetric(horizontal: 16,
-                              vertical: 12),
+                              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.2),
                               ),
@@ -142,20 +154,23 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.chat_bubble_outline,
-                                  ),   color: Colors.white,
+                                  ),
+                                  color: Colors.white,
                                 ),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.send_outlined,
-                                  ),   color: Colors.white,
+                                  ),
+                                  color: Colors.white,
                                 ),
                                 const Spacer(),
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.bookmark_border_outlined,
-                                  ),   color: Colors.white,
+                                  ),
+                                  color: Colors.white,
                                 ),
                               ],
                             )
