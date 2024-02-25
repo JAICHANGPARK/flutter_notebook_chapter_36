@@ -35,7 +35,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 140,
+                  height: 120,
                   color: Colors.blue,
                 ),
                 const Gap(16),
@@ -89,10 +89,12 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                 ],
                               ),
                             ),
-                            const Divider(),
+                            const Divider(
+                              height: 4,
+                            ),
                             Container(
                               height: 360,
-                              color: Colors.blue,
+
                               child: const Stack(
                                 children: [],
                               ),
