@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyClosetHomePage extends StatefulWidget {
@@ -30,8 +31,47 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: const Column(
-              children: [],
+            child: Column(
+              children: [
+                Container(
+                  height: 140,
+                  color: Colors.blue,
+                ),
+                Expanded(
+                    child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(.3),
+                        ),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 12,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Dream Walker"),
+                                      Text("@dreamwalker"),
+                                    ],
+                                  ),
+                                ),
+                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
+                              ],
+                            ),
+                            Divider(),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ))
+              ],
             ),
           ),
           Positioned(
