@@ -93,7 +93,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                               height: 4,
                             ),
                             Container(
-                              height: 360,
+                              height: 340,
 
                               child: const Stack(
                                 children: [],
@@ -142,7 +142,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.chat_bubble_outline,
-                                  ),
+                                  ),   color: Colors.white,
                                 ),
                                 IconButton(
                                   onPressed: () {},
@@ -155,7 +155,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   onPressed: () {},
                                   icon: const Icon(
                                     Icons.bookmark_border_outlined,
-                                  ),
+                                  ),   color: Colors.white,
                                 ),
                               ],
                             )
