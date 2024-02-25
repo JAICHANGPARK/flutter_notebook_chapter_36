@@ -54,7 +54,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                               child: Row(
                                 children: [
                                   CircleAvatar(
@@ -98,9 +98,14 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.all(16),
+                              margin: EdgeInsets.symmetric(horizontal: 16,
+                              vertical: 12),
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.2),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 2,
                               ),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
