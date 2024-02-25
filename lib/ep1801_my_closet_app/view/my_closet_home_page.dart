@@ -55,22 +55,58 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                               child: Row(
                                 children: [
                                   CircleAvatar(
-                                    radius: 12,
+                                    radius: 15,
                                   ),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text("Dream Walker"),
-                                        Text("@dreamwalker"),
+                                        Text(
+                                          "Dream Walker",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          "@dreamwalker",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
                                       ],
                                     ),
                                   ),
-                                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                                  IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(Icons.more_horiz),
+                                  ),
                                 ],
                               ),
                             ),
                             Divider(),
+                            Container(
+                              height: 360,
+                              color: Colors.blue,
+                              child: Stack(
+                                children: [],
+                              ),
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.shopping_basket,
+                                  ),
+                                  Text(
+                                    "View items in this look",
+                                  ),
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       )
