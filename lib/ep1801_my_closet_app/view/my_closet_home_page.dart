@@ -38,14 +38,14 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                   height: 140,
                   color: Colors.blue,
                 ),
-                Gap(16),
+                const Gap(16),
                 Expanded(
                     child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.symmetric(horizontal: 16),
+                        margin: const EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(.2),
                           borderRadius: BorderRadius.circular(16),
@@ -57,11 +57,11 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 5),
                               child: Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 15,
                                   ),
-                                  Gap(8),
-                                  Expanded(
+                                  const Gap(8),
+                                  const Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
@@ -84,30 +84,30 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   ),
                                   IconButton(
                                     onPressed: () {},
-                                    icon: Icon(Icons.more_horiz),
+                                    icon: const Icon(Icons.more_horiz),
                                   ),
                                 ],
                               ),
                             ),
-                            Divider(),
+                            const Divider(),
                             Container(
                               height: 360,
                               color: Colors.blue,
-                              child: Stack(
+                              child: const Stack(
                                 children: [],
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(horizontal: 16,
+                              margin: const EdgeInsets.symmetric(horizontal: 16,
                               vertical: 12),
                               decoration: BoxDecoration(
                                 color: Colors.white.withOpacity(.2),
                               ),
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 2,
                               ),
-                              child: Row(
+                              child: const Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Icon(
@@ -126,31 +126,31 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                 ],
                               ),
                             ),
-                            Divider(),
+                            const Divider(),
                             Row(
                               children: [
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.favorite_border,
                                   ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.chat_bubble_outline,
                                   ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.send_outlined,
                                   ),
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.bookmark_border_outlined,
                                   ),
                                 ),
@@ -172,7 +172,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               child: Container(
                 height: 120,
                 color: Colors.black,
-                child: Row(
+                child: const Row(
                   children: [
                     Expanded(
                       child: Column(
