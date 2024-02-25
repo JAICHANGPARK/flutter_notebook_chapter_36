@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MyClosetHomePage extends StatefulWidget {
   const MyClosetHomePage({super.key});
@@ -37,7 +38,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                   height: 140,
                   color: Colors.blue,
                 ),
-
+                Gap(16),
                 Expanded(
                     child: SingleChildScrollView(
                   child: Column(
@@ -45,26 +46,29 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(.3),
+                          color: Colors.white.withOpacity(.2),
                         ),
                         child: Column(
                           children: [
-                            Row(
-                              children: [
-                                CircleAvatar(
-                                  radius: 12,
-                                ),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("Dream Walker"),
-                                      Text("@dreamwalker"),
-                                    ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 12,
                                   ),
-                                ),
-                                IconButton(onPressed: (){}, icon: Icon(Icons.more_horiz)),
-                              ],
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Dream Walker"),
+                                        Text("@dreamwalker"),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(onPressed: () {}, icon: Icon(Icons.more_horiz)),
+                                ],
+                              ),
                             ),
                             Divider(),
                           ],
