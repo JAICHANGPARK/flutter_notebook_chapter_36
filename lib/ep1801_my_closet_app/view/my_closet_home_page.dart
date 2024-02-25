@@ -43,6 +43,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                   child: Column(
                     children: [
                       Container(
+                        margin: EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(.3),
                         ),
