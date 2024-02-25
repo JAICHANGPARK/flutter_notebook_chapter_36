@@ -48,6 +48,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                         margin: EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(.2),
+                          borderRadius: BorderRadius.circular(16),
                         ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,6 +60,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   CircleAvatar(
                                     radius: 15,
                                   ),
+                                  Gap(8),
                                   Expanded(
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,12 +69,14 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                           "Dream Walker",
                                           style: TextStyle(
                                             color: Colors.white,
+                                            fontSize: 13,
                                           ),
                                         ),
                                         Text(
                                           "@dreamwalker",
                                           style: TextStyle(
                                             color: Colors.white,
+                                            fontSize: 12,
                                           ),
                                         ),
                                       ],
@@ -94,6 +98,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                               ),
                             ),
                             Container(
+                              margin: EdgeInsets.all(16),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                               ),
@@ -108,6 +113,23 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                                   ),
                                 ],
                               ),
+                            ),
+                            Divider(),
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.favorite_border,
+                                  ),
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.favorite_border,
+                                  ),
+                                ),
+                              ],
                             )
                           ],
                         ),
