@@ -42,6 +42,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                 Expanded(
                     child: SingleChildScrollView(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
                         margin: EdgeInsets.symmetric(horizontal: 16),
@@ -49,6 +50,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                           color: Colors.white.withOpacity(.2),
                         ),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
