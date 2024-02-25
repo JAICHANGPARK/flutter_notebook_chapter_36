@@ -41,10 +41,8 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.white.withOpacity(.2)
-                        ),
+                        decoration:
+                            BoxDecoration(borderRadius: BorderRadius.circular(12), color: Colors.white.withOpacity(.2)),
                         padding: const EdgeInsets.all(12),
                         margin: const EdgeInsets.only(right: 8),
                         child: const Column(
@@ -52,7 +50,12 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                           children: [
                             CircleAvatar(),
                             Gap(8),
-                            Text("Human")
+                            Text(
+                              "Human",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
                           ],
                         ),
                       );
