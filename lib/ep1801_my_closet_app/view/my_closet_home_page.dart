@@ -35,16 +35,23 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
             child: Column(
               children: [
                 Container(
-                  height: 120,
-                  color: Colors.blue,
-                  padding: EdgeInsets.only(left: 16),
+                  height: 100,
+                  padding: const EdgeInsets.only(left: 16),
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-                        child: Column(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.white.withOpacity(.2)
+                        ),
+                        padding: const EdgeInsets.all(12),
+                        margin: const EdgeInsets.only(right: 8),
+                        child: const Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(),
+                            Gap(8),
                             Text("Human")
                           ],
                         ),
