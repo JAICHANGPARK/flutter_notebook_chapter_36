@@ -16,7 +16,6 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
           children: [
             Container(
               height: 52,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Row(
