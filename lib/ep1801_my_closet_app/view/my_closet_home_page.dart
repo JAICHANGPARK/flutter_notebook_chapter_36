@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/view/my_closet_look_page.dart';
 import 'package:gap/gap.dart';
 
 class MyClosetHomePage extends StatefulWidget {
@@ -73,7 +74,11 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(builder: (context) => MyClosetLookPage()));
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const MyClosetLookPage(),
+                            ),
+                          );
                         },
                         child: Container(
                           margin: const EdgeInsets.symmetric(horizontal: 16),
