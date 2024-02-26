@@ -50,6 +50,18 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                 ],
               ),
             ),
+            Expanded(
+              child: ListView(),
+            ),
+            Divider(
+              color: Colors.white,
+            ),
+            Text(
+              "Choose wear color and size",
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            )
           ],
         ),
       ),
