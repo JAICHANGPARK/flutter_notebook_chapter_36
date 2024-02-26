@@ -19,14 +19,21 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
               child: Stack(
                 children: [
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.keyboard_arrow_left,
                         ),
+                        color: Colors.white,
                       ),
-                      Text("Back"),
+                      Text(
+                        "Back",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ],
                   ),
                   Positioned(
