@@ -68,7 +68,13 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Center(
-                child: Text(""),
+                child: Text(
+                  "add to cart".toUpperCase(),
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                  ),
+                ),
               ),
             )
           ],
