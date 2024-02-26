@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MyClosetLookPage extends StatefulWidget {
   const MyClosetLookPage({super.key});
@@ -62,21 +63,26 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                 color: Colors.white,
               ),
             ),
+            Gap(12),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
               ),
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(vertical: 16),
               child: Center(
                 child: Text(
                   "add to cart".toUpperCase(),
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
-            )
+            ),
+            Gap(12),
           ],
         ),
       ),
