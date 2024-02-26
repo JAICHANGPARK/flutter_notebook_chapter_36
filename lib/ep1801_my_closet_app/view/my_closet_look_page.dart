@@ -23,7 +23,9 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                         icon: const Icon(
                           Icons.keyboard_arrow_left,
                         ),
@@ -54,27 +56,27 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
             Expanded(
               child: ListView(),
             ),
-            Divider(
+            const Divider(
               color: Colors.white,
             ),
-            Text(
+            const Text(
               "Choose wear color and size",
               style: TextStyle(
                 color: Colors.white,
               ),
             ),
-            Gap(12),
+            const Gap(12),
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
               ),
-              margin: EdgeInsets.symmetric(horizontal: 16),
-              padding: EdgeInsets.symmetric(vertical: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(vertical: 16),
               child: Center(
                 child: Text(
                   "add to cart".toUpperCase(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontSize: 15,
                     fontWeight: FontWeight.bold,
@@ -82,7 +84,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                 ),
               ),
             ),
-            Gap(12),
+            const Gap(12),
           ],
         ),
       ),
