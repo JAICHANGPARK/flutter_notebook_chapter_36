@@ -23,12 +23,12 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                     children: [
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.keyboard_arrow_left,
                         ),
                         color: Colors.white,
                       ),
-                      Text(
+                      const Text(
                         "Back",
                         style: TextStyle(
                           color: Colors.white,
@@ -36,7 +36,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                       ),
                     ],
                   ),
-                  Positioned(
+                  const Positioned(
                     child: Center(
                       child: Text(
                         "Check the look",
