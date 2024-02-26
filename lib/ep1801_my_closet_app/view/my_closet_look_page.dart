@@ -11,26 +11,38 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-    
       body: SafeArea(
         child: Column(
           children: [
             Container(
-              height: 64,
+              height: 52,
               color: Colors.blue,
-            ),
-            Row(
-              children: [
-
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.keyboard_arrow_left,
+              child: Stack(
+                children: [
+                  Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.keyboard_arrow_left,
+                        ),
+                      ),
+                      Text("Back"),
+                    ],
                   ),
-                ),
-                Text("Back"),
-
-              ],
+                  Positioned(
+                    child: Center(
+                      child: Text(
+                        "Check the look",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
