@@ -61,6 +61,15 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
               style: TextStyle(
                 color: Colors.white,
               ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Center(
+                child: Text(""),
+              ),
             )
           ],
         ),
