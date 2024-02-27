@@ -68,7 +68,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
-                            color: Colors.pink,
+                            color: Colors.white.withOpacity(.3),
                             borderRadius: BorderRadius.circular(12),
                           ),
                         ),
@@ -134,10 +134,11 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                   )
                                 ],
                               ),
+                              Gap(12),
                               Text(
                                 "\$${item.price}",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 ),
