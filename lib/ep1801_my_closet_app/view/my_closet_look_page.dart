@@ -75,9 +75,13 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                             child: Column(
                           children: [
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text(
                                   item.title ?? "",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
