@@ -95,6 +95,13 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                       color: Colors.grey,
                                     ),
                                   ),
+                                  child: Text(
+                                    "Size: ${item.size}",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15
+                                    ),
+                                  ),
                                 )
                               ],
                             )
