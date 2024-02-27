@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/data/closet_look_data.dart';
 import 'package:gap/gap.dart';
 
 class MyClosetLookPage extends StatefulWidget {
@@ -9,8 +10,6 @@ class MyClosetLookPage extends StatefulWidget {
 }
 
 class _MyClosetLookPageState extends State<MyClosetLookPage> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +55,20 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
               ),
             ),
             Expanded(
-              child: ListView(),
+              child: ListView.builder(
+                
+                itemBuilder: (context, index) {
+                  final item = ClosetLookData.items[index];
+                  return Container(
+                    margin: EdgeInsets.all(12),
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
             const Divider(
               color: Colors.white,
