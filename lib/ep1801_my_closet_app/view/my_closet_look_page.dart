@@ -70,6 +70,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                             color: Colors.pink,
                           ),
                         ),
+                        Gap(12),
                         Expanded(
                             child: Column(
                           children: [
@@ -84,6 +85,17 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                     Icons.more_horiz,
                                   ),
                                 ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                )
                               ],
                             )
                           ],
