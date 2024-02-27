@@ -132,7 +132,11 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                   ),
                                 )
                               ],
-                            )
+                            ),
+                            Text("\$${item.price}",style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),)
                           ],
                         ))
                       ],
