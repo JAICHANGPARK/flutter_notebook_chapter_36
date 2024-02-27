@@ -94,12 +94,15 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                     border: Border.all(
                                       color: Colors.grey,
                                     ),
+                                    borderRadius: BorderRadius.circular(32),
                                   ),
+                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   child: Text(
                                     "Size: ${item.size}",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 15
+                                      fontSize: 15,
+                                      color: Colors.white,
                                     ),
                                   ),
                                 )
