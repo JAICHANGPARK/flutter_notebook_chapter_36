@@ -19,10 +19,10 @@ class ClosetLookData {
     ClosetLook(
 
       imgUrl: "",
-      price: "24.99",
-      title: "Relaxed-fit Hoodie",
-      color: "Pink",
-      size: "S",
+      price: "27.99",
+      title: "Sneakers",
+      color: "White",
+      size: "10",
     )
   ];
 }
