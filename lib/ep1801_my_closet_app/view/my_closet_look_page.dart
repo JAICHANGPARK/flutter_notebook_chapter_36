@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/data/closet_look_data.dart';
 import 'package:gap/gap.dart';
@@ -66,8 +67,9 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                         Container(
                           height: 120,
                           width: 120,
-                          decoration: const BoxDecoration(
+                          decoration: BoxDecoration(
                             color: Colors.pink,
+                            borderRadius: BorderRadius.circular(12),
                           ),
                         ),
                         const Gap(12),
