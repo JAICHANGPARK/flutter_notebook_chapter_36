@@ -65,7 +65,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                     child: Row(
                       children: [
                         Container(
-                          height: 120,
+                          height: 130,
                           width: 120,
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.3),
