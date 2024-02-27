@@ -60,17 +60,17 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                 itemBuilder: (context, index) {
                   final item = ClosetLookData.items[index];
                   return Container(
-                    margin: EdgeInsets.all(12),
+                    margin: const EdgeInsets.all(12),
                     child: Row(
                       children: [
                         Container(
                           height: 120,
                           width: 120,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.pink,
                           ),
                         ),
-                        Gap(12),
+                        const Gap(12),
                         Expanded(
                             child: Column(
                           children: [
@@ -79,13 +79,13 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                               children: [
                                 Text(
                                   item.title ?? "",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                   ),
                                 ),
                                 IconButton(
                                   onPressed: () {},
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.more_horiz,
                                   ),
                                 ),
@@ -100,10 +100,28 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                     ),
                                     borderRadius: BorderRadius.circular(32),
                                   ),
-                                  padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                                   child: Text(
                                     "Size: ${item.size}",
-                                    style: TextStyle(
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                                Gap(8),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                                  child: Text(
+                                    "Color: ${item.color}",
+                                    style: const TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 15,
                                       color: Colors.white,
