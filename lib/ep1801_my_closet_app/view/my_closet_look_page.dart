@@ -69,8 +69,25 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                           decoration: BoxDecoration(
                             color: Colors.pink,
                           ),
-
-                        )
+                        ),
+                        Expanded(
+                            child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Text(
+                                  item.title ?? "",
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.more_horiz,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ))
                       ],
                     ),
                   );
