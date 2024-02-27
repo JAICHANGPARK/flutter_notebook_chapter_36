@@ -56,14 +56,21 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
             ),
             Expanded(
               child: ListView.builder(
-                
+                itemCount: ClosetLookData.items.length,
                 itemBuilder: (context, index) {
                   final item = ClosetLookData.items[index];
                   return Container(
                     margin: EdgeInsets.all(12),
                     child: Row(
                       children: [
-                        
+                        Container(
+                          height: 120,
+                          width: 120,
+                          decoration: BoxDecoration(
+                            color: Colors.pink,
+                          ),
+
+                        )
                       ],
                     ),
                   );
