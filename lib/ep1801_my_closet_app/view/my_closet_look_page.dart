@@ -81,6 +81,7 @@ class _MyClosetLookPageState extends State<MyClosetLookPage> {
                                   item.title ?? "",
                                   style: const TextStyle(
                                     color: Colors.white,
+                                    fontSize: 16,
                                   ),
                                 ),
                                 IconButton(
