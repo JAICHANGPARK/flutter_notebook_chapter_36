@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/view/my_closet_look_page.dart';
@@ -223,11 +222,11 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               child: Container(
                 height: 120,
                 color: Colors.black,
-                child:  Row(
+                child: Row(
                   children: [
                     Expanded(
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           setState(() {
                             pageIndex = 0;
                           });
@@ -237,12 +236,12 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                           children: [
                             Icon(
                               Icons.dynamic_feed_rounded,
-                              color: Colors.white,
+                              color: pageIndex == 0 ? Colors.white : Colors.grey,
                             ),
                             Text(
                               "Feed",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: pageIndex == 0 ? Colors.white : Colors.grey,
                               ),
                             )
                           ],
@@ -250,20 +249,27 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                       ),
                     ),
                     Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.bookmark,
-                            color: Colors.grey,
-                          ),
-                          Text(
-                            "Closet",
-                            style: TextStyle(
-                              color: Colors.grey,
+                      child: GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            pageIndex = 1;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.bookmark,
+                              color: pageIndex == 1 ? Colors.white : Colors.grey,
                             ),
-                          )
-                        ],
+                            Text(
+                              "Closet",
+                              style: TextStyle(
+                                color: pageIndex == 1 ? Colors.white : Colors.grey,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Expanded(
