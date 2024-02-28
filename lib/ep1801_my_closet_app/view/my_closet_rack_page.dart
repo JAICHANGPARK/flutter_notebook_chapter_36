@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class MyClosetRackPage extends StatelessWidget {
   const MyClosetRackPage({super.key});
@@ -53,6 +54,7 @@ class MyClosetRackPage extends StatelessWidget {
               ],
             ),
           ),
+          Gap(24),
           Expanded(
             child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -64,7 +66,19 @@ class MyClosetRackPage extends StatelessWidget {
                 return Container(
                   decoration: BoxDecoration(
                     color: Colors.white.withOpacity(.2),
-                    borderRadius: BorderRadius.circular(12)
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Container(),
+                      ),
+                      Text("\$110.00"),
+                      Text(
+                        "@dreamwalker",
+                      )
+                    ],
                   ),
                 );
               },
