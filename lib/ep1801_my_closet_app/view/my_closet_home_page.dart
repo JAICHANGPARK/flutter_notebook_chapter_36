@@ -36,7 +36,8 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: Column(
+            child: IndexedStack(
+              index: pageIndex,
               children: [
                 Column(
                   children: [
