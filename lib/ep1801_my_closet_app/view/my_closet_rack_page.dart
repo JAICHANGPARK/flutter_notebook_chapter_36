@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
 class MyClosetRackPage extends StatelessWidget {
-  const MyClosetRackPage({Key? key}) : super(key: key);
+  const MyClosetRackPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+
+      ],
+    );
   }
 }
