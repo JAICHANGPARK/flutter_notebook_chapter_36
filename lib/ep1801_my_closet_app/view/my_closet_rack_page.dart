@@ -10,7 +10,7 @@ class MyClosetRackPage extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 42,
+            height: 36,
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(.2),
               borderRadius: BorderRadius.circular(8),
@@ -52,7 +52,24 @@ class MyClosetRackPage extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          Expanded(
+            child: GridView.builder(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 16,
+                mainAxisSpacing: 16,
+              ),
+              itemBuilder: (context, index) {
+                return Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(.2),
+                    borderRadius: BorderRadius.circular(12)
+                  ),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
