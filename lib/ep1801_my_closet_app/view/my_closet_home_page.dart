@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/view/my_closet_look_page.dart';
 import 'package:gap/gap.dart';
 
@@ -223,23 +223,30 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
               child: Container(
                 height: 120,
                 color: Colors.black,
-                child: const Row(
+                child:  Row(
                   children: [
                     Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            Icons.dynamic_feed_rounded,
-                            color: Colors.white,
-                          ),
-                          Text(
-                            "Feed",
-                            style: TextStyle(
+                      child: GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            pageIndex = 0;
+                          });
+                        },
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.dynamic_feed_rounded,
                               color: Colors.white,
                             ),
-                          )
-                        ],
+                            Text(
+                              "Feed",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Expanded(
