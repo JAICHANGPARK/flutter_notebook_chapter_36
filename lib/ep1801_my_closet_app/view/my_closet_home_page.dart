@@ -4,6 +4,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_notebook_chapter_36/ep1801_my_closet_app/view/my_closet_look_page.dart';
 import 'package:gap/gap.dart';
 
+import 'my_closet_rack_page.dart';
+
 class MyClosetHomePage extends StatefulWidget {
   const MyClosetHomePage({super.key});
 
@@ -12,8 +14,8 @@ class MyClosetHomePage extends StatefulWidget {
 }
 
 class _MyClosetHomePageState extends State<MyClosetHomePage> {
-
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -210,6 +212,7 @@ class _MyClosetHomePageState extends State<MyClosetHomePage> {
                     ))
                   ],
                 ),
+                MyClosetRackPage(),
               ],
             ),
           ),
