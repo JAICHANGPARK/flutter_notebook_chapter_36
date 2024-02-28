@@ -76,9 +76,17 @@ class MyClosetRackPage extends StatelessWidget {
                       Expanded(
                         child: Container(),
                       ),
-                      Text("\$110.00"),
+                      Text(
+                        "\$110.00",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                       Text(
                         "@dreamwalker",
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
                       )
                     ],
                   ),
