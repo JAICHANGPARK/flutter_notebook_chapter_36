@@ -49,6 +49,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
+                                margin: EdgeInsets.all(24),
                                 decoration: BoxDecoration(
                                   color: Colors.indigoAccent,
                                 ),
@@ -95,6 +96,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                                       shape: BoxShape.circle,
                                     ),
                                   ),
+                                  Gap(16),
                                   Container(
                                     height: 52,
                                     width: 52,
