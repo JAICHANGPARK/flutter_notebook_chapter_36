@@ -17,16 +17,17 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
         actions: [
           CircleAvatar(
             child: IconButton(
-              
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+              ),
             ),
           )
         ],
       ),
       body: SafeArea(
         child: Column(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
