@@ -6,7 +6,7 @@
 - by Dmitry Lauretsky for Ronas IT | UI/UX Team
 - https://dribbble.com/shots/23704730-Trip-Planner-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/13039267/file/original-5e4c232193df20bcd8b289356e21d516.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/13232888/file/original-f1ae5a6c240dccbbda12e3048294197a.png?resize=1905x1429"/>
 
 ## EP1801-1805
 
