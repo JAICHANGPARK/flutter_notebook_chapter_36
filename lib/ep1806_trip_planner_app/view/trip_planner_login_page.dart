@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TripPlannerLoginPage extends StatelessWidget {
   const TripPlannerLoginPage({super.key});
@@ -35,13 +36,14 @@ class TripPlannerLoginPage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                      Gap(12),
                       Expanded(
                           child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(32),
-                            topLeft:  Radius.circular(32),
+                            topLeft: Radius.circular(32),
                           ),
                         ),
                       ))
