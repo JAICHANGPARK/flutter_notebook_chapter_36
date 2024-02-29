@@ -52,7 +52,18 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                     ),
                     Expanded(
                       child: ListView.builder(
-                        itemBuilder: () {},
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (_, __) {
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+
+                              ],
+                            ),
+                          );
+                        },
                       ),
                     )
                   ],
