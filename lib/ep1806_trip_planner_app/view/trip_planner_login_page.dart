@@ -13,6 +13,18 @@ class TripPlannerLoginPage extends StatelessWidget {
               "https://cdn.pixabay.com/photo/2023/08/03/22/25/mountain-8168060_1280.jpg",
               fit: BoxFit.cover,
             ),
+          ),
+          Positioned(
+            child: Column(
+              children: [
+                Expanded(child: Container()),
+                Expanded(
+                  child: Column(
+                    children: [],
+                  ),
+                )
+              ],
+            ),
           )
         ],
       ),
