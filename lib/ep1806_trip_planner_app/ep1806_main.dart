@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'view/trip_planner_login_page.dart';
+
 void main() {
   runApp(const TripPlannerApp());
 }
