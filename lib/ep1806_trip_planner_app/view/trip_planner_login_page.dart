@@ -20,7 +20,22 @@ class TripPlannerLoginPage extends StatelessWidget {
                 Expanded(child: Container()),
                 Expanded(
                   child: Column(
-                    children: [],
+                    children: [
+                      Text(
+                        "NAVIGATE\nTHE WORLD",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 42,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Let Trip Planner guide you",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
                   ),
                 )
               ],
