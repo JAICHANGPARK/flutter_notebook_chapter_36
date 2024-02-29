@@ -66,6 +66,23 @@ class TripPlannerLoginPage extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "I already have an account",
+                                ),
+                              ),
+                              Divider(),
+                              Text("Sign in using"),
+                              Row(
+                                children: [
+                                  Container(
+                                    decoration: BoxDecoration(
+                                      border: 
+                                    ),,
+                                  )
+                                ],
                               )
                             ],
                           ),
