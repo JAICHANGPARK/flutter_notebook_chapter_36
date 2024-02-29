@@ -38,15 +38,39 @@ class TripPlannerLoginPage extends StatelessWidget {
                       ),
                       Gap(12),
                       Expanded(
-                          child: Container(
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(32),
-                            topLeft: Radius.circular(32),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(32),
+                              topLeft: Radius.circular(32),
+                            ),
+                          ),
+                          child: Column(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.indigoAccent,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      "Create new account",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.keyboard_arrow_right,
+                                      color: Colors.white,
+                                    )
+                                  ],
+                                ),
+                              )
+                            ],
                           ),
                         ),
-                      ))
+                      )
                     ],
                   ),
                 )
