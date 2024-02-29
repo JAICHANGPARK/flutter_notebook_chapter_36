@@ -23,6 +23,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               Icons.language,
             ),
             label: "Explore",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.supervisor_account,
+            ),
+            label: "Community",
           )
         ],
       ),
