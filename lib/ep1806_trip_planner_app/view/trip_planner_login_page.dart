@@ -50,6 +50,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                             children: [
                               Container(
                                 margin: EdgeInsets.all(24),
+                                padding: EdgeInsets.symmetric(vertical: 12),
                                 decoration: BoxDecoration(
                                   color: Colors.indigoAccent,
                                 ),
