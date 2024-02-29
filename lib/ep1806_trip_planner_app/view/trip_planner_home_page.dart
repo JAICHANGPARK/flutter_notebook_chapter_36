@@ -11,9 +11,22 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: CircleAvatar(),
+        title: Text("Trip Planner"),
+        actions: [
+          CircleAvatar(
+            child: IconButton(
+              
+            ),
+          )
+        ],
+      ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
