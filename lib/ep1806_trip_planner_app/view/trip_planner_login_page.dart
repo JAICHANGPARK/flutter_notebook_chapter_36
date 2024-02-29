@@ -34,7 +34,15 @@ class TripPlannerLoginPage extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                         ),
-                      )
+                      ),
+                      Expanded(
+                          child: Container(
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              topRight: Radius.circular(32),
+                            )),
+                      ))
                     ],
                   ),
                 )
