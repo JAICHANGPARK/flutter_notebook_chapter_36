@@ -27,7 +27,16 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
       ),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Expanded(child: Placeholder()),
+            Expanded(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+              ),
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
