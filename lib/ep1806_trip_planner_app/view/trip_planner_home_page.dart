@@ -35,6 +35,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               Icons.favorite_border,
             ),
             label: "Favorite",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.settings_outlined,
+            ),
+            label: "Settings",
           )
         ],
       ),
