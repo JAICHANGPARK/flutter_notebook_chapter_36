@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TripPlannerHomePage extends StatefulWidget {
   const TripPlannerHomePage({super.key});
 
@@ -12,9 +11,19 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.language,
+            ),
+            label: "Explore",
+          )
         ],
       ),
     );
