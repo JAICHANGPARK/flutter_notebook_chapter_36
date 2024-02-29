@@ -49,12 +49,13 @@ class TripPlannerLoginPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                margin: EdgeInsets.all(24),
+                                margin: EdgeInsets.only(left: 24, right: 24, top: 24),
                                 padding: EdgeInsets.symmetric(vertical: 12),
                                 decoration: BoxDecoration(
                                   color: Colors.indigoAccent,
                                 ),
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
                                       "Create new account",
@@ -75,8 +76,11 @@ class TripPlannerLoginPage extends StatelessWidget {
                                   "I already have an account",
                                 ),
                               ),
-                              Divider(),
+                              Divider(
+                                height: 42,
+                              ),
                               Text("Sign in using"),
+                              Gap(16),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
