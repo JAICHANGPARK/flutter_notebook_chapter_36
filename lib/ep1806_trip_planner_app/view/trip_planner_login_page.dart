@@ -76,12 +76,33 @@ class TripPlannerLoginPage extends StatelessWidget {
                               Divider(),
                               Text("Sign in using"),
                               Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
+                                    height: 52,
+                                    width: 52,
                                     decoration: BoxDecoration(
-                                      border: 
-                                    ),,
-                                  )
+                                      border: Border.all(),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                  Gap(16),
+                                  Container(
+                                    height: 52,
+                                    width: 52,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                  Container(
+                                    height: 52,
+                                    width: 52,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
                                 ],
                               )
                             ],
