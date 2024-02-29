@@ -33,6 +33,29 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(32),
+                    topRight: Radius.circular(32),
+                  ),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Text("Categories"),
+                        Text("See all"),
+                        CircleAvatar(
+                          radius: 16,
+                          backgroundColor: Colors.grey[400]!,
+                        ),
+                      ],
+                    ),
+                    Expanded(
+                      child: ListView.builder(
+                        itemBuilder: () {},
+                      ),
+                    )
+                  ],
                 ),
               ),
             )
