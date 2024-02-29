@@ -59,7 +59,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                             padding: const EdgeInsets.all(8.0),
                             child: Column(
                               children: [
-
+                                Expanded(
+                                  child: Placeholder(),
+                                ),
+                                Text(
+                                  "Mountains",
+                                )
                               ],
                             ),
                           );
