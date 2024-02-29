@@ -29,6 +29,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               Icons.supervisor_account,
             ),
             label: "Community",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.favorite_border,
+            ),
+            label: "Favorite",
           )
         ],
       ),
