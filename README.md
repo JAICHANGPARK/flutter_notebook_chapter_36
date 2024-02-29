@@ -1,5 +1,13 @@
 # flutter_notebook_chapter_36
 
+## EP1806
+
+- Trip Planner Mobile App
+- by Dmitry Lauretsky for Ronas IT | UI/UX Team
+- https://dribbble.com/shots/23704730-Trip-Planner-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/13039267/file/original-5e4c232193df20bcd8b289356e21d516.png?resize=1905x1429"/>
+
 ## EP1801-1805
 
 - Shop My Closet App Design Concept
