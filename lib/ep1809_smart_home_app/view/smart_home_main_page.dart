@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({super.key});
@@ -44,28 +45,32 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               height: 42,
               child: Placeholder(),
             ),
+            Gap(16),
             Expanded(
-                child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 360,
-                    child: Placeholder(),
-                  ),
-                  GridView.builder(
-                    shrinkWrap: true,
-                      itemCount: 10,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        crossAxisSpacing: 16,
-                        mainAxisSpacing: 16,
-                      ),
-                      itemBuilder: (context, index) {
-                        return Placeholder();
-                      }),
-                ],
-              ),
-            ))
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: SingleChildScrollView(
+                                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 360,
+                      child: Placeholder(),
+                    ),
+                    GridView.builder(
+                      shrinkWrap: true,
+                        itemCount: 10,
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          crossAxisSpacing: 16,
+                          mainAxisSpacing: 16,
+                        ),
+                        itemBuilder: (context, index) {
+                          return Placeholder();
+                        }),
+                  ],
+                                ),
+                              ),
+                ))
           ],
         ),
       ),
