@@ -53,6 +53,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                 ),
                 padding: EdgeInsets.all(16),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
@@ -76,7 +77,20 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       ],
                     ),
                     Spacer(),
-                    Text("Niagara Falls"),
+                    Text(
+                      "Niagara Falls",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24
+                      ),
+                    ),
+                    Text("Niagara Falls (/naɪˈæɡərə/) is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States.",
+                    maxLines: 2,
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),),
+
                   ],
                 ),
               ),
