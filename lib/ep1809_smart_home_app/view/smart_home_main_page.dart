@@ -44,19 +44,25 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               height: 42,
               child: Placeholder(),
             ),
-            SizedBox(
-              height: 360,
-              child: Placeholder(),
-            )
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 360,
+                    child: Placeholder(),
+                  ),
+                  GridView.builder(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(), itemBuilder: )
+                ],
+              ),
+            ))
           ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
         height: 72,
         child: Row(
-          children: [
-
-          ],
+          children: [],
         ),
       ),
     );
