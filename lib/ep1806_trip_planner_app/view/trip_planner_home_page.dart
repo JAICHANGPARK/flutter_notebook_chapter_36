@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TripPlannerHomePage extends StatefulWidget {
   const TripPlannerHomePage({super.key});
@@ -63,6 +64,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                         ),
                         Spacer(),
                         Text("What to do"),
+                        Gap(6),
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 12,
