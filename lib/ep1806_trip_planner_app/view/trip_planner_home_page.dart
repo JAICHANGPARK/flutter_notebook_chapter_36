@@ -152,6 +152,11 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
                                       borderRadius: BorderRadius.circular(16),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2017/02/14/03/03/ama-dablam-2064522_1280.jpg",
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
