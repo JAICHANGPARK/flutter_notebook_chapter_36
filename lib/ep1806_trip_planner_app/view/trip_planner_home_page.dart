@@ -132,7 +132,6 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                   ),
                   Expanded(
                     child: Container(
-
                       padding: EdgeInsets.only(
                         left: 16,
                         bottom: 16,
@@ -145,18 +144,23 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                           return Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Expanded(
                                   child: Container(
                                     width: 160,
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
-                                      borderRadius: BorderRadius.circular(16)
+                                      borderRadius: BorderRadius.circular(16),
                                     ),
                                   ),
                                 ),
+                                Gap(12),
                                 Text(
                                   "Mountains",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 )
                               ],
                             ),
