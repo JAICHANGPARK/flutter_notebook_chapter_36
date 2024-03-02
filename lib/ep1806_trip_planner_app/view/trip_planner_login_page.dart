@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_36/ep1806_trip_planner_app/view/trip_planner_home_page.dart';
 import 'package:gap/gap.dart';
 
 class TripPlannerLoginPage extends StatelessWidget {
@@ -76,7 +77,13 @@ class TripPlannerLoginPage extends StatelessWidget {
                                 ),
                               ),
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) => TripPlannerHomePage(),
+                                    ),
+                                  );
+                                },
                                 child: const Text(
                                   "I already have an account",
                                 ),
