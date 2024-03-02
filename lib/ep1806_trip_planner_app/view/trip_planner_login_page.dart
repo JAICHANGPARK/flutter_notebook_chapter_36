@@ -56,7 +56,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                                 ),
                                 padding: const EdgeInsets.symmetric(vertical: 12),
                                 decoration: BoxDecoration(
-                                  color: Colors.indigoAccent,
+                                  color: Colors.indigo,
                                   borderRadius: BorderRadius.circular(24),
                                 ),
                                 child: const Row(
