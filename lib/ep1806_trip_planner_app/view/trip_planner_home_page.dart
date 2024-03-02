@@ -42,7 +42,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
           children: [
             Expanded(
               child: Container(
-                margin: EdgeInsets.all(16),
+                margin: EdgeInsets.all(24),
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(16),
