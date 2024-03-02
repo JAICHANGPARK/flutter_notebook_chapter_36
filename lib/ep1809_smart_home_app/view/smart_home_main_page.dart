@@ -22,6 +22,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Text("Dreamwalker!"),
                   ],
                 ),
+                Spacer(),
                 CircleAvatar(
                   child: Icon(
                     Icons.qr_code_scanner_rounded,
@@ -38,7 +39,23 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 42,
+              child: Placeholder(),
+            ),
+            SizedBox(
+              height: 360,
+              child: Placeholder(),
             )
+          ],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        height: 72,
+        child: Row(
+          children: [
+
           ],
         ),
       ),
