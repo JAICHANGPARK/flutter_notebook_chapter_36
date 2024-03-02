@@ -49,10 +49,15 @@ class TripPlannerLoginPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(left: 24, right: 24, top: 24),
+                                margin: EdgeInsets.only(
+                                  left: 24,
+                                  right: 24,
+                                  top: 24,
+                                ),
                                 padding: EdgeInsets.symmetric(vertical: 12),
                                 decoration: BoxDecoration(
                                   color: Colors.indigoAccent,
+                                  borderRadius: BorderRadius.circular(24),
                                 ),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
