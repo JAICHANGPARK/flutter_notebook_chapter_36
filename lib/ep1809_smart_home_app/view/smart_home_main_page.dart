@@ -15,36 +15,42 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Text("Welcome home"),
-                    Text("Dreamwalker!"),
-                  ],
-                ),
-                Spacer(),
-                CircleAvatar(
-                  child: Icon(
-                    Icons.qr_code_scanner_rounded,
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      Text("Welcome home"),
+                      Text("Dreamwalker!"),
+                    ],
                   ),
-                ),
-                CircleAvatar(
-                  child: Icon(
-                    Icons.notifications_active_outlined,
+                  Spacer(),
+                  CircleAvatar(
+                    child: Icon(
+                      Icons.qr_code_scanner_rounded,
+                    ),
                   ),
-                ),
-                CircleAvatar(
-                  child: Icon(
-                    Icons.settings_outlined,
+                  CircleAvatar(
+                    child: Icon(
+                      Icons.notifications_active_outlined,
+                    ),
                   ),
-                ),
-              ],
+                  CircleAvatar(
+                    child: Icon(
+                      Icons.settings_outlined,
+                    ),
+                  ),
+                ],
+              ),
             ),
-            Gap(16),
+            Gap(8),
             SizedBox(
               height: 42,
-              child: Placeholder(),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Placeholder(),
+              ),
             ),
             Gap(16),
             Expanded(
