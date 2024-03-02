@@ -29,12 +29,24 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
         child: Column(
           children: [
             Expanded(
-                child: Container(
-              decoration: BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.circular(16),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          child: Text("Perfect for you "),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
-            )),
+            ),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
