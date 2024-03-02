@@ -42,10 +42,13 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               child: Container(
                 margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: Colors.grey,
-                  borderRadius: BorderRadius.circular(16),
-
-                ),
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(16),
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://cdn.pixabay.com/photo/2014/07/20/13/38/niagara-falls-397831_1280.jpg",
+                      ),
+                    )),
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
@@ -56,11 +59,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                             color: Colors.indigo,
                           ),
                           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                          child: Text("Perfect for you ",
-                            style: TextStyle(
-                              color: Colors.white
-                            )
-                          ),
+                          child: Text("Perfect for you ", style: TextStyle(color: Colors.white)),
                         ),
                         Spacer(),
                         Text("What to do"),
@@ -75,6 +74,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       ],
                     ),
                     Spacer(),
+                    Text("Niagara Falls"),
                   ],
                 ),
               ),
