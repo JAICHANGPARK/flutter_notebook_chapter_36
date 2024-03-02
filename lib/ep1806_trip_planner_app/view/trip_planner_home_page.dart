@@ -12,8 +12,11 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const CircleAvatar(),
+        leading: const CircleAvatar(
+          radius: 18,
+        ),
         title: const Text("Trip Planner"),
+        centerTitle: true,
         actions: [
           CircleAvatar(
             child: IconButton(
@@ -45,8 +48,10 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           radius: 12,
-                          child: Icon(Icons.),
-                        )
+                          child: Icon(
+                            Icons.keyboard_arrow_right,
+                          ),
+                        ),
                       ],
                     )
                   ],
