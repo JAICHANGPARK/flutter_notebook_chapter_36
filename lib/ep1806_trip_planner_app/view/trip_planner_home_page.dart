@@ -28,7 +28,13 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            const Expanded(child: Placeholder()),
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                color: Colors.grey,
+                borderRadius: BorderRadius.circular(16),
+              ),
+            )),
             Expanded(
               child: Container(
                 decoration: const BoxDecoration(
