@@ -67,6 +67,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     GridView.builder(
                       shrinkWrap: true,
                         itemCount: 10,
+                        physics: NeverScrollableScrollPhysics(),
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           crossAxisSpacing: 16,
