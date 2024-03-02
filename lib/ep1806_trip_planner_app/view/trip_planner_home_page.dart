@@ -42,13 +42,15 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               child: Container(
                 margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(16),
-                    image: DecorationImage(
-                      image: NetworkImage(
-                        "https://cdn.pixabay.com/photo/2014/07/20/13/38/niagara-falls-397831_1280.jpg",
-                      ),
-                    )),
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(16),
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      "https://cdn.pixabay.com/photo/2014/07/20/13/38/niagara-falls-397831_1280.jpg",
+                    ),
+                    fit: BoxFit.cover,
+                  ),
+                ),
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
