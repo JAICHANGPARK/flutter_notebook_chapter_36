@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
@@ -93,77 +94,78 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                 ),
               ),
             ),
-            Expanded(
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(32),
-                    topRight: Radius.circular(32),
-                  ),
+            Container(
+              height: 320,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(32),
+                  topRight: Radius.circular(32),
                 ),
-                child: Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Row(
-                        children: [
-                          const Text(
-                            "Categories",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
-                            ),
+              ),
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      children: [
+                        const Text(
+                          "Categories",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
                           ),
-                          Spacer(),
-                          const Text("See all"),
-                          Gap(8),
-                          CircleAvatar(
-                            radius: 12,
-                            backgroundColor: Colors.grey[400]!,
-                            child: Icon(
-                              Icons.keyboard_arrow_right,
-                            ),
-                            foregroundColor: Colors.black,
-                          ),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        padding: EdgeInsets.only(
-                          left: 16,
-                          bottom: 16,
-                          top: 16,
                         ),
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
-                          itemCount: 10,
-                          itemBuilder: (_, __) {
-                            return Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.grey,
-                                        borderRadius: BorderRadius.circular(16)
-                                      ),
+                        Spacer(),
+                        const Text("See all"),
+                        Gap(8),
+                        CircleAvatar(
+                          radius: 12,
+                          backgroundColor: Colors.grey[400]!,
+                          child: Icon(
+                            Icons.keyboard_arrow_right,
+                          ),
+                          foregroundColor: Colors.black,
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+
+                      padding: EdgeInsets.only(
+                        left: 16,
+                        bottom: 16,
+                        top: 16,
+                      ),
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (_, __) {
+                          return Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    width: 160,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(16)
                                     ),
                                   ),
-                                  Text(
-                                    "Mountains",
-                                  )
-                                ],
-                              ),
-                            );
-                          },
-                        ),
+                                ),
+                                Text(
+                                  "Mountains",
+                                )
+                              ],
+                            ),
+                          );
+                        },
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  )
+                ],
               ),
             )
           ],
