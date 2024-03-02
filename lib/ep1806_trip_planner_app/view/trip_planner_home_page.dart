@@ -12,13 +12,13 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: CircleAvatar(),
-        title: Text("Trip Planner"),
+        leading: const CircleAvatar(),
+        title: const Text("Trip Planner"),
         actions: [
           CircleAvatar(
             child: IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
               ),
             ),
@@ -28,10 +28,10 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
+            const Expanded(child: Placeholder()),
             Expanded(
               child: Container(
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(32),
@@ -42,8 +42,8 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                   children: [
                     Row(
                       children: [
-                        Text("Categories"),
-                        Text("See all"),
+                        const Text("Categories"),
+                        const Text("See all"),
                         CircleAvatar(
                           radius: 16,
                           backgroundColor: Colors.grey[400]!,
@@ -55,8 +55,8 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (_, __) {
-                          return Padding(
-                            padding: const EdgeInsets.all(8.0),
+                          return const Padding(
+                            padding: EdgeInsets.all(8.0),
                             child: Column(
                               children: [
                                 Expanded(
@@ -80,25 +80,25 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.language,
             ),
             label: "Explore",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.supervisor_account,
             ),
             label: "Community",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite_border,
             ),
             label: "Favorite",
           ),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
             icon: Icon(
               Icons.settings_outlined,
             ),
