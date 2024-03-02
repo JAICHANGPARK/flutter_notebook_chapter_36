@@ -79,18 +79,15 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                     Spacer(),
                     Text(
                       "Niagara Falls",
+                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
+                    ),
+                    Text(
+                      "Niagara Falls (/naɪˈæɡərə/) is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States.",
+                      maxLines: 2,
                       style: TextStyle(
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
                       ),
                     ),
-                    Text("Niagara Falls (/naɪˈæɡərə/) is a group of three waterfalls at the southern end of Niagara Gorge, spanning the border between the province of Ontario in Canada and the state of New York in the United States.",
-                    maxLines: 2,
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),),
-
                   ],
                 ),
               ),
@@ -104,22 +101,28 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                     topRight: Radius.circular(32),
                   ),
                 ),
-
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Row(
                         children: [
-                          const Text("Categories",style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                          ),),
+                          const Text(
+                            "Categories",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
                           Spacer(),
                           const Text("See all"),
                           CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.grey[400]!,
+                            child: Icon(
+                              Icons.keyboard_arrow_right,
+                            ),
+                            foregroundColor: Colors.black,
                           ),
                         ],
                       ),
