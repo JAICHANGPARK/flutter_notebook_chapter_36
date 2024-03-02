@@ -116,6 +116,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                           ),
                           Spacer(),
                           const Text("See all"),
+                          Gap(8),
                           CircleAvatar(
                             radius: 12,
                             backgroundColor: Colors.grey[400]!,
@@ -156,6 +157,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: [
           const BottomNavigationBarItem(
             icon: Icon(
