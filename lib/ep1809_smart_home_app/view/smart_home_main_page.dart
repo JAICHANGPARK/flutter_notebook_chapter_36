@@ -11,6 +11,23 @@ class SmartHomeMainPage extends StatefulWidget {
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text("Welcome home"),
+                    Text("Dreamwalker!"),
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
