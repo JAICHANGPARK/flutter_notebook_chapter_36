@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class TripPlannerHomePage extends StatefulWidget {
@@ -133,12 +134,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (_, __) {
-                          return const Padding(
+                          return Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Column(
                               children: [
                                 Expanded(
-                                  child: Placeholder(),
+                                  child: Container(),
                                 ),
                                 Text(
                                   "Mountains",
