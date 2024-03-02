@@ -104,17 +104,21 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                     topRight: Radius.circular(32),
                   ),
                 ),
+
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        const Text("Categories"),
-                        const Text("See all"),
-                        CircleAvatar(
-                          radius: 16,
-                          backgroundColor: Colors.grey[400]!,
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        children: [
+                          const Text("Categories"),
+                          const Text("See all"),
+                          CircleAvatar(
+                            radius: 16,
+                            backgroundColor: Colors.grey[400]!,
+                          ),
+                        ],
+                      ),
                     ),
                     Expanded(
                       child: ListView.builder(
