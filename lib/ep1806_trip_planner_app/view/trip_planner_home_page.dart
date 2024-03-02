@@ -111,10 +111,14 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       padding: const EdgeInsets.all(16.0),
                       child: Row(
                         children: [
-                          const Text("Categories"),
+                          const Text("Categories",style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),),
+                          Spacer(),
                           const Text("See all"),
                           CircleAvatar(
-                            radius: 16,
+                            radius: 12,
                             backgroundColor: Colors.grey[400]!,
                           ),
                         ],
