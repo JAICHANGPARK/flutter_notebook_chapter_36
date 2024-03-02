@@ -13,8 +13,11 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
-        leading: const CircleAvatar(
-          radius: 18,
+        leading: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: const CircleAvatar(
+            radius: 12,
+          ),
         ),
         title: const Text("Trip Planner"),
         centerTitle: true,
@@ -40,14 +43,25 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(16),
+
                 ),
+                padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
                     Row(
                       children: [
                         Container(
-                          child: Text("Perfect for you "),
+                          decoration: BoxDecoration(
+                            color: Colors.indigo,
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          child: Text("Perfect for you ",
+                            style: TextStyle(
+                              color: Colors.white
+                            )
+                          ),
                         ),
+                        Spacer(),
                         Text("What to do"),
                         CircleAvatar(
                           backgroundColor: Colors.white,
@@ -57,7 +71,8 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                           ),
                         ),
                       ],
-                    )
+                    ),
+                    Spacer(),
                   ],
                 ),
               ),
