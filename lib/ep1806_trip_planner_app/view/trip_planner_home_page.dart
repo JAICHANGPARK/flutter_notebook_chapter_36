@@ -130,24 +130,30 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       ),
                     ),
                     Expanded(
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (_, __) {
-                          return Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: Column(
-                              children: [
-                                Expanded(
-                                  child: Container(),
-                                ),
-                                Text(
-                                  "Mountains",
-                                )
-                              ],
-                            ),
-                          );
-                        },
+                      child: Container(
+                        padding: EdgeInsets.only(left: 16,bottom: 16,
+                        top: 16,),
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (_, __) {
+                            return Padding(
+                              padding: EdgeInsets.all(8.0),
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(),
+                                    ),
+                                  ),
+                                  Text(
+                                    "Mountains",
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     )
                   ],
