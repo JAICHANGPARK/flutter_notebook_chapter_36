@@ -40,6 +40,12 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       children: [
                         Container(
                           child: Text("Perfect for you "),
+                        ),
+                        Text("What to do"),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          radius: 12,
+                          child: Icon(Icons.),
                         )
                       ],
                     )
