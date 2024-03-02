@@ -11,6 +11,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       appBar: AppBar(
         leading: const CircleAvatar(
           radius: 18,
@@ -19,6 +20,8 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
         centerTitle: true,
         actions: [
           CircleAvatar(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
             child: IconButton(
               onPressed: () {},
               icon: const Icon(
