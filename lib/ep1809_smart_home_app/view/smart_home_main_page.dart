@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SmartHomeMainPage extends StatefulWidget {
   const SmartHomeMainPage({super.key});
 
@@ -22,7 +21,22 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Text("Welcome home"),
                     Text("Dreamwalker!"),
                   ],
-                )
+                ),
+                CircleAvatar(
+                  child: Icon(
+                    Icons.qr_code_scanner_rounded,
+                  ),
+                ),
+                CircleAvatar(
+                  child: Icon(
+                    Icons.notifications_active_outlined,
+                  ),
+                ),
+                CircleAvatar(
+                  child: Icon(
+                    Icons.settings_outlined,
+                  ),
+                ),
               ],
             )
           ],
