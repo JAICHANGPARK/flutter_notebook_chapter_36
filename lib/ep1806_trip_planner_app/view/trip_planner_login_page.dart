@@ -22,7 +22,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                 Expanded(
                   child: Column(
                     children: [
-                      Text(
+                      const Text(
                         "NAVIGATE\nTHE WORLD",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -30,16 +30,16 @@ class TripPlannerLoginPage extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Let Trip Planner guide you",
                         style: TextStyle(
                           color: Colors.white,
                         ),
                       ),
-                      Gap(12),
+                      const Gap(12),
                       Expanded(
                         child: Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.only(
                               topRight: Radius.circular(32),
@@ -49,17 +49,17 @@ class TripPlannerLoginPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                margin: EdgeInsets.only(
+                                margin: const EdgeInsets.only(
                                   left: 24,
                                   right: 24,
                                   top: 24,
                                 ),
-                                padding: EdgeInsets.symmetric(vertical: 12),
+                                padding: const EdgeInsets.symmetric(vertical: 12),
                                 decoration: BoxDecoration(
                                   color: Colors.indigoAccent,
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                child: Row(
+                                child: const Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Text(
@@ -77,15 +77,15 @@ class TripPlannerLoginPage extends StatelessWidget {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   "I already have an account",
                                 ),
                               ),
-                              Divider(
+                              const Divider(
                                 height: 42,
                               ),
-                              Text("Sign in using"),
-                              Gap(16),
+                              const Text("Sign in using"),
+                              const Gap(16),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -97,7 +97,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                                       shape: BoxShape.circle,
                                     ),
                                   ),
-                                  Gap(16),
+                                  const Gap(16),
                                   Container(
                                     height: 52,
                                     width: 52,
@@ -106,7 +106,7 @@ class TripPlannerLoginPage extends StatelessWidget {
                                       shape: BoxShape.circle,
                                     ),
                                   ),
-                                  Gap(16),
+                                  const Gap(16),
                                   Container(
                                     height: 52,
                                     width: 52,
