@@ -95,7 +95,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               ),
             ),
             Container(
-              height: 320,
+              height: 280,
               decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -106,7 +106,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.only(left: 24, top: 16, right: 24, bottom: 8),
                     child: Row(
                       children: [
                         const Text(
@@ -136,7 +136,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                       padding: EdgeInsets.only(
                         left: 16,
                         bottom: 16,
-                        top: 16,
+                        top: 0,
                       ),
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
