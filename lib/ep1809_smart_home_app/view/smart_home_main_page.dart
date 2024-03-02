@@ -41,6 +41,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 ),
               ],
             ),
+            Gap(16),
             SizedBox(
               height: 42,
               child: Placeholder(),
@@ -56,6 +57,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       height: 360,
                       child: Placeholder(),
                     ),
+                    Gap(16),
                     GridView.builder(
                       shrinkWrap: true,
                         itemCount: 10,
