@@ -11,7 +11,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         leading: const CircleAvatar(
           radius: 18,
@@ -36,6 +36,7 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
           children: [
             Expanded(
               child: Container(
+                margin: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color: Colors.grey,
                   borderRadius: BorderRadius.circular(16),
