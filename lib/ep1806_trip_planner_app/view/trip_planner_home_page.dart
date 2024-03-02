@@ -131,8 +131,11 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                     ),
                     Expanded(
                       child: Container(
-                        padding: EdgeInsets.only(left: 16,bottom: 16,
-                        top: 16,),
+                        padding: EdgeInsets.only(
+                          left: 16,
+                          bottom: 16,
+                          top: 16,
+                        ),
                         child: ListView.builder(
                           scrollDirection: Axis.horizontal,
                           itemCount: 10,
@@ -143,7 +146,10 @@ class _TripPlannerHomePageState extends State<TripPlannerHomePage> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                        borderRadius: BorderRadius.circular(16)
+                                      ),
                                     ),
                                   ),
                                   Text(
