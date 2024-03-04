@@ -25,9 +25,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       Text("Welcome home"),
                       Text(
                         "Dreamwalker!",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                       ),
                     ],
                   ),
@@ -59,9 +57,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             SizedBox(
               height: 42,
               child: Padding(
-                padding: const EdgeInsets.only(left: 16),
-                child: Placeholder(),
-              ),
+                  padding: const EdgeInsets.only(left: 16),
+                  child: ListView(
+                    children: [
+                      Container(
+                        child: IconButton(
+                          icon: Icon(Icons.star),
+                          onPressed: () {},
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                      )
+                    ],
+                  )),
             ),
             Gap(16),
             Expanded(
