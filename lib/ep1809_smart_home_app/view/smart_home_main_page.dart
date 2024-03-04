@@ -55,9 +55,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             Gap(16),
             Expanded(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: SingleChildScrollView(
-                                child: Column(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: SingleChildScrollView(
+                child: Column(
                   children: [
                     SizedBox(
                       height: 360,
@@ -66,20 +66,21 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Gap(16),
                     GridView.builder(
                       shrinkWrap: true,
-                        itemCount: 10,
-                        physics: NeverScrollableScrollPhysics(),
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 16,
-                          mainAxisSpacing: 16,
-                        ),
-                        itemBuilder: (context, index) {
-                          return Placeholder();
-                        }),
+                      itemCount: 10,
+                      physics: NeverScrollableScrollPhysics(),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 16,
+                        mainAxisSpacing: 16,
+                      ),
+                      itemBuilder: (context, index) {
+                        return Placeholder();
+                      },
+                    ),
                   ],
-                                ),
-                              ),
-                ))
+                ),
+              ),
+            ))
           ],
         ),
       ),
