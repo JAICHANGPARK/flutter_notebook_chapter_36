@@ -66,6 +66,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           onPressed: () {},
                         ),
                         margin: EdgeInsets.only(right: 12),
+                      ),
+                      Container(margin: EdgeInsets.only(right: 12),
+
+                        child: Text("All"),
+
                       )
                     ],
                   )),
