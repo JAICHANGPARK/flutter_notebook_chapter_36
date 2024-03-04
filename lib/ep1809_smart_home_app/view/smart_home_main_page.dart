@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -153,10 +154,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    SizedBox(
-                      height: 360,
-                      child: Placeholder(),
-                    ),
+                    Container(
+                        height: 360,
+                        child: Column(
+                          children: [],
+                        )),
                     Gap(16),
                     GridView.builder(
                       shrinkWrap: true,
