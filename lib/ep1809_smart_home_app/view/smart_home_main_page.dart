@@ -190,6 +190,22 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   )
                                 ],
                               ),
+                            ),
+                            Spacer(),
+                            Text('Now the apartment is'),
+                            Row(
+                              children: [],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(),
+                              child: Center(
+                                child: Text(
+                                  "Adjust",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
                             )
                           ],
                         )),
