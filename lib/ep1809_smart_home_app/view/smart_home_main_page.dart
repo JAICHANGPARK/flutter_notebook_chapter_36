@@ -192,12 +192,31 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               ),
                             ),
                             Spacer(),
-                            Text('Now the apartment is'),
-                            Row(
-                              children: [],
+                            Text(
+                              'Now the apartment is',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white
+                              ),
                             ),
+                            Gap(12),
+                            SizedBox(
+                              height: 64,
+                              child: Row(
+                                children: [
+                                  Expanded(child: Placeholder()),
+                                  Expanded(child: Placeholder()),
+                                ],
+                              ),
+                            ),
+                            Gap(12),
                             Container(
-                              decoration: BoxDecoration(),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(24),
+                                color: Colors.pink[100],
+                              ),
+                              padding: EdgeInsets.symmetric(vertical: 12),
                               child: Center(
                                 child: Text(
                                   "Adjust",
