@@ -156,6 +156,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   children: [
                     Container(
                         height: 360,
+                        width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(16),
@@ -165,6 +166,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 12,
+                                vertical: 2,
+                              ),
                               decoration: BoxDecoration(
                                 color: Colors.red[50],
                                 borderRadius: BorderRadius.circular(24),
