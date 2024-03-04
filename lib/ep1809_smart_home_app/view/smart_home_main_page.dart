@@ -69,11 +69,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         margin: EdgeInsets.only(right: 12),
                       ),
                       Container(
-                        
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                        ),
                         margin: EdgeInsets.only(right: 12),
-
                         child: Center(child: Text("All")),
-
                       )
                     ],
                   )),
