@@ -59,6 +59,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               child: Padding(
                   padding: const EdgeInsets.only(left: 16),
                   child: ListView(
+                    scrollDirection: Axis.horizontal,
                     children: [
                       Container(
                         child: IconButton(
@@ -67,9 +68,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                         margin: EdgeInsets.only(right: 12),
                       ),
-                      Container(margin: EdgeInsets.only(right: 12),
+                      Container(
+                        
+                        margin: EdgeInsets.only(right: 12),
 
-                        child: Text("All"),
+                        child: Center(child: Text("All")),
 
                       )
                     ],
