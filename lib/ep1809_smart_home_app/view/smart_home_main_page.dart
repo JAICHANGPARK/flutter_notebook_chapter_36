@@ -160,7 +160,9 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(16),
                         ),
+                        padding: EdgeInsets.all(16),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               decoration: BoxDecoration(
@@ -171,9 +173,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   CircleAvatar(
-                                    radius: 8,
+                                    radius: 4,
                                     backgroundColor: Colors.red,
                                   ),
+                                  Gap(8),
                                   Text(
                                     "Live",
                                     style: TextStyle(
