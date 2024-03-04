@@ -57,34 +57,75 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             SizedBox(
               height: 42,
               child: Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: [
-                      Container(
-                        child: IconButton(
-                          icon: Icon(Icons.star),
-                          onPressed: () {},
-                        ),
-                        margin: EdgeInsets.only(right: 12),
+                padding: const EdgeInsets.only(left: 16),
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: [
+                    Container(
+                      child: IconButton(
+                        icon: Icon(Icons.star),
+                        onPressed: () {},
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.grey[200],
+                      margin: EdgeInsets.only(right: 12),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      margin: EdgeInsets.only(right: 12),
+                      child: Center(
+                          child: Text(
+                        "All",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 16,),
-                        margin: EdgeInsets.only(right: 12),
-                        child: Center(
-                            child: Text(
-                          "All",
+                      )),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      margin: EdgeInsets.only(right: 12),
+                      child: Center(
+                          child: Text(
+                        "Living room",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      margin: EdgeInsets.only(right: 12),
+                      child: Center(
+                        child: Text(
+                          "Bedrooms",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
                           ),
-                        )),
-                      )
-                    ],
-                  )),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ),
             Gap(16),
             Expanded(
