@@ -165,6 +165,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg",
                               ),
                               fit: BoxFit.cover,
+                              colorFilter: ColorFilter.mode(Colors.black.withOpacity(.1),
+                              BlendMode.darken)
                             )),
                         padding: EdgeInsets.all(16),
                         child: Column(
