@@ -161,7 +161,28 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Column(
-                          children: [],
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.red[50],
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 8,
+                                    backgroundColor: Colors.red,
+                                  ),
+                                  Text(
+                                    "Live",
+                                    style: TextStyle(
+                                      color: Colors.red,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
                         )),
                     Gap(16),
                     GridView.builder(
