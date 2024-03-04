@@ -122,6 +122,25 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ),
                         ),
                       ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(24),
+                      ),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
+                      margin: EdgeInsets.only(right: 12),
+                      child: Center(
+                        child: Text(
+                          "Bathroom",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     )
                   ],
                 ),
