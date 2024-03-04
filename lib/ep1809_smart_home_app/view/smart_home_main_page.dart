@@ -168,6 +168,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                 borderRadius: BorderRadius.circular(24),
                               ),
                               child: Row(
+                                mainAxisSize: MainAxisSize.min,
                                 children: [
                                   CircleAvatar(
                                     radius: 8,
