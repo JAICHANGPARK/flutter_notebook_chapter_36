@@ -32,12 +32,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       Icons.qr_code_scanner_rounded,
                     ),
                   ),
+                  Gap(8),
                   CircleAvatar(
+                    backgroundColor: Colors.grey[200],
                     child: Icon(
                       Icons.notifications_active_outlined,
                     ),
-                  ),
+                  ), Gap(8),
                   CircleAvatar(
+                    backgroundColor: Colors.grey[200],
                     child: Icon(
                       Icons.settings_outlined,
                     ),
