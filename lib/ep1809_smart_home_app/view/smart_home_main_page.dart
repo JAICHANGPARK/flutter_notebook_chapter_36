@@ -27,6 +27,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                   Spacer(),
                   CircleAvatar(
+                    backgroundColor: Colors.grey[200],
                     child: Icon(
                       Icons.qr_code_scanner_rounded,
                     ),
