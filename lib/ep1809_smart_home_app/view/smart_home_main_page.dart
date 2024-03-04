@@ -158,9 +158,14 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         height: 360,
                         width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.grey,
-                          borderRadius: BorderRadius.circular(16),
-                        ),
+                            color: Colors.grey,
+                            borderRadius: BorderRadius.circular(16),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            )),
                         padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -194,11 +199,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             Spacer(),
                             Text(
                               'Now the apartment is',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                color: Colors.white
-                              ),
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
                             ),
                             Gap(12),
                             SizedBox(
