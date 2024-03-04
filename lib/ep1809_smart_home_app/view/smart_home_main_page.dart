@@ -20,9 +20,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Welcome home"),
-                      Text("Dreamwalker!"),
+                      Text(
+                        "Dreamwalker!",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                   Spacer(),
@@ -38,7 +44,8 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     child: Icon(
                       Icons.notifications_active_outlined,
                     ),
-                  ), Gap(8),
+                  ),
+                  Gap(8),
                   CircleAvatar(
                     backgroundColor: Colors.grey[200],
                     child: Icon(
