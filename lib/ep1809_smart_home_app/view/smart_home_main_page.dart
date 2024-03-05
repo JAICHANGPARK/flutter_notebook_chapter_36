@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -161,13 +160,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             color: Colors.grey,
                             borderRadius: BorderRadius.circular(16),
                             image: DecorationImage(
-                              image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg",
-                              ),
-                              fit: BoxFit.cover,
-                              colorFilter: ColorFilter.mode(Colors.black.withOpacity(.1),
-                              BlendMode.darken)
-                            )),
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2017/01/07/17/48/interior-1961070_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                                colorFilter: ColorFilter.mode(Colors.black.withOpacity(.1), BlendMode.darken))),
                         padding: EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
