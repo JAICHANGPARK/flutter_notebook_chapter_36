@@ -228,6 +228,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         children: [
                                           CircleAvatar(
                                             radius: 30,
+                                            backgroundColor: Colors.grey,
                                           ),
                                           Gap(8),
                                           Column(
