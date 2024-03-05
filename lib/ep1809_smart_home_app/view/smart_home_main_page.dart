@@ -331,11 +331,29 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                               color: Colors.grey[300]!,
                             ),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Stack(
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  CircleAvatar()
+                                  CircleAvatar(
+                                    radius: 32,
+                                  ),
+                                  Text("Living room"),
+                                  Text("Robot cleaner"),
+                                  Container(
+                                    child: Row(
+                                      children: [
+                                        Icon(
+                                          Icons.timer_outlined,
+                                        ),
+                                        Text(
+                                          "-45 min left",
+                                        )
+                                      ],
+                                    ),
+                                  )
                                 ],
                               )
                             ],
