@@ -230,7 +230,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                             radius: 30,
                                           ),
                                           Column(
-                                            children: [Text("Temperature"), Text("68")],
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Temperature",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                              Text("68"),
+                                            ],
                                           )
                                         ],
                                       ),
