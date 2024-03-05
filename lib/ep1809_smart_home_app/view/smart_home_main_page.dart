@@ -319,11 +319,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       itemCount: 10,
                       physics: NeverScrollableScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        crossAxisSpacing: 16,
-                        mainAxisSpacing: 16,
-                        childAspectRatio: .9
-                      ),
+                          crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: .9),
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(
@@ -353,10 +349,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   ),
                                   Gap(8),
                                   Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.indigo[100],
+                                    ),
                                     child: Row(
+                                      mainAxisSize: MainAxisSize.min,
                                       children: [
                                         Icon(
                                           Icons.timer_outlined,
+                                          size: 16,
                                         ),
                                         Text(
                                           "-45 min left",
