@@ -221,15 +221,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     child: Container(
                                       decoration: BoxDecoration(
                                         color: Colors.black,
+                                        borderRadius: BorderRadius.circular(32),
                                       ),
                                       child: Row(
                                         children: [
-                                          CircleAvatar(),
+                                          CircleAvatar(
+                                            radius: 30,
+                                          ),
                                           Column(
-                                            children: [
-                                              Text("Temperature"),
-                                              Text("68")
-                                            ],
+                                            children: [Text("Temperature"), Text("68")],
                                           )
                                         ],
                                       ),
