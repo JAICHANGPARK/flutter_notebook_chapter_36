@@ -319,7 +319,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       itemCount: 10,
                       physics: NeverScrollableScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: .9),
+                        crossAxisCount: 2,
+                        crossAxisSpacing: 16,
+                        mainAxisSpacing: 16,
+                        childAspectRatio: .95,
+                      ),
                       itemBuilder: (context, index) {
                         return Container(
                           decoration: BoxDecoration(
