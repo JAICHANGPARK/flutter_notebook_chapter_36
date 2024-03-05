@@ -324,7 +324,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         mainAxisSpacing: 16,
                       ),
                       itemBuilder: (context, index) {
-                        return Placeholder();
+                        return Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        );
                       },
                     ),
                   ],
