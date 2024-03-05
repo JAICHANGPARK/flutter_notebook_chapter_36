@@ -73,7 +73,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: EdgeInsets.symmetric(
@@ -91,7 +91,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: EdgeInsets.symmetric(
@@ -109,7 +109,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: EdgeInsets.symmetric(
@@ -128,7 +128,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[200],
+                        color: Colors.grey[100],
                         borderRadius: BorderRadius.circular(24),
                       ),
                       padding: EdgeInsets.symmetric(
