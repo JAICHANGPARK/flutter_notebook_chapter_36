@@ -316,7 +316,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Gap(16),
                     GridView.builder(
                       shrinkWrap: true,
-                      itemCount: 10,
+                      itemCount: 5,
                       physics: NeverScrollableScrollPhysics(),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
