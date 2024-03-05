@@ -322,6 +322,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         crossAxisCount: 2,
                         crossAxisSpacing: 16,
                         mainAxisSpacing: 16,
+                        childAspectRatio: .9
                       ),
                       itemBuilder: (context, index) {
                         return Container(
@@ -350,6 +351,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                       fontSize: 18,
                                     ),
                                   ),
+                                  Gap(8),
                                   Container(
                                     child: Row(
                                       children: [
