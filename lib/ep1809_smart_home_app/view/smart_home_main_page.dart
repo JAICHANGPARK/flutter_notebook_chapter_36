@@ -229,8 +229,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           CircleAvatar(
                                             radius: 30,
                                           ),
+                                          Gap(8),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
                                               Text(
                                                 "Temperature",
@@ -238,7 +240,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                                   color: Colors.white,
                                                 ),
                                               ),
-                                              Text("68"),
+                                              Text(
+                                                "68",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 20,
+                                                ),
+                                              ),
                                             ],
                                           )
                                         ],
