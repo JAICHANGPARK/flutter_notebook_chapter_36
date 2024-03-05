@@ -206,14 +206,35 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             Spacer(),
                             Text(
                               'Now the apartment is',
-                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                                color: Colors.white,
+                              ),
                             ),
                             Gap(12),
                             SizedBox(
                               height: 64,
                               child: Row(
                                 children: [
-                                  Expanded(child: Placeholder()),
+                                  Expanded(
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.black,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(),
+                                          Column(
+                                            children: [
+                                              Text("Temperature"),
+                                              Text("68")
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                   Expanded(child: Placeholder()),
                                 ],
                               ),
