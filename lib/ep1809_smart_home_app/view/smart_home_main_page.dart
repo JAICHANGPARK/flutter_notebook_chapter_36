@@ -327,6 +327,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         return Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: Stack(
+                            children: [
+                              Column(
+                                children: [
+                                  CircleAvatar()
+                                ],
+                              )
+                            ],
                           ),
                         );
                       },
