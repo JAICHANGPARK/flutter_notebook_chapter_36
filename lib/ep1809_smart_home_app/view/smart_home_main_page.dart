@@ -25,7 +25,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       Text("Welcome home"),
                       Text(
                         "Dreamwalker!",
-                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     ],
                   ),
