@@ -350,7 +350,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   Gap(8),
                                   Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.indigo[100],
+                                      color: Colors.indigo[50],
                                     ),
                                     padding: EdgeInsets.symmetric(
                                       horizontal: 6,
@@ -363,6 +363,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                           Icons.timer_outlined,
                                           size: 16,
                                         ),
+                                        Gap(4),
                                         Text(
                                           "-45 min left",
                                         )
