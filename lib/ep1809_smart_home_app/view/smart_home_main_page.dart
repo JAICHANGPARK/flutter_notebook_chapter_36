@@ -352,6 +352,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                     decoration: BoxDecoration(
                                       color: Colors.indigo[100],
                                     ),
+                                    padding: EdgeInsets.symmetric(
+                                      horizontal: 6,
+                                      vertical: 2,
+                                    ),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
                                       children: [
