@@ -223,6 +223,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                         color: Colors.black,
                                         borderRadius: BorderRadius.circular(32),
                                       ),
+                                      padding: EdgeInsets.all(2),
                                       child: Row(
                                         children: [
                                           CircleAvatar(
