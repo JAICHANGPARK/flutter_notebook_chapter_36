@@ -340,8 +340,16 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                                   CircleAvatar(
                                     radius: 32,
                                   ),
+                                  Gap(8),
                                   Text("Living room"),
-                                  Text("Robot cleaner"),
+                                  Gap(8),
+                                  Text(
+                                    "Robot cleaner",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18,
+                                    ),
+                                  ),
                                   Container(
                                     child: Row(
                                       children: [
