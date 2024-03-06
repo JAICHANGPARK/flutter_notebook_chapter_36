@@ -99,13 +99,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         decoration: BoxDecoration(
                           color: tabIndex == 1 ? Colors.pink : Colors.grey[100],
                           borderRadius: BorderRadius.circular(24),
-                          gradient: const LinearGradient(
+                          gradient: tabIndex == 1 ? const LinearGradient(
                             colors: [
                               Color.fromRGBO(220, 174, 246, 1),
                               Color.fromRGBO(254, 181, 226, 1),
                               Color.fromRGBO(253, 211, 188, 1),
                             ],
-                          ),
+                          ) : null,
                         ),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
@@ -124,7 +124,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     InkWell(
                       onTap: () {
                         setState(() {
-                          tabIndex = 1;
+                          tabIndex = 2;
                         });
                       },
                       child: Container(
