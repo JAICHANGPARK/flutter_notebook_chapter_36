@@ -103,39 +103,53 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         )),
                       ),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 16,
-                      ),
-                      margin: EdgeInsets.only(right: 12),
-                      child: Center(
-                          child: Text(
-                        "Living room",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          tabIndex = 1;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(24),
                         ),
-                      )),
-                    ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 16,
-                      ),
-                      margin: EdgeInsets.only(right: 12),
-                      child: Center(
-                        child: Text(
-                          "Bedrooms",
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        child: Center(
+                            child: Text(
+                          "Living room",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
+                          ),
+                        )),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          tabIndex = 2;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(24),
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        child: Center(
+                          child: Text(
+                            "Bedrooms",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
