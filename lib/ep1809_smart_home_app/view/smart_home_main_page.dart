@@ -91,6 +91,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                             gradient: LinearGradient(colors: [
                               Color.fromRGBO(220, 174, 246, 1),
                               Color.fromRGBO(254  , 181, 226, 1),
+                              Color.fromRGBO(253  , 211, 188, 1),
                             ])),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
