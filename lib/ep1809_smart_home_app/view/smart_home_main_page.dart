@@ -11,6 +11,7 @@ class SmartHomeMainPage extends StatefulWidget {
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
   int pageIndex = 0;
   int tabIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +70,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     Container(
                       child: IconButton(
                         icon: Icon(Icons.star),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            tabIndex = 0;
+                          });
+                        },
                       ),
                       margin: EdgeInsets.only(right: 12),
                     ),
@@ -154,11 +159,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             Gap(16),
             Expanded(
                 child: IndexedStack(
-                  index: tabIndex,
-                  children: [
-                    Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                                  child: SingleChildScrollView(
+              index: tabIndex,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: SingleChildScrollView(
                     child: Column(
                       children: [
                         Container(
@@ -388,13 +393,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                       ],
                     ),
-                                  ),
-                                ),
-                    Container(),
-                    Container(),
-                    Container(),
-                  ],
-                ))
+                  ),
+                ),
+                Container(),
+                Container(),
+                Container(),
+              ],
+            ))
           ],
         ),
       ),
@@ -402,7 +407,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         height: 92,
         color: Colors.white,
         surfaceTintColor: Colors.white,
-
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -428,7 +432,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     setState(() {
                       pageIndex = 1;
                     });
-
                   },
                   icon: Icon(
                     Icons.playlist_add_outlined,
