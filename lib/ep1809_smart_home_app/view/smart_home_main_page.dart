@@ -420,7 +420,32 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             CircleAvatar(
               radius: 24,
             ),
-
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.playlist_add_outlined,
+                  ),
+                ),
+                Text(
+                  "Shop",
+                )
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.sentiment_satisfied,
+                  ),
+                ),
+                Text(
+                  "Profile",
+                )
+              ],
+            ),
           ],
         ),
       ),
