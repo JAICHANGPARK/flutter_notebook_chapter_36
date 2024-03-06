@@ -424,7 +424,12 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             Column(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      pageIndex = 1;
+                    });
+
+                  },
                   icon: Icon(
                     Icons.playlist_add_outlined,
                   ),
@@ -440,7 +445,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             Column(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      pageIndex = 2;
+                    });
+                  },
                   icon: Icon(
                     Icons.inventory_2_outlined,
                   ),
@@ -453,7 +462,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
             Column(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      pageIndex = 3;
+                    });
+                  },
                   icon: Icon(
                     Icons.sentiment_satisfied,
                   ),
