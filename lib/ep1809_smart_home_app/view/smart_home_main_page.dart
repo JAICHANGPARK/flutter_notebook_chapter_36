@@ -425,7 +425,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.playlist_add_outlined,
+                    Icons.inventory_2_outlined,
                   ),
                 ),
                 Text(
