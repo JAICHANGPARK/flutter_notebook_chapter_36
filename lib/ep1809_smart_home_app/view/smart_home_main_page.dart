@@ -392,6 +392,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         height: 92,
         color: Colors.white,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Column(
               children: [
@@ -429,7 +430,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   ),
                 ),
                 Text(
-                  "Shop",
+                  "Programs",
                 )
               ],
             ),
