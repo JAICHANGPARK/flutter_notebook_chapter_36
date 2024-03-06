@@ -86,8 +86,13 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.grey[100],
+                          color: tabIndex == 1 ? Colors.pink : Colors.grey[100],
                           borderRadius: BorderRadius.circular(24),
+                          gradient: LinearGradient(
+                            colors: [
+                              
+                            ]
+                          )
                         ),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
