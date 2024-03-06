@@ -68,6 +68,17 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     Container(
+                      decoration: BoxDecoration(
+                        color: tabIndex == 0 ? Colors.pink : Colors.grey[100],
+                        borderRadius: BorderRadius.circular(24),
+                        gradient: const LinearGradient(
+                          colors: [
+                            Color.fromRGBO(220, 174, 246, 1),
+                            Color.fromRGBO(254, 181, 226, 1),
+                            Color.fromRGBO(253, 211, 188, 1),
+                          ],
+                        ),
+                      ),
                       child: IconButton(
                         icon: Icon(Icons.star),
                         onPressed: () {
