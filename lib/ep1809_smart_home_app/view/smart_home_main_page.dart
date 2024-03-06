@@ -402,13 +402,18 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         height: 92,
         color: Colors.white,
         surfaceTintColor: Colors.white,
+
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Column(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    setState(() {
+                      pageIndex = 0;
+                    });
+                  },
                   icon: Icon(
                     Icons.home_filled,
                   ),
