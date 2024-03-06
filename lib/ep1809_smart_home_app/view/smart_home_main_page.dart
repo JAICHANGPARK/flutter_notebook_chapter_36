@@ -472,12 +472,74 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text("Bedroom 01"),
+                            Text(
+                              "Bedroom 01",
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            ),
                             IconButton(
                               onPressed: () {},
                               icon: Icon(Icons.add),
                             ),
                           ],
+                        ),
+                        GridView.count(
+                          crossAxisCount: 2,
+                          children: List.generate(
+                              3,
+                              (index) => Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      border: Border.all(
+                                        color: Colors.grey[300]!,
+                                      ),
+                                    ),
+                                    padding: EdgeInsets.all(12),
+                                    child: Stack(
+                                      children: [
+                                        Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            CircleAvatar(
+                                              radius: 32,
+                                            ),
+                                            Gap(8),
+                                            Text("Living room"),
+                                            Gap(8),
+                                            Text(
+                                              "Robot cleaner",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                              ),
+                                            ),
+                                            Gap(8),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.indigo[50],
+                                              ),
+                                              padding: EdgeInsets.symmetric(
+                                                horizontal: 6,
+                                                vertical: 2,
+                                              ),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: [
+                                                  Icon(
+                                                    Icons.timer_outlined,
+                                                    size: 16,
+                                                  ),
+                                                  Gap(4),
+                                                  Text(
+                                                    "-45 min left",
+                                                  )
+                                                ],
+                                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )),
                         )
                       ],
                     ),
