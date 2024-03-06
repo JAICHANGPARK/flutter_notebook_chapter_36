@@ -416,7 +416,11 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                   "Shop",
                 )
               ],
-            )
+            ),
+            CircleAvatar(
+              radius: 24,
+            ),
+
           ],
         ),
       ),
