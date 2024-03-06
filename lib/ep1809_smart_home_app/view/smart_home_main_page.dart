@@ -129,8 +129,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.grey[100],
+                          color: tabIndex == 2 ? Colors.pink : Colors.grey[100],
                           borderRadius: BorderRadius.circular(24),
+                          gradient: tabIndex == 2 ? const LinearGradient(
+                            colors: [
+                              Color.fromRGBO(220, 174, 246, 1),
+                              Color.fromRGBO(254, 181, 226, 1),
+                              Color.fromRGBO(253, 211, 188, 1),
+                            ],
+                          ) : null,
                         ),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
@@ -149,13 +156,20 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     InkWell(
                       onTap: () {
                         setState(() {
-                          tabIndex = 2;
+                          tabIndex = 3;
                         });
                       },
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.grey[100],
+                          color: tabIndex == 3 ? Colors.pink : Colors.grey[100],
                           borderRadius: BorderRadius.circular(24),
+                          gradient: tabIndex == 3 ? const LinearGradient(
+                            colors: [
+                              Color.fromRGBO(220, 174, 246, 1),
+                              Color.fromRGBO(254, 181, 226, 1),
+                              Color.fromRGBO(253, 211, 188, 1),
+                            ],
+                          ) : null,
                         ),
                         padding: EdgeInsets.symmetric(
                           horizontal: 16,
@@ -174,8 +188,15 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        color: Colors.grey[100],
+                        color: tabIndex == 4 ? Colors.pink : Colors.grey[100],
                         borderRadius: BorderRadius.circular(24),
+                        gradient: tabIndex == 4 ? const LinearGradient(
+                          colors: [
+                            Color.fromRGBO(220, 174, 246, 1),
+                            Color.fromRGBO(254, 181, 226, 1),
+                            Color.fromRGBO(253, 211, 188, 1),
+                          ],
+                        ) : null,
                       ),
                       padding: EdgeInsets.symmetric(
                         horizontal: 16,
