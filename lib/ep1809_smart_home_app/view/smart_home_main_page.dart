@@ -79,6 +79,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           ],
                         ),
                       ),
+                      margin: EdgeInsets.only(right: 12),
                       child: IconButton(
                         icon: Icon(Icons.star),
                         onPressed: () {
@@ -87,7 +88,6 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                           });
                         },
                       ),
-                      margin: EdgeInsets.only(right: 12),
                     ),
                     InkWell(
                       onTap: () {
