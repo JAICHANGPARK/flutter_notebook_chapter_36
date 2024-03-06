@@ -390,6 +390,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         height: 92,
+        color: Colors.white,
         child: Row(
           children: [
             Column(
