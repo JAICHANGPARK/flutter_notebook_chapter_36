@@ -389,9 +389,34 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
         ),
       ),
       bottomNavigationBar: BottomAppBar(
-        height: 72,
+        height: 92,
         child: Row(
-          children: [],
+          children: [
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home_filled,
+                  ),
+                ),
+                Text("Home")
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.playlist_add_outlined,
+                  ),
+                ),
+                Text(
+                  "Shop",
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
