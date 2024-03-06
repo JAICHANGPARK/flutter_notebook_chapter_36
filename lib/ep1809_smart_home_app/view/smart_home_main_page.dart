@@ -484,6 +484,10 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                         ),
                         GridView.count(
                           crossAxisCount: 2,
+                          shrinkWrap: true,
+                          crossAxisSpacing: 12,
+                          mainAxisSpacing: 12,
+                          childAspectRatio: .95,
                           children: List.generate(
                               3,
                               (index) => Container(
