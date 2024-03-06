@@ -9,6 +9,8 @@ class SmartHomeMainPage extends StatefulWidget {
 }
 
 class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
+  int pageIndex = 0;
+  int tabIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -391,6 +393,7 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
       bottomNavigationBar: BottomAppBar(
         height: 92,
         color: Colors.white,
+        surfaceTintColor: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
