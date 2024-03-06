@@ -78,23 +78,30 @@ class _SmartHomeMainPageState extends State<SmartHomeMainPage> {
                       ),
                       margin: EdgeInsets.only(right: 12),
                     ),
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.grey[100],
-                        borderRadius: BorderRadius.circular(24),
-                      ),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 16,
-                      ),
-                      margin: EdgeInsets.only(right: 12),
-                      child: Center(
-                          child: Text(
-                        "All",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          tabIndex = 1;
+                        });
+                      },
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.grey[100],
+                          borderRadius: BorderRadius.circular(24),
                         ),
-                      )),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
+                        margin: EdgeInsets.only(right: 12),
+                        child: Center(
+                            child: Text(
+                          "All",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )),
+                      ),
                     ),
                     Container(
                       decoration: BoxDecoration(
