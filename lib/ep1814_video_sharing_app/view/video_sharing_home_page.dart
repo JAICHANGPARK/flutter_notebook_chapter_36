@@ -41,7 +41,9 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           children: [
                             Positioned(
                               child: Container(
-                                color: Colors.tealAccent,
+                                decoration: BoxDecoration(
+                                  color: Colors.tealAccent,
+                                ),
                               ),
                             ),
                           ],
