@@ -34,14 +34,13 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ),
                       Spacer(),
                       Container(
-                        width: 100,
+                        width: 120,
                         height: 38,
                         // color: Colors.grey,
                         child: Stack(
                           children: [
                             Positioned(
                               child: Transform.rotate(
-                                
                                 angle: -0.1,
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -53,7 +52,6 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             Positioned(
                               child: Transform.rotate(
-
                                 angle: 0.1,
                                 child: Container(
                                   decoration: BoxDecoration(
@@ -69,6 +67,21 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Center(
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.emoji_events_outlined,
+                                      color: Colors.white,),
+                                      Text(
+                                        "TRY PRO",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
