@@ -35,7 +35,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       Spacer(),
                       Container(
                         width: 100,
-                        height: 42,
+                        height: 38,
                         color: Colors.grey,
                         child: Stack(
                           children: [
@@ -43,6 +43,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.tealAccent,
+                                  borderRadius: BorderRadius.circular(24),
                                 ),
                               ),
                             ),
