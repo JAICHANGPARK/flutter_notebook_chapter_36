@@ -23,6 +23,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       onPressed: () {},
                       icon: Icon(Icons.menu),
                     ),
+                    Text("Reelme."),
+                    Spacer(),
+                    Container(
+                      width: 42,
+                      color: Colors.grey,
+                    )
                   ],
                 )
               ],
