@@ -107,21 +107,45 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     height: 52,
                     child: Placeholder(),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text("Story"),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text(
-                          "See All",
-                        ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Story"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "See All",
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 320,
+                            child: Placeholder(),
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Story"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text(
+                                  "See All",
+                                ),
+                              ),
+                            ],
+                          ),
+                          Container(
+                            height: 320,
+                            child: Placeholder(),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                  Container(
-                    height: 320,
-                    child: Placeholder(),
+                    ),
                   )
                 ],
               ),
