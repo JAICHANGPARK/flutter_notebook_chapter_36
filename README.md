@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_36
 
-## EP1809
+## EP1814
+
+- Video Sharing App - Social Media
+- by Shahruk Ahmed
+- https://dribbble.com/shots/23729616-Video-Sharing-App-Social-Media
+
+<img src="https://cdn.dribbble.com/userupload/13306020/file/original-7d725567e8e552cbd6fec8d5e089cfb5.png?resize=1905x1429"/>
+
+## EP1809-1813
 
 - AI Smart Home with Mobile Application Testing Applied
 - by Brightlab
