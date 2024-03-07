@@ -11,6 +11,14 @@ class VideoSharingHomePage extends StatefulWidget {
 class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Stack(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
