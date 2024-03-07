@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class VideoSharingHomePage extends StatefulWidget {
   const VideoSharingHomePage({super.key});
@@ -91,6 +92,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ],
                     ),
                   ),
+                  Gap(16),
+                  Container(
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+                  Gap(16),
                   Container(
                     height: 100,
                     child: Placeholder(),
