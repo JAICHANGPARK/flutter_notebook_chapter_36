@@ -36,13 +36,37 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       Container(
                         width: 100,
                         height: 38,
-                        color: Colors.grey,
+                        // color: Colors.grey,
                         child: Stack(
                           children: [
                             Positioned(
+                              child: Transform.rotate(
+                                
+                                angle: -0.05,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              child: Transform.rotate(
+
+                                angle: 0.05,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.tealAccent,
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Positioned(
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.tealAccent,
+                                  color: Colors.black,
                                   borderRadius: BorderRadius.circular(24),
                                 ),
                               ),
