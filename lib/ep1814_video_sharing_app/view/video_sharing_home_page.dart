@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class VideoSharingHomePage extends StatefulWidget {
   const VideoSharingHomePage({super.key});
 
@@ -15,7 +14,19 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-
+            Positioned.fill(
+                child: Column(
+              children: [
+                Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.menu),
+                    ),
+                  ],
+                )
+              ],
+            ))
           ],
         ),
       ),
