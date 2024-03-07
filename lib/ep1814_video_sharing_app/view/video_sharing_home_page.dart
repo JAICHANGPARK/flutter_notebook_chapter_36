@@ -102,9 +102,22 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     height: 100,
                     child: Placeholder(),
                   ),
+                  Gap(16),
                   Container(
                     height: 52,
                     child: Placeholder(),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Story"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See All",
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
