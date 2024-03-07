@@ -42,7 +42,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             Positioned(
                               child: Transform.rotate(
                                 
-                                angle: -0.05,
+                                angle: -0.1,
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.red,
@@ -54,7 +54,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             Positioned(
                               child: Transform.rotate(
 
-                                angle: 0.05,
+                                angle: 0.1,
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.tealAccent,
@@ -65,6 +65,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             Positioned(
                               child: Container(
+                                // margin: EdgeInsets.symmetric(vertical: 1),
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(24),
