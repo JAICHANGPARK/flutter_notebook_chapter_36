@@ -15,7 +15,6 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
         child: Stack(
           children: [
             Positioned.fill(
-              
                 child: Column(
               children: [
                 Row(
@@ -24,12 +23,26 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       onPressed: () {},
                       icon: Icon(Icons.menu),
                     ),
-                    Text("Reelme."),
+                    Text(
+                      "Reelme.",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     Spacer(),
                     Container(
                       width: 120,
                       height: 42,
                       color: Colors.grey,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            child: Container(
+                              color: Colors.tealAccent,
+                            ),
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 )
