@@ -17,34 +17,38 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
             Positioned.fill(
                 child: Column(
               children: [
-                Row(
-                  children: [
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.menu),
-                    ),
-                    Text(
-                      "Reelme.",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.menu),
                       ),
-                    ),
-                    Spacer(),
-                    Container(
-                      width: 120,
-                      height: 42,
-                      color: Colors.grey,
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            child: Container(
-                              color: Colors.tealAccent,
+                      Text(
+                        "Reelme.",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      Spacer(),
+                      Container(
+                        width: 100,
+                        height: 42,
+                        color: Colors.grey,
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              child: Container(
+                                color: Colors.tealAccent,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             ))
