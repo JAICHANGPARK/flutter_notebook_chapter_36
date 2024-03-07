@@ -70,6 +70,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 ),
                                 child: Center(
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(Icons.emoji_events_outlined,
                                       color: Colors.white,),
