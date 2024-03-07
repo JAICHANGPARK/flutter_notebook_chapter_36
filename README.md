@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_36
 
-## EP1814
+## EP1813
 
 - Video Sharing App - Social Media
 - by Shahruk Ahmed
@@ -8,7 +8,7 @@
 
 <img src="https://cdn.dribbble.com/userupload/13306020/file/original-7d725567e8e552cbd6fec8d5e089cfb5.png?resize=1905x1429"/>
 
-## EP1809-1813
+## EP1809-1812
 
 - AI Smart Home with Mobile Application Testing Applied
 - by Brightlab
