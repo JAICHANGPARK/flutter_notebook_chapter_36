@@ -27,14 +27,21 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
           Expanded(
               child: Container(
             margin: EdgeInsets.all(24),
-            decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(8),
+            ),
           )),
           Container(
             height: 220,
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
-                BoxShadow(color: Colors.grey[300]!, blurRadius: 4, spreadRadius: 2),
+                BoxShadow(
+                  color: Colors.grey[300]!,
+                  blurRadius: 4,
+                  spreadRadius: 2,
+                ),
               ],
             ),
             padding: EdgeInsets.only(bottom: 24),
