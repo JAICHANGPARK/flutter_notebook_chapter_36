@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -393,7 +395,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
               ),
             ),
             Positioned(
-              bottom: 0,
+              bottom: 32,
               left: 16,
               right: 16,
               child: Center(
@@ -401,10 +403,21 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   height: 72,
                   width: 200,
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    // color: Colors.white,
+                    borderRadius: BorderRadius.circular(42),
+                  ),
+                  child: ClipRRect(
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 8),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(42),
+                        ),
+                      ),
+                    ),
 
                   ),
-                  child: BackdropFilter(filter: null,),
 
                 ),
               ),
