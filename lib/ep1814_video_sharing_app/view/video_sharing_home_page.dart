@@ -329,26 +329,57 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   width: 160,
                                   decoration: BoxDecoration(
                                     color: Colors.tealAccent,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
                                 );
                               },
                             ),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Story"),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "See All",
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              right: 16,
+                              top: 24,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Story",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
-                              ),
-                            ],
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See All",
+                                  ),
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.black,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           Container(
-                            height: 320,
-                            child: Placeholder(),
+                            height: 280,
+                            padding: EdgeInsets.only(left: 16),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(right: 16),
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                      color: Colors.tealAccent,
+                                      borderRadius: BorderRadius.circular(8)
+                                  ),
+                                );
+                              },
+                            ),
                           ),
                         ],
                       ),
