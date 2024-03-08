@@ -392,6 +392,16 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                 ],
               ),
             ),
+            Positioned(
+              bottom: 0,
+              left: 16,
+              right: 16,
+              child: Container(
+                height: 72,
+                width: 200,
+
+              ),
+            )
           ],
         ),
       ),
