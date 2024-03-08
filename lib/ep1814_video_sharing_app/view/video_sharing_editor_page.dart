@@ -28,6 +28,7 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
             margin: EdgeInsets.all(24),
             decoration: BoxDecoration(
               color: Colors.grey,
+              borderRadius: BorderRadius.circular(8)
             ),
           )),
           Container(
@@ -39,7 +40,12 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
                   color: Colors.grey[300]!,
                   blurRadius: 4,
                   spreadRadius: 2
-                )
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                
               ],
             ),
           )
