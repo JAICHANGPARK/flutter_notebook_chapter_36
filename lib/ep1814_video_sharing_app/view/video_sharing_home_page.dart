@@ -21,12 +21,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
-                      right: 16,
-                      bottom: 16,
-                      top: 24
-
-                    ),
+                    padding: const EdgeInsets.only(right: 16, bottom: 16, top: 24),
                     child: Row(
                       children: [
                         IconButton(
@@ -335,7 +330,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   width: 160,
                                   decoration: BoxDecoration(
                                     color: Colors.tealAccent,
-                                    borderRadius: BorderRadius.circular(8)
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2023/07/12/17/23/activity-8122959_1280.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 );
                               },
@@ -379,10 +379,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 return Container(
                                   margin: EdgeInsets.only(right: 16),
                                   width: 160,
-                                  decoration: BoxDecoration(
-                                      color: Colors.tealAccent,
-                                      borderRadius: BorderRadius.circular(8)
-                                  ),
+                                  decoration:
+                                      BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(8)),
                                 );
                               },
                             ),
