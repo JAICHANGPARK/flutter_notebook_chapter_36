@@ -289,17 +289,30 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text("Story"),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  "See All",
+                          Padding(
+                            padding: const EdgeInsets.only(
+                              left: 16,
+                              right: 16,
+                              top: 24,
+                            ),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Story",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
-                              ),
-                            ],
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "See All",
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                           Container(
                             height: 320,
