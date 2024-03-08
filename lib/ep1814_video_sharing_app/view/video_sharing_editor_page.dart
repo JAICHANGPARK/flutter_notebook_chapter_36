@@ -24,28 +24,31 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
       ),
       body: Column(
         children: [
-          Expanded(child: Container(
+          Expanded(
+              child: Container(
             margin: EdgeInsets.all(24),
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(8)
-            ),
+            decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
           )),
           Container(
-            height: 200,
+            height: 220,
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: [
-                BoxShadow(
-                  color: Colors.grey[300]!,
-                  blurRadius: 4,
-                  spreadRadius: 2
-                ),
+                BoxShadow(color: Colors.grey[300]!, blurRadius: 4, spreadRadius: 2),
               ],
             ),
+            padding: EdgeInsets.only(bottom: 24),
             child: Column(
               children: [
-                
+                Expanded(child: Placeholder()),
+                Container(
+                  height: 32,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    itemBuilder: (context, index) {},
+                  ),
+                )
               ],
             ),
           )
