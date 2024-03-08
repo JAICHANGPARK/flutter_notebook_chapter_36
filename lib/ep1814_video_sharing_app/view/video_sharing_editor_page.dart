@@ -15,7 +15,9 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
         title: Text("Effects"),
         leading: IconButton(
           icon: Icon(Icons.clear),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
         ),
         actions: [TextButton(onPressed: () {}, child: Text("DONE"))],
       ),
