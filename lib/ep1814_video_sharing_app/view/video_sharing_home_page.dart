@@ -195,9 +195,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   ),
                   Gap(12),
                   Container(
-                    padding: EdgeInsets.only(
-                      left: 16,
-                    ),
+                    padding: EdgeInsets.only(left: 16),
                     height: 32,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -207,12 +205,31 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 12,),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
                           child: Center(
                             child: Text(
                               "All",
                               style: TextStyle(
                                 color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Reels",
+                              style: TextStyle(
+
                               ),
                             ),
                           ),
