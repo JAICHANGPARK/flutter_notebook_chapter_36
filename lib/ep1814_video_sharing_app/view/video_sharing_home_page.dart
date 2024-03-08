@@ -17,6 +17,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
         child: Stack(
           children: [
             Positioned.fill(
+              bottom: 16,
               child: Column(
                 children: [
                   Padding(
