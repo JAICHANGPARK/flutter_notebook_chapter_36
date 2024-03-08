@@ -310,13 +310,20 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                   child: Text(
                                     "See All",
                                   ),
+                                  style: TextButton.styleFrom(
+                                    foregroundColor: Colors.black,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                           Container(
                             height: 320,
-                            child: Placeholder(),
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {},
+                            ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
