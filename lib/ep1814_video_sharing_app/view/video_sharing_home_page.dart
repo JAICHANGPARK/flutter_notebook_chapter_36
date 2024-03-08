@@ -401,7 +401,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
               child: Center(
                 child: Container(
                   height: 72,
-                  width: 200,
+                  width: 240,
                   decoration: BoxDecoration(
                     // color: Colors.white,
                     borderRadius: BorderRadius.circular(42),
@@ -413,6 +413,18 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(.4),
                           borderRadius: BorderRadius.circular(42),
+                        ),
+                        child: Row(
+                          children: [
+                            CircleAvatar(
+                              radius: 28,
+                            ),
+                            Gap(8),
+                            Text("Start Editing"),
+                            Icon(Icons.keyboard_arrow_right),
+                            Icon(Icons.keyboard_arrow_right),
+                            Icon(Icons.keyboard_arrow_right),
+                          ],
                         ),
                       ),
                     ),
