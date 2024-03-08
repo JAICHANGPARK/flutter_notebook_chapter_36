@@ -208,6 +208,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           padding: EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
+                          margin: EdgeInsets.only(right: 12),
                           child: Center(
                             child: Text(
                               "All",
@@ -225,9 +226,28 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           padding: EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
+                          margin: EdgeInsets.only(right: 12),
                           child: Center(
                             child: Text(
                               "Reels",
+                              style: TextStyle(
+
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: EdgeInsets.only(right: 12),
+                          child: Center(
+                            child: Text(
+                              "Stories",
                               style: TextStyle(
 
                               ),
