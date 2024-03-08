@@ -197,12 +197,14 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   Container(
                     height: 52,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(4),
                           ),
+                          padding: EdgeInsets.symmetric(horizontal: 4),
                           child: Center(
                             child: Text(
                               "All",
