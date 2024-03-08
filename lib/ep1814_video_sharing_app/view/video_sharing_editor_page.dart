@@ -19,6 +19,7 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
             Navigator.of(context).pop();
           },
         ),
+        centerTitle: true,
         actions: [TextButton(onPressed: () {}, child: Text("DONE"))],
       ),
       body: Column(
