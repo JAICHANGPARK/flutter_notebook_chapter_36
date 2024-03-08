@@ -111,7 +111,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   Gap(16),
                   Container(
                     height: 100,
-                    child: Placeholder(),
+                    child: Row(
+                      children: [
+                        
+                      ],
+                    )
                   ),
                   Gap(16),
                   Container(
