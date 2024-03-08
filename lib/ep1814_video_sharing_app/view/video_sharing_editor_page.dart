@@ -23,7 +23,27 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
         actions: [TextButton(onPressed: () {}, child: Text("DONE"))],
       ),
       body: Column(
-        children: [],
+        children: [
+          Expanded(child: Container(
+            margin: EdgeInsets.all(24),
+            decoration: BoxDecoration(
+              color: Colors.grey,
+            ),
+          )),
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey[300]!,
+                  blurRadius: 4,
+                  spreadRadius: 2
+                )
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
