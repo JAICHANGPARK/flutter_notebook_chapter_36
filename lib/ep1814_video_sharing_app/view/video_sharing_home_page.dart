@@ -319,10 +319,19 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           ),
                           Container(
                             height: 320,
+                            padding: EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
-                              itemBuilder: (context, index) {},
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  margin: EdgeInsets.only(right: 16),
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.tealAccent,
+                                  ),
+                                );
+                              },
                             ),
                           ),
                           Row(
