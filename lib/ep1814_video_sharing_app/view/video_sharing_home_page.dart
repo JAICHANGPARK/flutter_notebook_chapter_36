@@ -103,6 +103,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search Reel, Instagram Templates...",
+                          border: InputBorder.none,
                         ),
                       ),
                     ),
