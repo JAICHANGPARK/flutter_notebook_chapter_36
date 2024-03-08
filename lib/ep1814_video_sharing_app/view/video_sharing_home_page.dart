@@ -110,13 +110,22 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   ),
                   Gap(16),
                   Container(
-                    height: 100,
-                    child: Row(
-                      children: [
-                        
-                      ],
-                    )
-                  ),
+                      height: 100,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              child: Column(
+                            children: [
+                              CircleAvatar(
+                                radius: 30,
+                              ),
+                              Text(
+                                "Remove BG",
+                              ),
+                            ],
+                          ))
+                        ],
+                      )),
                   Gap(16),
                   Container(
                     height: 52,
