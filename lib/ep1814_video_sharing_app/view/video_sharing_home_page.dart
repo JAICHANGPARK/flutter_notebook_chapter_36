@@ -193,7 +193,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ],
                     ),
                   ),
-                  Gap(12),
+                  Gap(16),
                   Container(
                     padding: EdgeInsets.only(left: 16),
                     height: 32,
