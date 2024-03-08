@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_36/ep1814_video_sharing_app/view/video_sharing_editor_page.dart';
 import 'package:gap/gap.dart';
 
 class VideoSharingHomePage extends StatefulWidget {
@@ -28,16 +29,16 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       children: [
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.menu),
+                          icon: const Icon(Icons.menu),
                         ),
-                        Text(
+                        const Text(
                           "Reelme.",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 24,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Container(
                           width: 120,
                           height: 38,
@@ -73,7 +74,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                     color: Colors.black,
                                     borderRadius: BorderRadius.circular(24),
                                   ),
-                                  child: Center(
+                                  child: const Center(
                                     child: Row(
                                       mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
@@ -100,10 +101,10 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   SizedBox(
                     height: 42,
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 12),
+                      margin: const EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                      padding: EdgeInsets.symmetric(horizontal: 8),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 8),
+                      child: const TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
                           hintText: "Search Reel, Instagram Templates...",
@@ -112,10 +113,10 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ),
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
                     height: 100,
-                    padding: EdgeInsets.symmetric(horizontal: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
                     child: Row(
                       children: [
                         Expanded(
@@ -126,8 +127,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                               ),
-                              Gap(4),
-                              Text(
+                              const Gap(4),
+                              const Text(
                                 "Remove BG",
                               ),
                             ],
@@ -141,8 +142,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                               ),
-                              Gap(4),
-                              Text(
+                              const Gap(4),
+                              const Text(
                                 "Crop",
                               ),
                             ],
@@ -156,8 +157,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                               ),
-                              Gap(4),
-                              Text(
+                              const Gap(4),
+                              const Text(
                                 "Background",
                               ),
                             ],
@@ -171,8 +172,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                               ),
-                              Gap(4),
-                              Text(
+                              const Gap(4),
+                              const Text(
                                 "Filter",
                               ),
                             ],
@@ -186,8 +187,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 radius: 32,
                                 backgroundColor: Colors.grey[200],
                               ),
-                              Gap(4),
-                              Text(
+                              const Gap(4),
+                              const Text(
                                 "Sticker",
                               ),
                             ],
@@ -196,9 +197,9 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Container(
-                    padding: EdgeInsets.only(left: 16),
+                    padding: const EdgeInsets.only(left: 16),
                     height: 32,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
@@ -208,11 +209,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.black,
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 12),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
                             child: Text(
                               "All",
                               style: TextStyle(
@@ -226,11 +227,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 12),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
                             child: Text(
                               "Reels",
                               style: TextStyle(),
@@ -242,11 +243,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 12),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
                             child: Text(
                               "Stories",
                               style: TextStyle(),
@@ -258,11 +259,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 12),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
                             child: Text(
                               "TikTok",
                               style: TextStyle(),
@@ -274,11 +275,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             color: Colors.grey[200],
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                             horizontal: 12,
                           ),
-                          margin: EdgeInsets.only(right: 12),
-                          child: Center(
+                          margin: const EdgeInsets.only(right: 12),
+                          child: const Center(
                             child: Text(
                               "Instagram",
                               style: TextStyle(),
@@ -288,7 +289,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       ],
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
@@ -301,7 +302,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Story",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -310,7 +311,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "See All",
                                   ),
                                   style: TextButton.styleFrom(
@@ -322,21 +323,30 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           ),
                           Container(
                             height: 280,
-                            padding: EdgeInsets.only(left: 16),
+                            padding: const EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
-                                return Container(
-                                  margin: EdgeInsets.only(right: 16),
-                                  width: 160,
-                                  decoration: BoxDecoration(
-                                    color: Colors.tealAccent,
-                                    borderRadius: BorderRadius.circular(8),
-                                    image: DecorationImage(
-                                      image: NetworkImage(
-                                          "https://cdn.pixabay.com/photo/2023/07/12/17/23/activity-8122959_1280.jpg"),
-                                      fit: BoxFit.cover,
+                                return GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => const VideoSharingEditorPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: const EdgeInsets.only(right: 16),
+                                    width: 160,
+                                    decoration: BoxDecoration(
+                                      color: Colors.tealAccent,
+                                      borderRadius: BorderRadius.circular(8),
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2023/07/12/17/23/activity-8122959_1280.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
                                 );
@@ -352,7 +362,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(
+                                const Text(
                                   "Story",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -361,7 +371,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                                 ),
                                 TextButton(
                                   onPressed: () {},
-                                  child: Text(
+                                  child: const Text(
                                     "See All",
                                   ),
                                   style: TextButton.styleFrom(
@@ -373,13 +383,13 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           ),
                           Container(
                             height: 280,
-                            padding: EdgeInsets.only(left: 16),
+                            padding: const EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   width: 160,
                                   decoration:
                                       BoxDecoration(color: Colors.tealAccent, borderRadius: BorderRadius.circular(8)),
@@ -414,8 +424,8 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           color: Colors.white.withOpacity(.4),
                           borderRadius: BorderRadius.circular(42),
                         ),
-                        padding: EdgeInsets.symmetric(horizontal: 4),
-                        child: Row(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: const Row(
                           children: [
                             CircleAvatar(
                               radius: 28,
@@ -430,9 +440,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                         ),
                       ),
                     ),
-
                   ),
-
                 ),
               ),
             )
