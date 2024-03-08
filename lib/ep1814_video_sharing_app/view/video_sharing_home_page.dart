@@ -318,7 +318,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                           ),
                           Container(
-                            height: 320,
+                            height: 280,
                             padding: EdgeInsets.only(left: 16),
                             child: ListView.builder(
                               scrollDirection: Axis.horizontal,
