@@ -98,10 +98,11 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                     child: Container(
                       margin: EdgeInsets.symmetric(horizontal: 12),
                       decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                      
+                      padding: EdgeInsets.symmetric(horizontal: 8),
                       child: TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.search),
+                          hintText: "Search Reel, Instagram Templates...",
                         ),
                       ),
                     ),
