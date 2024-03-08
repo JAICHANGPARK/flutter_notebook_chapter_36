@@ -13,14 +13,14 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Effects"),
-        actions: [
-          TextButton(onPressed: (){}, child: Text("DONE"))
-        ],
+        leading: IconButton(
+          icon: Icon(Icons.clear),
+          onPressed: () {},
+        ),
+        actions: [TextButton(onPressed: () {}, child: Text("DONE"))],
       ),
       body: Column(
-        children: [
-          
-        ],
+        children: [],
       ),
     );
   }
