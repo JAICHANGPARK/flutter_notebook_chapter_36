@@ -411,7 +411,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                       filter: ImageFilter.blur(sigmaX: 10, sigmaY: 8),
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.white.withOpacity(.4),
                           borderRadius: BorderRadius.circular(42),
                         ),
                       ),
