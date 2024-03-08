@@ -119,10 +119,71 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             children: [
                               CircleAvatar(
                                 radius: 32,
+                                backgroundColor: Colors.grey[200],
                               ),
                               Gap(4),
                               Text(
                                 "Remove BG",
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                              ),
+                              Gap(4),
+                              Text(
+                                "Crop",
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                              ),
+                              Gap(4),
+                              Text(
+                                "Background",
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                              ),
+                              Gap(4),
+                              Text(
+                                "Filter",
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              CircleAvatar(
+                                radius: 32,
+                                backgroundColor: Colors.grey[200],
+                              ),
+                              Gap(4),
+                              Text(
+                                "Sticker",
                               ),
                             ],
                           ),
