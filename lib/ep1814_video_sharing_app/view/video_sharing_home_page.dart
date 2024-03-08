@@ -196,7 +196,19 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                   Gap(16),
                   Container(
                     height: 52,
-                    child: Placeholder(),
+                    child: ListView(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          child: Center(
+                            child: Text("All"),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   Expanded(
                     child: SingleChildScrollView(
