@@ -230,9 +230,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           child: Center(
                             child: Text(
                               "Reels",
-                              style: TextStyle(
-
-                              ),
+                              style: TextStyle(),
                             ),
                           ),
                         ),
@@ -248,12 +246,42 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           child: Center(
                             child: Text(
                               "Stories",
-                              style: TextStyle(
-
-                              ),
+                              style: TextStyle(),
                             ),
                           ),
-                        )
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: EdgeInsets.only(right: 12),
+                          child: Center(
+                            child: Text(
+                              "TikTok",
+                              style: TextStyle(),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 12,
+                          ),
+                          margin: EdgeInsets.only(right: 12),
+                          child: Center(
+                            child: Text(
+                              "Instagram",
+                              style: TextStyle(),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
