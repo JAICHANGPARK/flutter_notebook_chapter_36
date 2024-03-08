@@ -11,6 +11,12 @@ class _VideoSharingEditorPageState extends State<VideoSharingEditorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Effects"),
+        actions: [
+          TextButton(onPressed: (){}, child: Text("DONE"))
+        ],
+      ),
       body: Column(
         children: [
           
