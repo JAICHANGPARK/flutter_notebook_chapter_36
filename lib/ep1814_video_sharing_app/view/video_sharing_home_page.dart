@@ -204,7 +204,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Center(
-                            child: Text("All"),
+                            child: Text(
+                              "All",
+                              style: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
                         )
                       ],
