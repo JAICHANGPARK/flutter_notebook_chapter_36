@@ -414,6 +414,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                           color: Colors.white.withOpacity(.4),
                           borderRadius: BorderRadius.circular(42),
                         ),
+                        padding: EdgeInsets.symmetric(horizontal: 4),
                         child: Row(
                           children: [
                             CircleAvatar(
@@ -421,6 +422,7 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
                             ),
                             Gap(8),
                             Text("Start Editing"),
+                            Gap(8),
                             Icon(Icons.keyboard_arrow_right),
                             Icon(Icons.keyboard_arrow_right),
                             Icon(Icons.keyboard_arrow_right),
