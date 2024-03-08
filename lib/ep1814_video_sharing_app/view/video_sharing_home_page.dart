@@ -20,7 +20,12 @@ class _VideoSharingHomePageState extends State<VideoSharingHomePage> {
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.only(
+                      right: 16,
+                      bottom: 16,
+                      top: 24
+
+                    ),
                     child: Row(
                       children: [
                         IconButton(
