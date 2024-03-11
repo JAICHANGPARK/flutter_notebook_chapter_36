@@ -70,7 +70,8 @@ class _YogaHomePageState extends State<YogaHomePage> {
             SizedBox(
               height: 140,
               child: Placeholder(),
-            )
+            ),
+            Text("Top Workouts"),
           ],
         ),
       ),
