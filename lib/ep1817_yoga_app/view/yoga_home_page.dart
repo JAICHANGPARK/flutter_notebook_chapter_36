@@ -21,9 +21,16 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 decoration: BoxDecoration(
                   color: Colors.grey[200],
                 ),
+              ),
+              Expanded(
+                child: Center(
+                  child: Text(
+                    "Yoga",
+                  ),
+                ),
               )
             ],
-          )
+          ),
         ],
       ),
     );
