@@ -79,7 +79,60 @@ class _YogaHomePageState extends State<YogaHomePage> {
         color: Colors.transparent,
         surfaceTintColor: Colors.transparent,
         child: Row(
-          children: [],
+          children: [
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home,
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 4,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home,
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 4,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home,
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 4,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.home,
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 4,
+                ),
+              ],
+            )
+          ],
         ),
       ),
     );
