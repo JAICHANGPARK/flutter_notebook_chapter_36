@@ -11,7 +11,13 @@ class YogaHomePage extends StatefulWidget {
 class _YogaHomePageState extends State<YogaHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
 
   }
 }
