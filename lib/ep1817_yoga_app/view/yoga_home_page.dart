@@ -61,6 +61,16 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
+            Text("Choose Your"),
+            Text("Workout Today !"),
+            SizedBox(
+              height: 62,
+              child: Placeholder(),
+            ),
+            SizedBox(
+              height: 140,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
