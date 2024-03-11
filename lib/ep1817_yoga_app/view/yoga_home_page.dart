@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class YogaHomePage extends StatefulWidget {
   const YogaHomePage({super.key});
 
@@ -14,10 +13,19 @@ class _YogaHomePageState extends State<YogaHomePage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Row(
+            children: [
+              Container(
+                height: 64,
+                width: 42,
+                decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                ),
+              )
+            ],
+          )
         ],
       ),
     );
-
   }
 }
