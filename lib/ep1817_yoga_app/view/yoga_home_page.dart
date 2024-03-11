@@ -112,7 +112,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home,
+                    Icons.notifications_none,
                   ),
                 ),
                 CircleAvatar(
@@ -126,7 +126,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home,
+                    Icons.person_2_outlined,
                   ),
                 ),
                 CircleAvatar(
