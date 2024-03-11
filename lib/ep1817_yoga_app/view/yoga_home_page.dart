@@ -72,6 +72,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
               child: Placeholder(),
             ),
             Text("Top Workouts"),
+            Expanded(child: Placeholder()),
           ],
         ),
       ),
@@ -79,6 +80,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
         color: Colors.transparent,
         surfaceTintColor: Colors.transparent,
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Column(
               children: [
