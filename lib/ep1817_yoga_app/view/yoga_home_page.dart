@@ -98,11 +98,12 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.home,
+                    Icons.insert_chart_outlined,
                   ),
                 ),
                 CircleAvatar(
                   radius: 4,
+                  backgroundColor: Colors.transparent,
                 ),
               ],
             ),
@@ -116,6 +117,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ),
                 CircleAvatar(
                   radius: 4,
+                  backgroundColor: Colors.transparent,
                 ),
               ],
             ),
@@ -129,6 +131,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ),
                 CircleAvatar(
                   radius: 4,
+                  backgroundColor: Colors.transparent,
                 ),
               ],
             )
