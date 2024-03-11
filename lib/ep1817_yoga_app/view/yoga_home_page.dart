@@ -75,6 +75,13 @@ class _YogaHomePageState extends State<YogaHomePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.transparent,
+        surfaceTintColor: Colors.transparent,
+        child: Row(
+          children: [],
+        ),
+      ),
     );
   }
 }
