@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_36/ep1817_yoga_app/view/yoga_home_page.dart';
 
 void main() {
-  runApp(YogaApp());
+  runApp(const YogaApp());
 }
 
 class YogaApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class YogaApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return  MaterialApp(
       home: YogaHomePage(),
     );
   }
