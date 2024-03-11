@@ -36,6 +36,10 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     child: Center(
                       child: Text(
                         "Yoga",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
                       ),
                     ),
                   ),
