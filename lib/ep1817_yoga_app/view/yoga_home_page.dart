@@ -41,9 +41,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                   ),
                   Container(
                     height: 64,
-                    width: 48,
+                    width: 42,
                     decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                      color: Color.fromRGBO(117, 118, 88, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
@@ -51,6 +51,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                         Icons.search,
                       ),
                       onPressed: () {},
+                      color: Colors.white,
                     ),
                   ),
                 ],
