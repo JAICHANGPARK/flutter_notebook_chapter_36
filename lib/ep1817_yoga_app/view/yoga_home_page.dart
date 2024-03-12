@@ -87,7 +87,16 @@ class _YogaHomePageState extends State<YogaHomePage> {
             ),
             SizedBox(
               height: 62,
-              child: Placeholder(),
+              child: Stack(
+                children: [
+                  Divider(
+                    indent: 16,
+                    thickness: 2,
+                    color: Colors.grey,
+                  ),
+                  Positioned(child: ListView(children: [],),),
+                ],
+              ),
             ),
             SizedBox(
               height: 140,
