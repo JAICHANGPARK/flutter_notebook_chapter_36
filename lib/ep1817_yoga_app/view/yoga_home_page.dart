@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -89,27 +90,38 @@ class _YogaHomePageState extends State<YogaHomePage> {
               height: 62,
               child: Stack(
                 children: [
-                  Divider(
-                    indent: 16,
-                    thickness: 2,
-                    color: Colors.grey,
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    child: Divider(
+                      indent: 16,
+                      thickness: 2,
+                      color: Colors.grey,
+                    ),
                   ),
                   Positioned(
                     left: 16,
                     bottom: 0,
                     top: 0,
                     right: 0,
-                    child: ListView(children: [
-                      Column(
-                        children: [
-                          Container(
-                            height: 4,
-                            color: Colors.brown,
-                          ),
-                        ],
-                      )
-
-                    ],),),
+                    child: ListView(
+                      children: [
+                        Column(
+                          children: [
+                            Container(
+                              height: 4,
+                              color: Colors.brown,
+                            ),
+                            Gap(12),
+                            Text(
+                              'Yoga',
+                            )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
