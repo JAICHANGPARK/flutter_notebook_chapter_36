@@ -115,9 +115,10 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             Container(
                               height: 4,
                               width: 32,
-                              color: Colors.brown,
+                              
                               decoration: BoxDecoration(
-                                
+                                color: Colors.brown,
+                                borderRadius: BorderRadius.circular(8)
                               ),
                             ),
                             Gap(8),
