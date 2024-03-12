@@ -260,7 +260,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ),
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(child: Padding(
+              padding: EdgeInsets.only(left: 16),
+            )),
           ],
         ),
       ),
