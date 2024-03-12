@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class YogaHomePage extends StatefulWidget {
   const YogaHomePage({super.key});
@@ -62,8 +63,28 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
-            Text("Choose Your"),
-            Text("Workout Today !"),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Choose Your",
+                    style: TextStyle(
+                      fontSize: 18,
+                    ),
+                  ),
+                  Gap(8),
+                  Text(
+                    "Workout Today !",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             SizedBox(
               height: 62,
               child: Placeholder(),
