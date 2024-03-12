@@ -237,7 +237,10 @@ class _YogaHomePageState extends State<YogaHomePage> {
             Gap(8),
             SizedBox(
               height: 140,
-              child: Placeholder(),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index){},
+              ),
             ),
             Text("Top Workouts"),
             Expanded(child: Placeholder()),
