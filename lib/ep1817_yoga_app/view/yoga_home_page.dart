@@ -120,9 +120,106 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             Gap(8),
                             Text(
                               'Yoga',
+                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                            )
+                          ],
+                        ),
+                        Gap(24),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 4,
+                              width: 42,
+                              // color: Colors.brown,
+                            ),
+                            Gap(8),
+                            Text(
+                              'zumba',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18
+                                fontSize: 18,
+                                color: Colors.grey[200]!,
+                              ),
+                            )
+                          ],
+                        ),
+                        Gap(24),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 4,
+                              width: 42,
+                              // color: Colors.brown,
+                            ),
+                            Gap(8),
+                            Text(
+                              'zumba',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.grey[200]!,
+                              ),
+                            )
+                          ],
+                        ),
+                        Gap(24),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 4,
+                              width: 42,
+                              // color: Colors.brown,
+                            ),
+                            Gap(8),
+                            Text(
+                              'zumba',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.grey[200]!,
+                              ),
+                            )
+                          ],
+                        ),
+                        Gap(24),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 4,
+                              width: 42,
+                              // color: Colors.brown,
+                            ),
+                            Gap(8),
+                            Text(
+                              'zumba',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.grey[200]!,
+                              ),
+                            )
+                          ],
+                        ),
+                        Gap(24),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              height: 4,
+                              width: 42,
+                              // color: Colors.brown,
+                            ),
+                            Gap(8),
+                            Text(
+                              'zumba',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.grey[200]!,
                               ),
                             )
                           ],
@@ -133,7 +230,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
-            Gap(16),
+            Gap(8),
             SizedBox(
               height: 140,
               child: Placeholder(),
