@@ -260,8 +260,21 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ),
               ),
             ),
-            Expanded(child: Padding(
+            Expanded(
+                child: Padding(
               padding: EdgeInsets.only(left: 16),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 300,
+                    margin: EdgeInsets.only(right: 16, bottom: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  );
+                },
+              ),
             )),
           ],
         ),
