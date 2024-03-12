@@ -91,26 +91,30 @@ class _YogaHomePageState extends State<YogaHomePage> {
               child: Stack(
                 children: [
                   Positioned(
-                    top: 0,
+                    top: 3,
                     left: 0,
                     right: 0,
                     child: Divider(
                       indent: 16,
                       thickness: 2,
-                      color: Colors.grey,
+                      height: 0,
+                      color: Colors.grey[300]!,
                     ),
                   ),
                   Positioned(
                     left: 16,
-                    bottom: 0,
+                    bottom: 16,
                     top: 0,
                     right: 0,
                     child: ListView(
+                      scrollDirection: Axis.horizontal,
                       children: [
                         Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
                               height: 4,
+                              width: 42,
                               color: Colors.brown,
                             ),
                             Gap(12),
