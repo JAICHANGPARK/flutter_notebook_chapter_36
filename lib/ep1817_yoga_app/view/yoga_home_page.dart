@@ -87,7 +87,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
               ),
             ),
             SizedBox(
-              height: 62,
+              height: 54,
               child: Stack(
                 children: [
                   Positioned(
@@ -117,9 +117,13 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               color: Colors.brown,
                             ),
-                            Gap(12),
+                            Gap(8),
                             Text(
                               'Yoga',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18
+                              ),
                             )
                           ],
                         )
@@ -129,6 +133,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
+            Gap(16),
             SizedBox(
               height: 140,
               child: Placeholder(),
