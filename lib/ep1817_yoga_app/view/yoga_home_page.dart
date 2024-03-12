@@ -234,14 +234,27 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
-            Gap(8),
-            SizedBox(
-              height: 140,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index){},
+            // Gap(8),
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: SizedBox(
+                height: 152,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index){
+                    return Container(
+                      width: 240,
+                      margin: EdgeInsets.only(right: 16),
+                      decoration: BoxDecoration(
+                        color: Colors.orange[100]!,
+                      ),
+                    );
+
+                  },
+                ),
               ),
             ),
+            Gap(16),
             Text("Top Workouts"),
             Expanded(child: Placeholder()),
           ],
