@@ -71,7 +71,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                   Text(
                     "Choose Your",
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
                     ),
                   ),
                   Gap(8),
@@ -79,7 +79,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     "Workout Today !",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 24,
+                      fontSize: 28,
                     ),
                   ),
                 ],
