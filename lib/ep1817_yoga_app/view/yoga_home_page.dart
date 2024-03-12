@@ -94,7 +94,22 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     thickness: 2,
                     color: Colors.grey,
                   ),
-                  Positioned(child: ListView(children: [],),),
+                  Positioned(
+                    left: 16,
+                    bottom: 0,
+                    top: 0,
+                    right: 0,
+                    child: ListView(children: [
+                      Column(
+                        children: [
+                          Container(
+                            height: 4,
+                            color: Colors.brown,
+                          ),
+                        ],
+                      )
+
+                    ],),),
                 ],
               ),
             ),
