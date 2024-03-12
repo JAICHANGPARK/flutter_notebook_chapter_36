@@ -115,11 +115,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             Container(
                               height: 4,
                               width: 32,
-                              
-                              decoration: BoxDecoration(
-                                color: Colors.brown,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                              decoration: BoxDecoration(color: Colors.brown, borderRadius: BorderRadius.circular(8)),
                             ),
                             Gap(8),
                             Text(
@@ -241,7 +237,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 height: 152,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index){
+                  itemBuilder: (context, index) {
                     return Container(
                       width: 240,
                       margin: EdgeInsets.only(right: 16),
@@ -249,13 +245,21 @@ class _YogaHomePageState extends State<YogaHomePage> {
                         color: Colors.orange[100]!,
                       ),
                     );
-
                   },
                 ),
               ),
             ),
             Gap(16),
-            Text("Top Workouts"),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Text(
+                "Top Workouts",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
+              ),
+            ),
             Expanded(child: Placeholder()),
           ],
         ),
