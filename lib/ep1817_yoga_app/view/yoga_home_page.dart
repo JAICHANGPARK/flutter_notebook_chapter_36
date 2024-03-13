@@ -425,8 +425,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(117, 118, 88, 1),
-                              borderRadius: BorderRadius.circular(8),
+                              borderRadius: BorderRadius.circular(16),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                             child: Row(
                               children: [
                                 Icon(
