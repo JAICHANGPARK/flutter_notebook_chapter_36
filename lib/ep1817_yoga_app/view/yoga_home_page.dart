@@ -243,17 +243,22 @@ class _YogaHomePageState extends State<YogaHomePage> {
                       margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                         color: Colors.orange[100]!,
+                        borderRadius: BorderRadius.circular(8),
                       ),
+                      padding: EdgeInsets.all(16),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Yoga Isolated"),
                           Row(
                             children: [
-                              Icon(Icons.access_time_filled_outlined),
+                              Icon(Icons.access_time_filled_outlined,
+                              size: 16,),
                               Gap(4),
                               Text("13 mins"),
                               Gap(8),
-                              Icon(Icons.local_fire_department_outlined),
+                              Icon(Icons.local_fire_department_outlined,
+                                size: 16,),
                               Gap(4),
                               Text("312 kal"),
                             ],
