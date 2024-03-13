@@ -419,6 +419,24 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             )
                           ],
                         ),
+                        Positioned(
+                          right: 16,
+                          bottom: 16,
+                          child: Container(
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  size: 18,
+                                ),
+                                Gap(6),
+                                Text(
+                                  "3.8",
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
                       ],
                     ),
                   );
