@@ -257,6 +257,23 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               Gap(4),
                               Text("312 kal"),
                             ],
+                          ),
+                          Spacer(),
+                          Container(
+                            child: Row(
+                              children: [
+                                Text(
+                                  "Play",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Gap(4),
+                                Icon(
+                                  Icons.play_arrow,
+                                )
+                              ],
+                            ),
                           )
                         ],
                       ),
