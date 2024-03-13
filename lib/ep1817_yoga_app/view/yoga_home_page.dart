@@ -290,6 +290,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               color: Colors.orange[200]!,
                               borderRadius: BorderRadius.circular(32),
                             ),
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
