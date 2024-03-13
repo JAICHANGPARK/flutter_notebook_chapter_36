@@ -244,6 +244,22 @@ class _YogaHomePageState extends State<YogaHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.orange[100]!,
                       ),
+                      child: Column(
+                        children: [
+                          Text("Yoga Isolated"),
+                          Row(
+                            children: [
+                              Icon(Icons.access_time_filled_outlined),
+                              Gap(4),
+                              Text("13 mins"),
+                              Gap(8),
+                              Icon(Icons.local_fire_department_outlined),
+                              Gap(4),
+                              Text("312 kal"),
+                            ],
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
