@@ -359,6 +359,8 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                     top: 12,
                                     child: CircleAvatar(
                                       radius: 24,
+                                      child: Icon(Icons.favorite),
+                                      foregroundColor: Colors.red,
                                     ),
                                   )
                                 ],
