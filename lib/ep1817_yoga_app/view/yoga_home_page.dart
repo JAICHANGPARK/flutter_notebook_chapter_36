@@ -335,7 +335,17 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     width: 300,
                     margin: EdgeInsets.only(right: 16, bottom: 12),
                     decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey[200]!,
+                          blurRadius: 4,
+                          spreadRadius: 2,
+                          offset: Offset(0,2),
+                        ),
+                        
+                      ],
+                      borderRadius: BorderRadius.circular(16)
                     ),
                     child: Stack(
                       children: [
