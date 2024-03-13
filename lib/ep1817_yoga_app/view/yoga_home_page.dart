@@ -335,28 +335,32 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     width: 300,
                     margin: EdgeInsets.only(right: 16, bottom: 12),
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey[200]!,
-                          blurRadius: 4,
-                          spreadRadius: 2,
-                          offset: Offset(0,2),
-                        ),
-                      ],
-                      borderRadius: BorderRadius.circular(16)
-                    ),
+                        color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 4,
+                            spreadRadius: 2,
+                            offset: Offset(0, 2),
+                          ),
+                        ],
+                        borderRadius: BorderRadius.circular(16)),
                     child: Stack(
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Container(
+                            Expanded(
+                                child: Container(
                               child: Stack(
                                 children: [
                                   Positioned(
-                                      
-                                      child: CircleAvatar())
+                                    right: 12,
+                                    top: 12,
+                                    child: CircleAvatar(
+                                      radius: 24,
+                                    ),
+                                  )
                                 ],
                               ),
                             )),
@@ -366,7 +370,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Inner Healing Therapy",),
+                                  Text(
+                                    "Inner Healing Therapy",
+                                  ),
                                   Text("Just warming up"),
                                   Row(
                                     children: [
@@ -398,7 +404,6 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                 ],
                               ),
                             )
-
                           ],
                         ),
                       ],
