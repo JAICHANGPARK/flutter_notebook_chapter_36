@@ -433,10 +433,14 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                 Icon(
                                   Icons.star,
                                   size: 18,
+                                  color: Colors.white,
                                 ),
                                 Gap(6),
                                 Text(
                                   "3.8",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               ],
                             ),
