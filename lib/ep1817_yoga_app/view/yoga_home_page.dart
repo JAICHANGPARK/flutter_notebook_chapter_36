@@ -423,6 +423,10 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           right: 16,
                           bottom: 16,
                           child: Container(
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(117, 118, 88, 1),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
                             child: Row(
                               children: [
                                 Icon(
