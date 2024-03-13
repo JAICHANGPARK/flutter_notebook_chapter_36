@@ -242,7 +242,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                       width: 240,
                       margin: EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
-                        color: Colors.orange[100]!,
+                        color: Colors.orange[50]!,
                         borderRadius: BorderRadius.circular(8),
                       ),
                       padding: EdgeInsets.all(16),
@@ -264,14 +264,22 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                 size: 16,
                               ),
                               Gap(4),
-                              Text("13 mins"),
+                              Text(
+                                "13 mins",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),
+                              ),
                               Gap(8),
                               Icon(
                                 Icons.local_fire_department_outlined,
                                 size: 16,
                               ),
                               Gap(4),
-                              Text("312 kal"),
+                              Text("312 kal",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                ),),
                             ],
                           ),
                           Spacer(),
