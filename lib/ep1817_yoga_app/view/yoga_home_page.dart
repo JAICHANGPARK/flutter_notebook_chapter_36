@@ -343,7 +343,6 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           spreadRadius: 2,
                           offset: Offset(0,2),
                         ),
-                        
                       ],
                       borderRadius: BorderRadius.circular(16)
                     ),
@@ -352,7 +351,15 @@ class _YogaHomePageState extends State<YogaHomePage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(child: Container()),
+                            Expanded(child: Container(
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                      
+                                      child: CircleAvatar())
+                                ],
+                              ),
+                            )),
                             Gap(12),
                             Padding(
                               padding: const EdgeInsets.all(16.0),
