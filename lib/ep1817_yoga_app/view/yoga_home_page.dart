@@ -340,16 +340,46 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     child: Stack(
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Expanded(child: Container()),
                             Gap(12),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Inner Healing Therapy",),
-                                Text("Just warming up"),
-                                
-                              ],
+                            Padding(
+                              padding: const EdgeInsets.all(16.0),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Inner Healing Therapy",),
+                                  Text("Just warming up"),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.access_time_filled_outlined,
+                                        size: 16,
+                                      ),
+                                      Gap(4),
+                                      Text(
+                                        "13 mins",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                      Gap(8),
+                                      Icon(
+                                        Icons.local_fire_department_outlined,
+                                        size: 16,
+                                      ),
+                                      Gap(4),
+                                      Text(
+                                        "312 kal",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             )
 
                           ],
