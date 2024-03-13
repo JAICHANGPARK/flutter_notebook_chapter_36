@@ -374,8 +374,19 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                 children: [
                                   Text(
                                     "Inner Healing Therapy",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                    ),
                                   ),
-                                  Text("Just warming up"),
+                                  Gap(4),
+                                  Text(
+                                    "Just warming up",
+                                    style: TextStyle(
+                                      fontSize: 13,
+                                    ),
+                                  ),
+                                  Gap(6),
                                   Row(
                                     children: [
                                       Icon(
