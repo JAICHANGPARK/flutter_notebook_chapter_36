@@ -343,6 +343,14 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           children: [
                             Expanded(child: Container()),
                             Gap(12),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Inner Healing Therapy",),
+                                Text("Just warming up"),
+                                
+                              ],
+                            )
 
                           ],
                         ),
