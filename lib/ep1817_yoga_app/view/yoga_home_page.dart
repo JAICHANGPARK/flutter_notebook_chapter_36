@@ -337,6 +337,17 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     decoration: BoxDecoration(
                       color: Colors.blue,
                     ),
+                    child: Stack(
+                      children: [
+                        Column(
+                          children: [
+                            Expanded(child: Container()),
+                            Gap(12),
+
+                          ],
+                        ),
+                      ],
+                    ),
                   );
                 },
               ),
