@@ -63,82 +63,96 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
               ),
             ),
             Container(
+              margin: EdgeInsets.all(16),
               height: 240,
               decoration: BoxDecoration(
                 color: Colors.grey,
                 borderRadius: BorderRadius.circular(16),
               ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Inner Healing Therapy"),
-                Row(
-                  children: [
-                    Expanded(
-                        child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              size: 16,
-                            ),
-                            Text(
-                              "3.8",
-                            ),
-                            Text(
-                              "(124 reviews)",
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.access_time_filled_outlined,
-                              size: 16,
-                            ),
-                            Gap(4),
-                            Text(
-                              "13 mins",
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
-                            Gap(8),
-                            Icon(
-                              Icons.local_fire_department_outlined,
-                              size: 16,
-                            ),
-                            Gap(4),
-                            Text(
-                              "312 kal",
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    )),
-                    Container(
-                      height: 64,
-                      width: 48,
-                      decoration: BoxDecoration(
-                        color: const Color.fromRGBO(117, 118, 88, 1),
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.play_arrow,
-                        ),
-                        onPressed: () {},
-                      ),
+            Gap(8),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Inner Healing Therapy",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
                     ),
-                  ],
-                )
-              ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  size: 16,
+                                ),
+                                Text(
+                                  "3.8",
+                                ),
+                                Text(
+                                  "(124 reviews)",
+                                ),
+                              ],
+                            ),
+                            Gap(12),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.access_time_filled_outlined,
+                                  size: 16,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "13 mins",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                                Gap(8),
+                                Icon(
+                                  Icons.local_fire_department_outlined,
+                                  size: 16,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "312 kal",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 64,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          color: const Color.fromRGBO(117, 118, 88, 1),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.play_arrow,
+                          ),
+                          onPressed: () {},
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
