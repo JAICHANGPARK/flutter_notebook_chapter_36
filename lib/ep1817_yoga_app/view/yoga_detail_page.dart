@@ -65,8 +65,37 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
               height: 240,
               decoration: BoxDecoration(
                 color: Colors.grey,
-                borderRadius: BorderRadius.circular(16)
+                borderRadius: BorderRadius.circular(16),
               ),
+            ),
+            Column(
+              children: [
+                Text("Inner Healing Therapy"),
+                Row(
+                  children: [
+                    Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.star,
+                              size: 16,
+                            ),
+                            Text(
+                              "3.8",
+                            ),
+                            Text(
+                              "(124 reviews)",
+                            ),
+                          ],
+                        )
+                      ],
+                    ))
+                  ],
+                )
+              ],
             )
           ],
         ),
