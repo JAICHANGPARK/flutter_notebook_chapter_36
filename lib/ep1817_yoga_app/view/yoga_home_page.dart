@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_36/ep1817_yoga_app/view/yoga_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class YogaHomePage extends StatefulWidget {
@@ -337,122 +338,131 @@ class _YogaHomePageState extends State<YogaHomePage> {
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Container(
-                    width: 300,
-                    margin: const EdgeInsets.only(right: 16, bottom: 12),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey[200]!,
-                            blurRadius: 4,
-                            spreadRadius: 2,
-                            offset: const Offset(0, 2),
-                          ),
-                        ],
-                        borderRadius: BorderRadius.circular(16)),
-                    child: Stack(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                                child: Container(
-                              child: const Stack(
-                                children: [
-                                  Positioned(
-                                    right: 12,
-                                    top: 12,
-                                    child: CircleAvatar(
-                                      radius: 24,
-                                      child: Icon(Icons.favorite),
-                                      foregroundColor: Colors.red,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            )),
-                            const Gap(12),
-                            const Padding(
-                              padding: EdgeInsets.all(16.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    "Inner Healing Therapy",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 16,
-                                    ),
-                                  ),
-                                  Gap(4),
-                                  Text(
-                                    "Just warming up",
-                                    style: TextStyle(
-                                      fontSize: 13,
-                                    ),
-                                  ),
-                                  Gap(6),
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.access_time_filled_outlined,
-                                        size: 16,
-                                      ),
-                                      Gap(4),
-                                      Text(
-                                        "13 mins",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
-                                      ),
-                                      Gap(8),
-                                      Icon(
-                                        Icons.local_fire_department_outlined,
-                                        size: 16,
-                                      ),
-                                      Gap(4),
-                                      Text(
-                                        "312 kal",
-                                        style: TextStyle(
-                                          fontSize: 12,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            )
-                          ],
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => YogaDetailsPage(),
                         ),
-                        Positioned(
-                          right: 16,
-                          bottom: 16,
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: const Color.fromRGBO(117, 118, 88, 1),
-                              borderRadius: BorderRadius.circular(16),
+                      );
+                    },
+                    child: Container(
+                      width: 300,
+                      margin: const EdgeInsets.only(right: 16, bottom: 12),
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey[200]!,
+                              blurRadius: 4,
+                              spreadRadius: 2,
+                              offset: const Offset(0, 2),
                             ),
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                            child: const Row(
-                              children: [
-                                Icon(
-                                  Icons.star,
-                                  size: 18,
-                                  color: Colors.white,
+                          ],
+                          borderRadius: BorderRadius.circular(16)),
+                      child: Stack(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                  child: Container(
+                                child: const Stack(
+                                  children: [
+                                    Positioned(
+                                      right: 12,
+                                      top: 12,
+                                      child: CircleAvatar(
+                                        radius: 24,
+                                        child: Icon(Icons.favorite),
+                                        foregroundColor: Colors.red,
+                                      ),
+                                    )
+                                  ],
                                 ),
-                                Gap(6),
-                                Text(
-                                  "3.8",
-                                  style: TextStyle(
+                              )),
+                              const Gap(12),
+                              const Padding(
+                                padding: EdgeInsets.all(16.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Inner Healing Therapy",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                    Gap(4),
+                                    Text(
+                                      "Just warming up",
+                                      style: TextStyle(
+                                        fontSize: 13,
+                                      ),
+                                    ),
+                                    Gap(6),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.access_time_filled_outlined,
+                                          size: 16,
+                                        ),
+                                        Gap(4),
+                                        Text(
+                                          "13 mins",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                        Gap(8),
+                                        Icon(
+                                          Icons.local_fire_department_outlined,
+                                          size: 16,
+                                        ),
+                                        Gap(4),
+                                        Text(
+                                          "312 kal",
+                                          style: TextStyle(
+                                            fontSize: 12,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                          Positioned(
+                            right: 16,
+                            bottom: 16,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: const Color.fromRGBO(117, 118, 88, 1),
+                                borderRadius: BorderRadius.circular(16),
+                              ),
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              child: const Row(
+                                children: [
+                                  Icon(
+                                    Icons.star,
+                                    size: 18,
                                     color: Colors.white,
                                   ),
-                                ),
-                              ],
+                                  Gap(6),
+                                  Text(
+                                    "3.8",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
