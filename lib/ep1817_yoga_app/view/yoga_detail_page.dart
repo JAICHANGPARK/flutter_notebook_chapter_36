@@ -64,7 +64,7 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
             ),
             Container(
               margin: EdgeInsets.all(16),
-              height: 240,
+              height: 220,
               decoration: BoxDecoration(
                 color: Colors.grey,
                 borderRadius: BorderRadius.circular(16),
@@ -248,13 +248,23 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
               maxLines: 4,
             ),
             Text("Select Your Tutor"),
-            SizedBox(height: 64,child: Placeholder(),),
-            SizedBox(height: 82,
-            child: Row(
-              children: [
-                Expanded(child: Placeholder()),
-              ],
-            ),)
+            SizedBox(
+              height: 64,
+              child: Placeholder(),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: SizedBox(
+                height: 82,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Gap(12),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
