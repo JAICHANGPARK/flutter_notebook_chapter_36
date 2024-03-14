@@ -153,6 +153,31 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 64,
+                  width: 48,
+                  decoration: BoxDecoration(
+                    color: const Color.fromRGBO(117, 118, 88, 1),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.play_arrow,
+                    ),
+                    onPressed: () {},
+                    color: Colors.white,
+                  ),
+                ),
+                Column(
+                  children: [
+                    Text("Level"),
+                    Text("1"),
+                  ],
+                )
+              ],
             )
           ],
         ),
