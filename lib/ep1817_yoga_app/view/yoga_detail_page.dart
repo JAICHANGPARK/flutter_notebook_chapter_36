@@ -69,6 +69,7 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
               ),
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Inner Healing Therapy"),
                 Row(
