@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class YogaDetailsPage extends StatefulWidget {
   const YogaDetailsPage({super.key});
@@ -76,7 +77,7 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
                   children: [
                     Expanded(
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -91,9 +92,50 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
                               "(124 reviews)",
                             ),
                           ],
-                        )
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.access_time_filled_outlined,
+                              size: 16,
+                            ),
+                            Gap(4),
+                            Text(
+                              "13 mins",
+                              style: TextStyle(
+                                fontSize: 12,
+                              ),
+                            ),
+                            Gap(8),
+                            Icon(
+                              Icons.local_fire_department_outlined,
+                              size: 16,
+                            ),
+                            Gap(4),
+                            Text(
+                              "312 kal",
+                              style: TextStyle(
+                                fontSize: 12,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
-                    ))
+                    )),
+                    Container(
+                      height: 64,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(117, 118, 88, 1),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.play_arrow,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
                   ],
                 )
               ],
