@@ -366,21 +366,22 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Expanded(
-                                  child: Container(
-                                child: const Stack(
-                                  children: [
-                                    Positioned(
-                                      right: 12,
-                                      top: 12,
-                                      child: CircleAvatar(
-                                        radius: 24,
-                                        child: Icon(Icons.favorite),
-                                        foregroundColor: Colors.red,
-                                      ),
-                                    )
-                                  ],
+                                child: Container(
+                                  child: const Stack(
+                                    children: [
+                                      Positioned(
+                                        right: 12,
+                                        top: 12,
+                                        child: CircleAvatar(
+                                          radius: 24,
+                                          child: Icon(Icons.favorite),
+                                          foregroundColor: Colors.red,
+                                        ),
+                                      )
+                                    ],
+                                  ),
                                 ),
-                              )),
+                              ),
                               const Gap(12),
                               const Padding(
                                 padding: EdgeInsets.all(16.0),
