@@ -14,7 +14,12 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+
+              ],
+            )
+
           ],
         ),
       ),
