@@ -29,13 +29,13 @@ class _YogaHomePageState extends State<YogaHomePage> {
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.menu,
                       ),
                       onPressed: () {},
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Yoga",
@@ -50,11 +50,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
                     height: 64,
                     width: 42,
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(117, 118, 88, 1),
+                      color: const Color.fromRGBO(117, 118, 88, 1),
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.search,
                       ),
                       onPressed: () {},
@@ -64,8 +64,8 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -117,14 +117,14 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 32,
                               decoration: BoxDecoration(color: Colors.brown, borderRadius: BorderRadius.circular(8)),
                             ),
-                            Gap(8),
-                            Text(
+                            const Gap(8),
+                            const Text(
                               'Yoga',
                               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                             )
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -133,7 +133,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               // color: Colors.brown,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               'zumba',
                               style: TextStyle(
@@ -144,7 +144,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             )
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -153,7 +153,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               // color: Colors.brown,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               'zumba',
                               style: TextStyle(
@@ -164,7 +164,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             )
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -173,7 +173,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               // color: Colors.brown,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               'zumba',
                               style: TextStyle(
@@ -184,7 +184,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             )
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -193,7 +193,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               // color: Colors.brown,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               'zumba',
                               style: TextStyle(
@@ -204,7 +204,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             )
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -213,7 +213,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               width: 42,
                               // color: Colors.brown,
                             ),
-                            Gap(8),
+                            const Gap(8),
                             Text(
                               'zumba',
                               style: TextStyle(
@@ -240,24 +240,24 @@ class _YogaHomePageState extends State<YogaHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       width: 240,
-                      margin: EdgeInsets.only(right: 16),
+                      margin: const EdgeInsets.only(right: 16),
                       decoration: BoxDecoration(
                         color: Colors.orange[50]!,
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Yoga Isolated",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
                             ),
                           ),
-                          Gap(8),
-                          Row(
+                          const Gap(8),
+                          const Row(
                             children: [
                               Icon(
                                 Icons.access_time_filled_outlined,
@@ -284,14 +284,14 @@ class _YogaHomePageState extends State<YogaHomePage> {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.orange[100]!,
                               borderRadius: BorderRadius.circular(32),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            child: Row(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 Text(
@@ -314,9 +314,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                 ),
               ),
             ),
-            Gap(16),
-            Padding(
-              padding: const EdgeInsets.all(16.0),
+            const Gap(16),
+            const Padding(
+              padding: EdgeInsets.all(16.0),
               child: Text(
                 "Top Workouts",
                 style: TextStyle(
@@ -327,13 +327,13 @@ class _YogaHomePageState extends State<YogaHomePage> {
             ),
             Expanded(
                 child: Padding(
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
                     width: 300,
-                    margin: EdgeInsets.only(right: 16, bottom: 12),
+                    margin: const EdgeInsets.only(right: 16, bottom: 12),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
@@ -341,7 +341,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                             color: Colors.grey[200]!,
                             blurRadius: 4,
                             spreadRadius: 2,
-                            offset: Offset(0, 2),
+                            offset: const Offset(0, 2),
                           ),
                         ],
                         borderRadius: BorderRadius.circular(16)),
@@ -352,7 +352,7 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           children: [
                             Expanded(
                                 child: Container(
-                              child: Stack(
+                              child: const Stack(
                                 children: [
                                   Positioned(
                                     right: 12,
@@ -366,9 +366,9 @@ class _YogaHomePageState extends State<YogaHomePage> {
                                 ],
                               ),
                             )),
-                            Gap(12),
-                            Padding(
-                              padding: const EdgeInsets.all(16.0),
+                            const Gap(12),
+                            const Padding(
+                              padding: EdgeInsets.all(16.0),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
@@ -424,11 +424,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
                           bottom: 16,
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(117, 118, 88, 1),
+                              color: const Color.fromRGBO(117, 118, 88, 1),
                               borderRadius: BorderRadius.circular(16),
                             ),
-                            padding: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                            child: Row(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.star,
@@ -465,11 +465,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.home,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 4,
                 ),
               ],
@@ -478,11 +478,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.insert_chart_outlined,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.transparent,
                 ),
@@ -492,11 +492,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.notifications_none,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.transparent,
                 ),
@@ -506,11 +506,11 @@ class _YogaHomePageState extends State<YogaHomePage> {
               children: [
                 IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.person_2_outlined,
                   ),
                 ),
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 4,
                   backgroundColor: Colors.transparent,
                 ),
