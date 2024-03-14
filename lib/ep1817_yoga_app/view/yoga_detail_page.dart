@@ -252,6 +252,7 @@ class _YogaDetailsPageState extends State<YogaDetailsPage> {
               height: 64,
               child: Placeholder(),
             ),
+            Gap(12),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: SizedBox(
