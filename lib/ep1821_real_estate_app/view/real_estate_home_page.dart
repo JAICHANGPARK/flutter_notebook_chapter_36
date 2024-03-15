@@ -184,13 +184,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
+                                
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
                                 children: [
                                   Row(
                                     children: [
-                                      Text("Lakeshouse Vivd West"),
-                                      Text("\$1,680"),
+                                      Text(
+                                        "Lakeshouse Vivd West",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      Spacer(),
+                                      Text("\$1,680",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                        ),),
                                     ],
                                   ),
                                   Row(
