@@ -179,18 +179,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       child: Stack(
                         children: [
                           Positioned(
+                              right: 12,
+                              top: 12,
                               child: Container(
-                            child: Row(
-                              children: [
-                                Icon(
-                                  Icons.backpack_rounded,
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.backpack_rounded,
+                                    ),
+                                    Text(
+                                      "360",
+                                    )
+                                  ],
                                 ),
-                                Text(
-                                  "360",
-                                )
-                              ],
-                            ),
-                          )),
+                              )),
                           Positioned(
                             left: 12,
                             right: 12,
