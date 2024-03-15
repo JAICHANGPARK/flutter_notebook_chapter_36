@@ -79,7 +79,22 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 72,
+              margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+              color: Colors.blue,
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Placeholder();
+                  },
+                ),
+              ),
+            ),
           ],
         ),
       ),
