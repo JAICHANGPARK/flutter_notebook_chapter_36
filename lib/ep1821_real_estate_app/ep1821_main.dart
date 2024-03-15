@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(RealEstateApp());
+  runApp(const RealEstateApp());
 }
 
 class RealEstateApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class RealEstateApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      home: RealEstateApp(),
     );
   }
 }
