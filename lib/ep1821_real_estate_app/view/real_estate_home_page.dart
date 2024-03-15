@@ -97,7 +97,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             Container(
               height: 72,
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
-              color: Colors.blue,
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                border: Border.all(
+                  color: Colors.grey,
+                ),
+                borderRadius: BorderRadius.circular(32),
+              ),
             ),
             Expanded(
               child: Padding(
