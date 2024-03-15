@@ -68,8 +68,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Find Your New"),
-                        Text("apartment, House, lands and more"),
+                        Text(
+                          "Find Your New",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
+                        ),
+                        Gap(4),
+                        Text(
+                          "apartment, House, lands and more",
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
                       ],
                     ),
                   ),
