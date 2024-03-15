@@ -184,7 +184,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                
+                                borderRadius: BorderRadius.circular(12),
                               ),
                               padding: EdgeInsets.all(16),
                               child: Column(
@@ -199,11 +199,13 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                         ),
                                       ),
                                       Spacer(),
-                                      Text("\$1,680",
+                                      Text(
+                                        "\$1,680",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
                                           fontSize: 16,
-                                        ),),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   Row(
