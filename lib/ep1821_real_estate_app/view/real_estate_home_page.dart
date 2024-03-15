@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
@@ -45,16 +46,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 ],
               ),
             ),
+            Gap(12),
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey[200]!,
+                color: Colors.grey[100]!,
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(24),
-                  bottomLeft: Radius.circular(24),
+                  topLeft: Radius.circular(32),
+                  bottomLeft: Radius.circular(32),
                 ),
               ),
               margin: EdgeInsets.only(left: 16),
-              padding: EdgeInsets.symmetric(horizontal: 16,vertical: 12),
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               child: Row(
                 children: [
                   IconButton(
