@@ -166,6 +166,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Container(
+                      margin: EdgeInsets.only(bottom: 12),
                       height: 320,
                       decoration: BoxDecoration(
                         image: DecorationImage(
@@ -174,6 +175,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ),
                           fit: BoxFit.cover,
                         ),
+                        borderRadius: BorderRadius.circular(16)
                       ),
                       child: Stack(
                         children: [
@@ -208,6 +210,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       ),
                                     ],
                                   ),
+                                  Gap(8),
                                   Row(
                                     children: [
                                       Icon(
