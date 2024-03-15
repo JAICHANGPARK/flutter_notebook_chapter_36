@@ -98,11 +98,63 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               height: 72,
               margin: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
               decoration: BoxDecoration(
-                color: Colors.blue,
                 border: Border.all(
                   color: Colors.grey,
                 ),
-                borderRadius: BorderRadius.circular(32),
+                borderRadius: BorderRadius.circular(36),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 4,
+                      ),
+                      Text(
+                        "Nearby",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  )),
+                  Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 4, backgroundColor: Colors.transparent,
+                          ),
+                          Text(
+                            "Recommend",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      )),
+                  Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CircleAvatar(
+                            radius: 4,
+                            backgroundColor: Colors.transparent,
+                          ),
+                          Text(
+                            "Upcoming",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                        ],
+                      )),
+                ],
               ),
             ),
             Expanded(
