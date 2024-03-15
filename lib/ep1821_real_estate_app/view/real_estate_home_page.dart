@@ -167,6 +167,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       height: 320,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                       child: Stack(
                         children: [
                           Positioned(
@@ -174,12 +182,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             right: 12,
                             bottom: 12,
                             child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
                               child: Column(
                                 children: [
                                   Row(
                                     children: [
                                       Text("Lakeshouse Vivd West"),
-                                      Text("\$1,680")
+                                      Text("\$1,680"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(
+                                        Icons.apartment,
+                                      ),
+                                      Text("4bd 2ba 1493m"),
+                                      Text(
+                                        "Month",
+                                      )
                                     ],
                                   )
                                 ],
