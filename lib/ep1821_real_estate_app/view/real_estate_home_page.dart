@@ -17,15 +17,17 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
             Row(
               children: [
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   decoration: BoxDecoration(
                     border: Border.all(
                       color: Colors.grey[300]!,
                     ),
                   ),
                   child: Text(
-                    "HOMECOCO,",
+                    "HOMECOCO",
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 26),
                   ),
-                )
+                ),
               ],
             )
           ],
