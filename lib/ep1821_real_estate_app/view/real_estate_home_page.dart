@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
 
@@ -15,7 +14,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
+                  ),
+                  child: Text(
+                    "HOMECOCO,",
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
