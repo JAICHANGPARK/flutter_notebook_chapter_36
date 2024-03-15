@@ -25,8 +25,19 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   ),
                   child: Text(
                     "HOMECOCO",
-                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 26),
+                    style: TextStyle(
+                      fontWeight: FontWeight.w900,
+                      fontSize: 26,
+                    ),
                   ),
+                ),
+                Spacer(),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.notifications_none),
+                ),
+                CircleAvatar(
+                  radius: 27,
                 ),
               ],
             )
