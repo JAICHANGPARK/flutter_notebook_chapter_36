@@ -53,6 +53,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   bottomLeft: Radius.circular(24),
                 ),
               ),
+              margin: EdgeInsets.only(left: 16),
+              padding: EdgeInsets.symmetric(horizontal: 16,vertical: 12),
               child: Row(
                 children: [
                   IconButton(
