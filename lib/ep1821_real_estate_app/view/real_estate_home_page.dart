@@ -15,7 +15,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+
           ],
         ),
       ),
