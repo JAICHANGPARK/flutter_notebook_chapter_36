@@ -123,38 +123,40 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   )),
                   Expanded(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          CircleAvatar(
-                            radius: 4, backgroundColor: Colors.transparent,
-                          ),
-                          Text(
-                            "Recommend",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                              color: Colors.grey,
-                            ),
-                          ),
-                        ],
-                      )),
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.transparent,
+                      ),
+                      Text(
+                        "Recommend",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  )),
                   Expanded(
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          CircleAvatar(
-                            radius: 4,
-                            backgroundColor: Colors.transparent,
-                          ),
-                          Text(
-                            "Upcoming",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16, color: Colors.grey,
-                            ),
-                          ),
-                        ],
-                      )),
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.transparent,
+                      ),
+                      Text(
+                        "Upcoming",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ],
+                  )),
                 ],
               ),
             ),
@@ -163,7 +165,30 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Placeholder();
+                    return Container(
+                      height: 320,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 12,
+                            right: 12,
+                            bottom: 12,
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Lakeshouse Vivd West"),
+                                      Text("\$1,680")
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
                   },
                 ),
               ),
