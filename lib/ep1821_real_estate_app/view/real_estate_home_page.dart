@@ -26,6 +26,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       border: Border.all(
                         color: Colors.grey[300]!,
                       ),
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     child: Text(
                       "HOMECOCO",
