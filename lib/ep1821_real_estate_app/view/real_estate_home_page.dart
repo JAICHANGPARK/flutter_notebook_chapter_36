@@ -169,16 +169,28 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       margin: EdgeInsets.only(bottom: 12),
                       height: 320,
                       decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: NetworkImage(
-                            "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                            ),
+                            fit: BoxFit.cover,
                           ),
-                          fit: BoxFit.cover,
-                        ),
-                        borderRadius: BorderRadius.circular(16)
-                      ),
+                          borderRadius: BorderRadius.circular(16)),
                       child: Stack(
                         children: [
+                          Positioned(
+                              child: Container(
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.backpack_rounded,
+                                ),
+                                Text(
+                                  "360",
+                                )
+                              ],
+                            ),
+                          )),
                           Positioned(
                             left: 12,
                             right: 12,
