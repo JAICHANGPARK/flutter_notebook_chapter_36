@@ -133,6 +133,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 16,
+                              color: Colors.grey,
                             ),
                           ),
                         ],
@@ -149,7 +150,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             "Upcoming",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: 16, color: Colors.grey,
                             ),
                           ),
                         ],
