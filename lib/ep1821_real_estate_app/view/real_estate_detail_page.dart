@@ -21,7 +21,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 children: [
                   InkWell(
                     onTap: (){
-                      
+                      Navigator.of(context).pop();
                     },
                     child: Container(
                       decoration: BoxDecoration(
