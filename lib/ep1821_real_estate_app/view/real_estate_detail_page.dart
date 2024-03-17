@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class RealEstateDetailPage extends StatefulWidget {
   const RealEstateDetailPage({super.key});
 
@@ -11,6 +10,34 @@ class RealEstateDetailPage extends StatefulWidget {
 class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            Expanded(
+                child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(),
+                borderRadius: BorderRadius.circular(32),
+              ),
+            )),
+            Expanded(
+              
+                child: Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                ))
+          ],
+        ),
+      ),
+    );
   }
 }
