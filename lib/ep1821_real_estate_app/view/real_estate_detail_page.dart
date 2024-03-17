@@ -27,7 +27,13 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 borderRadius: BorderRadius.circular(32),
               ),
               child: Center(
-                child: Text("Explore in VR"),
+                child: Text(
+                  "Explore in VR",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ),
             )),
             Gap(12),
@@ -38,10 +44,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                 color: Colors.black,
                 borderRadius: BorderRadius.circular(32),
               ),
-                  child: Center(
-                    child: Text("Book a Call"
-                        ),
+              child: Center(
+                child: Text(
+                  "Book a Call",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
                   ),
+                ),
+              ),
             ))
           ],
         ),
