@@ -165,86 +165,95 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Container(
-                      margin: const EdgeInsets.only(bottom: 12),
-                      height: 320,
-                      decoration: BoxDecoration(
-                        image: const DecorationImage(
-                          image: NetworkImage(
-                            "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => RealEstateDetailPage(),
                           ),
-                          fit: BoxFit.cover,
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 12),
+                        height: 320,
+                        decoration: BoxDecoration(
+                          image: const DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(16),
                         ),
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
+                        child: Stack(
+                          children: [
+                            Positioned(
+                                right: 12,
+                                top: 12,
+                                child: Container(
+                                  child: const Row(
+                                    children: [
+                                      Icon(
+                                        Icons.backpack_rounded,
+                                      ),
+                                      Text(
+                                        "360",
+                                      )
+                                    ],
+                                  ),
+                                )),
+                            Positioned(
+                              left: 12,
                               right: 12,
-                              top: 12,
+                              bottom: 12,
                               child: Container(
-                                child: const Row(
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                                padding: const EdgeInsets.all(16),
+                                child: const Column(
                                   children: [
-                                    Icon(
-                                      Icons.backpack_rounded,
+                                    Row(
+                                      children: [
+                                        Text(
+                                          "Lakeshouse Vivd West",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        Spacer(),
+                                        Text(
+                                          "\$1,680",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    Text(
-                                      "360",
+                                    Gap(8),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.apartment,
+                                          size: 16,
+                                        ),
+                                        Gap(8),
+                                        Text("4bd 2ba 1493m"),
+                                        Spacer(),
+                                        Text(
+                                          "Month",
+                                        )
+                                      ],
                                     )
                                   ],
                                 ),
-                              )),
-                          Positioned(
-                            left: 12,
-                            right: 12,
-                            bottom: 12,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              padding: const EdgeInsets.all(16),
-                              child: const Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text(
-                                        "Lakeshouse Vivd West",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
-                                        ),
-                                      ),
-                                      Spacer(),
-                                      Text(
-                                        "\$1,680",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 16,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  Gap(8),
-                                  Row(
-                                    children: [
-                                      Icon(
-                                        Icons.apartment,
-                                        size: 16,
-                                      ),
-                                      Gap(8),
-                                      Text("4bd 2ba 1493m"),
-                                      Spacer(),
-                                      Text(
-                                        "Month",
-                                      )
-                                    ],
-                                  )
-                                ],
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     );
                   },
