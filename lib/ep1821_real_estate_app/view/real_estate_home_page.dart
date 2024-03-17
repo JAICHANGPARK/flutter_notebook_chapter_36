@@ -169,13 +169,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       margin: const EdgeInsets.only(bottom: 12),
                       height: 320,
                       decoration: BoxDecoration(
-                          image: const DecorationImage(
-                            image: NetworkImage(
-                              "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
-                            ),
-                            fit: BoxFit.cover,
+                        image: const DecorationImage(
+                          image: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
                           ),
-                          borderRadius: BorderRadius.circular(16)),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
                       child: Stack(
                         children: [
                           Positioned(
@@ -229,8 +230,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     children: [
                                       Icon(
                                         Icons.apartment,
+                                        size: 16,
                                       ),
+                                      Gap(8),
                                       Text("4bd 2ba 1493m"),
+                                      Spacer(),
                                       Text(
                                         "Month",
                                       )
