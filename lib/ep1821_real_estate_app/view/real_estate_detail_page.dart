@@ -42,16 +42,41 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               ),
               Gap(15),
               Expanded(
-                  child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Container(
-                      height: 480,
-                      child: Placeholder(),
-                    )
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 480,
+                        child: Placeholder(),
+                      ),
+                      Row(
+                        children: [
+                          Text("\$3,822"),
+                          Container(
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.bookmark_border,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            child: IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.share,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Text("Residence"),
+
+                    ],
+                  ),
                 ),
-              ))
+              )
             ],
           ),
         ),
