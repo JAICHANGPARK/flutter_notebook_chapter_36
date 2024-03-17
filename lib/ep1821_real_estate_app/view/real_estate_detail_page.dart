@@ -19,20 +19,31 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
             children: [
               Row(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                    ),
-                    child: Row(
-                      children: [
-                        CircleAvatar(),
-                        Text("Go Back"),
-                      ],
+                  InkWell(
+                    onTap: (){
+                      
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(),
+                      ),
+                      child: Row(
+                        children: [
+                          CircleAvatar(
+
+                            child: Icon(Icons.arrow_back),
+                          ),
+                          Text("Go Back"),
+                        ],
+                      ),
                     ),
                   ),
                   Spacer(),
                   Container(
-                    decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all()),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(),
+                    ),
                     child: IconButton(
                       icon: Icon(Icons.more_vert),
                       onPressed: () {},
@@ -72,7 +83,6 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         ],
                       ),
                       Text("Residence"),
-
                     ],
                   ),
                 ),
