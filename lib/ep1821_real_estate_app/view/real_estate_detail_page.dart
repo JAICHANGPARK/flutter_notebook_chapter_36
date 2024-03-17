@@ -13,31 +13,47 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                    ),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Text("Go Back"),
+                      ],
+                    ),
                   ),
-                  child: Row(
-                    children: [
-                      CircleAvatar(),
-                      Text("Go Back"),
-                    ],
-                  ),
+                  Spacer(),
+                  Container(
+                    decoration: BoxDecoration(shape: BoxShape.circle, border: Border.all()),
+                    child: IconButton(
+                      icon: Icon(Icons.more_vert),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
+              Gap(15),
+              Expanded(
+                  child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 480,
+                      child: Placeholder(),
+                    )
+                  ],
                 ),
-                Spacer(),
-                Container(
-                  child: IconButton(
-                    icon: Icon(Icons.more_vert), onPressed: () {  },
-
-                  ),
-                )
-              ],
-            )
-          ],
+              ))
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(
