@@ -14,10 +14,34 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Row(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(),
+                  ),
+                  child: Row(
+                    children: [
+                      CircleAvatar(),
+                      Text("Go Back"),
+                    ],
+                  ),
+                ),
+                Spacer(),
+                Container(
+                  child: IconButton(
+                    icon: Icon(Icons.more_vert), onPressed: () {  },
+
+                  ),
+                )
+              ],
+            )
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(
+        color: Colors.white,
         child: Row(
           children: [
             Expanded(
