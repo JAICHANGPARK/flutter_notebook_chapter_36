@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
+import 'real_estate_detail_page.dart';
+
 class RealEstateHomePage extends StatefulWidget {
   const RealEstateHomePage({super.key});
 
