@@ -25,7 +25,9 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     },
                     child: Container(
                       decoration: BoxDecoration(
-                        border: Border.all(),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
                         borderRadius: BorderRadius.circular(32),
                       ),
                       padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
@@ -33,7 +35,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         children: [
                           CircleAvatar(
                             radius: 24,
-                            backgroundColor: Colors.grey[300]!,
+                            backgroundColor: Colors.grey[200]!,
                             child: Icon(Icons.arrow_back),
                           ),
                           Gap(12),
@@ -52,7 +54,9 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(),
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
                     ),
                     child: IconButton(
                       icon: Icon(Icons.more_vert),
