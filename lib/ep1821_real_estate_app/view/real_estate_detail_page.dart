@@ -79,7 +79,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   "https://cdn.pixabay.com/photo/2016/12/08/21/21/skyscrapers-1893201_1280.jpg"),
                               fit: BoxFit.cover,
                             ),
-                            
+                            borderRadius: BorderRadius.circular(32),
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
@@ -89,13 +89,16 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   Container(
                                     decoration: BoxDecoration(
                                       color: Colors.white.withOpacity(.2),
+                                      borderRadius: BorderRadius.circular(32),
                                     ),
                                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                                     child: Text("Open for sale"),
                                   ),
+                                  Spacer(),
                                   CircleAvatar(
                                     backgroundColor: Colors.white.withOpacity(.2),
                                     foregroundColor: Colors.white,
+                                    radius: 27,
                                     child: IconButton(
                                       icon: Icon(Icons.favorite),
                                       onPressed: () {},
