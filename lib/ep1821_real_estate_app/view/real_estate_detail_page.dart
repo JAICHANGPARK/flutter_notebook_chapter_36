@@ -59,7 +59,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     children: [
                       Container(
                         height: 480,
-                        child: Placeholder(),
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage("https://cdn.pixabay.com/photo/2016/12/08/21/21/skyscrapers-1893201_1280.jpg"),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                        child: Column(
+                          children: [
+
+                          ],
+                        )
                       ),
                       Row(
                         children: [
