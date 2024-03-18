@@ -83,6 +83,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           ),
                           padding: EdgeInsets.all(16),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
                                 children: [
@@ -111,7 +112,20 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                     ),
                                   )
                                 ],
-                              )
+                              ),
+                              Spacer(),
+                              Text(
+                                "Lakeshorre\nBlvd West",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 32,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text("unknown", style: TextStyle(
+
+                                color: Colors.white,
+                              ),)
                             ],
                           )),
                       Row(
