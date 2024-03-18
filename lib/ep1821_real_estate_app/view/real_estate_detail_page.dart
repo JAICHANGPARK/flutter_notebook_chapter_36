@@ -85,12 +85,16 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               Row(
                                 children: [
                                   Container(
+                                    decoration: BoxDecoration(
+                                      color:  Colors.white.withOpacity(.2),
+                                    ),
                                     child: Text("Open for sale"),
-
                                   ),
                                   CircleAvatar(
+                                    backgroundColor: Colors.white.withOpacity(.2),
                                     child: IconButton(
-                                      icon: Icon(Icons.favorite), onPressed: () {  },
+                                      icon: Icon(Icons.favorite),
+                                      onPressed: () {},
                                     ),
                                   )
                                 ],
