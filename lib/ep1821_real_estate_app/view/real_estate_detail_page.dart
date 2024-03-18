@@ -183,13 +183,18 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                         children: [
                           Text("4 Beds  2 Bath  1493m"),
                           Spacer(),
-                          Icon(Icons.apartment, size: 15,),
+                          Icon(
+                            Icons.apartment,
+                            size: 15,
+                          ),
                           Text("house")
                         ],
                       ),
                       Divider(
                         height: 32,
                       ),
+                      Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
                     ],
                   ),
                 ),
@@ -200,12 +205,15 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
+        surfaceTintColor: Colors.white,
         child: Row(
           children: [
             Expanded(
                 child: Container(
               decoration: BoxDecoration(
-                border: Border.all(),
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
                 borderRadius: BorderRadius.circular(32),
               ),
               child: Center(
