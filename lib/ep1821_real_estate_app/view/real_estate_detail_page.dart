@@ -140,6 +140,7 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               fontSize: 32,
                             ),
                           ),
+                          Spacer(),
                           Container(
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
@@ -154,7 +155,14 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                               ),
                             ),
                           ),
+                          Gap(12),
                           Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
                             child: IconButton(
                               onPressed: () {},
                               icon: Icon(
@@ -164,7 +172,24 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                           ),
                         ],
                       ),
-                      Text("Residence"),
+                      Text(
+                        "Residence",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          Text("4 Beds  2 Bath  1493m"),
+                          Spacer(),
+                          Icon(Icons.apartment, size: 15,),
+                          Text("house")
+                        ],
+                      ),
+                      Divider(
+                        height: 32,
+                      ),
                     ],
                   ),
                 ),
