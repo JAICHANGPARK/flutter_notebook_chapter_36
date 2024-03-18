@@ -92,7 +92,13 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                       borderRadius: BorderRadius.circular(32),
                                     ),
                                     padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-                                    child: Text("Open for sale"),
+                                    child: Text(
+                                      "Open for sale",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                   ),
                                   Spacer(),
                                   CircleAvatar(
