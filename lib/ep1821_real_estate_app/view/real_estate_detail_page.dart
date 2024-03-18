@@ -79,19 +79,23 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   "https://cdn.pixabay.com/photo/2016/12/08/21/21/skyscrapers-1893201_1280.jpg"),
                               fit: BoxFit.cover,
                             ),
+                            
                           ),
+                          padding: EdgeInsets.all(16),
                           child: Column(
                             children: [
                               Row(
                                 children: [
                                   Container(
                                     decoration: BoxDecoration(
-                                      color:  Colors.white.withOpacity(.2),
+                                      color: Colors.white.withOpacity(.2),
                                     ),
+                                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
                                     child: Text("Open for sale"),
                                   ),
                                   CircleAvatar(
                                     backgroundColor: Colors.white.withOpacity(.2),
+                                    foregroundColor: Colors.white,
                                     child: IconButton(
                                       icon: Icon(Icons.favorite),
                                       onPressed: () {},
