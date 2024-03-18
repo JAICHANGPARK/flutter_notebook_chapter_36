@@ -81,7 +81,21 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                             ),
                           ),
                           child: Column(
-                            children: [],
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    child: Text("Open for sale"),
+
+                                  ),
+                                  CircleAvatar(
+                                    child: IconButton(
+                                      icon: Icon(Icons.favorite), onPressed: () {  },
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
                           )),
                       Row(
                         children: [
