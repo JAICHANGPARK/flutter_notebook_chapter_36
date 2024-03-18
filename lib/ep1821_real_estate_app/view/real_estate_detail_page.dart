@@ -122,16 +122,31 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                                   color: Colors.white,
                                 ),
                               ),
-                              Text("unknown", style: TextStyle(
-
-                                color: Colors.white,
-                              ),)
+                              Text(
+                                "unknown",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              )
                             ],
                           )),
+                      Gap(16),
                       Row(
                         children: [
-                          Text("\$3,822"),
+                          Text(
+                            "\$3,822",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                            ),
+                          ),
                           Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.grey[200]!,
+                              ),
+                            ),
                             child: IconButton(
                               onPressed: () {},
                               icon: Icon(
