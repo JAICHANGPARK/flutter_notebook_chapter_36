@@ -20,20 +20,30 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
               Row(
                 children: [
                   InkWell(
-                    onTap: (){
+                    onTap: () {
                       Navigator.of(context).pop();
                     },
                     child: Container(
                       decoration: BoxDecoration(
                         border: Border.all(),
+                        borderRadius: BorderRadius.circular(32),
                       ),
+                      padding: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
                       child: Row(
                         children: [
                           CircleAvatar(
-
+                            radius: 24,
+                            backgroundColor: Colors.grey[300]!,
                             child: Icon(Icons.arrow_back),
                           ),
-                          Text("Go Back"),
+                          Gap(12),
+                          Text(
+                            "Go Back",
+                            style: TextStyle(
+                              fontSize: 16,
+                            ),
+                          ),
+                          Gap(12),
                         ],
                       ),
                     ),
@@ -58,19 +68,17 @@ class _RealEstateDetailPageState extends State<RealEstateDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        height: 480,
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage("https://cdn.pixabay.com/photo/2016/12/08/21/21/skyscrapers-1893201_1280.jpg"),
-                            fit: BoxFit.cover,
+                          height: 480,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2016/12/08/21/21/skyscrapers-1893201_1280.jpg"),
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        ),
-                        child: Column(
-                          children: [
-
-                          ],
-                        )
-                      ),
+                          child: Column(
+                            children: [],
+                          )),
                       Row(
                         children: [
                           Text("\$3,822"),
