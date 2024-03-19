@@ -175,7 +175,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             onTap: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
-                                  builder: (context) => RealEstateDetailPage(),
+                                  builder: (context) => const RealEstateDetailPage(),
                                 ),
                               );
                             },
@@ -278,7 +278,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(32),
                 ),
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                   horizontal: 8,
                   vertical: 8,
                 ),
@@ -288,7 +288,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     CircleAvatar(
                       radius: 26,
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.home_filled,
                         ),
                         onPressed: () {},
@@ -298,7 +298,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       radius: 26,
                       backgroundColor: Colors.transparent,
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.explore_outlined,
                         ),
                         onPressed: () {},
@@ -308,7 +308,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       radius: 26,
                       backgroundColor: Colors.transparent,
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.favorite_border,
                         ),
                         onPressed: () {},
@@ -318,7 +318,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       radius: 26,
                       backgroundColor: Colors.transparent,
                       child: IconButton(
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.chat_outlined,
                         ),
                         onPressed: () {},
