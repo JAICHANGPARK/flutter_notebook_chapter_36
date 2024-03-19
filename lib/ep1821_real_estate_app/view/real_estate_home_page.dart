@@ -269,6 +269,9 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 ],
               ),
             ),
+            Positioned(
+              child: Container(),
+            ),
           ],
         ),
       ),
