@@ -283,16 +283,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                   vertical: 8,
                 ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CircleAvatar(
-                      radius: 26,
-                      child: IconButton(
-                        icon: Icon(
-                          Icons.home_filled,
-                        ),
-                        onPressed: () {},
-                      ),
-                    ),
                     CircleAvatar(
                       radius: 26,
                       child: IconButton(
@@ -307,7 +299,27 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       backgroundColor: Colors.transparent,
                       child: IconButton(
                         icon: Icon(
+                          Icons.explore_outlined,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 26,
+                      backgroundColor: Colors.transparent,
+                      child: IconButton(
+                        icon: Icon(
                           Icons.favorite_border,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 26,
+                      backgroundColor: Colors.transparent,
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.chat_outlined,
                         ),
                         onPressed: () {},
                       ),
