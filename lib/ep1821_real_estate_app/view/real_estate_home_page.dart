@@ -270,12 +270,37 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
               ),
             ),
             Positioned(
-              left: 42,
-              right: 42,
+              left: 62,
+              right: 62,
               bottom: 24,
               child: Container(
                 decoration: BoxDecoration(
-                  
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 8,
+                  vertical: 8,
+                ),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.home_filled,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                    CircleAvatar(
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.home_filled,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
