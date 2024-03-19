@@ -285,6 +285,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                 child: Row(
                   children: [
                     CircleAvatar(
+                      radius: 26,
                       child: IconButton(
                         icon: Icon(
                           Icons.home_filled,
@@ -293,9 +294,20 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ),
                     ),
                     CircleAvatar(
+                      radius: 26,
                       child: IconButton(
                         icon: Icon(
                           Icons.home_filled,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                    CircleAvatar(
+                      radius: 26,
+                      backgroundColor: Colors.transparent,
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.favorite_border,
                         ),
                         onPressed: () {},
                       ),
