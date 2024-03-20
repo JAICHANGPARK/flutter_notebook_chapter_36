@@ -297,7 +297,14 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     padding: EdgeInsets.all(12),
                                     child: Align(
                                       alignment: Alignment.bottomRight,
-                                      child: CircleAvatar(),
+                                      child: CircleAvatar(
+                                        radius: 20,
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(
+                                          Icons.favorite_border,
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
