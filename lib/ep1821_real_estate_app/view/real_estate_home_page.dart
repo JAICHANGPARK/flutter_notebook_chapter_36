@@ -281,6 +281,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 16,
                             mainAxisSpacing: 16,
+                            childAspectRatio: .8
                           ),
                           itemBuilder: (context, index) {
                             return Column(
