@@ -275,7 +275,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                       Padding(
-                        padding: const EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: GridView.builder(
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
                           itemBuilder: (context, index) {
