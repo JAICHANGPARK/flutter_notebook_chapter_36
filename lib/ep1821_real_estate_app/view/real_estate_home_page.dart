@@ -275,14 +275,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         ],
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                         child: GridView.builder(
                           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 16,
-                            mainAxisSpacing: 16,
-                            childAspectRatio: .8
-                          ),
+                              crossAxisCount: 2, crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: .8),
                           itemBuilder: (context, index) {
                             return Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -297,6 +293,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                             "https://cdn.pixabay.com/photo/2016/11/18/13/18/architecture-1834420_1280.jpg"),
                                         fit: BoxFit.cover,
                                       ),
+                                    ),
+                                    padding: EdgeInsets.all(12),
+                                    child: Align(
+                                      alignment: Alignment.bottomRight,
+                                      child: CircleAvatar(),
                                     ),
                                   ),
                                 ),
