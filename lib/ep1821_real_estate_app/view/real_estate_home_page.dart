@@ -294,7 +294,15 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     ),
                                   ),
                                 ),
-                                Text("Blvd West"),
+                                Gap(7),
+                                Text(
+                                  "Blvd West",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Gap(7),
                                 Row(
                                   children: [
                                     Icon(
