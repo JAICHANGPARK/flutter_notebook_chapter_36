@@ -315,7 +315,7 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                       size: 14,
                                       color: Colors.grey,
                                     ),
-                                    Text("2db 1ba 345m")
+                                    Text("2db 1ba 345m"),
                                   ],
                                 )
                               ],
