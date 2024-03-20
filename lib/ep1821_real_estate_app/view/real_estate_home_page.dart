@@ -274,9 +274,26 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                           ),
                         ],
                       ),
-                      GridView.builder(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-                        itemBuilder: (context, index) {},
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: GridView.builder(
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                          itemBuilder: (context, index) {
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Expanded(child: Container()),
+                                Text("Blvd West"),
+                                Row(
+                                  children: [
+                                    Icon(Icons.apartment_rounded,size: 14,color: Colors.grey,),
+                                    Text("2db 1ba 345m")
+                                  ],
+                                )
+                              ],
+                            );
+                          },
+                        ),
                       )
                     ],
                   )),
