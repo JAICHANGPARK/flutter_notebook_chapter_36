@@ -277,16 +277,31 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: GridView.builder(
-                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            crossAxisSpacing: 16,
+                            mainAxisSpacing: 16,
+                          ),
                           itemBuilder: (context, index) {
                             return Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Expanded(child: Container()),
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                  ),
+                                ),
                                 Text("Blvd West"),
                                 Row(
                                   children: [
-                                    Icon(Icons.apartment_rounded,size: 14,color: Colors.grey,),
+                                    Icon(
+                                      Icons.apartment_rounded,
+                                      size: 14,
+                                      color: Colors.grey,
+                                    ),
                                     Text("2db 1ba 345m")
                                   ],
                                 )
