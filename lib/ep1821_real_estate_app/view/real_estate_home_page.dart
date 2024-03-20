@@ -273,6 +273,10 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                             ),
                           ),
                         ],
+                      ),
+                      GridView.builder(
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+                        itemBuilder: (context, index) {},
                       )
                     ],
                   )),
