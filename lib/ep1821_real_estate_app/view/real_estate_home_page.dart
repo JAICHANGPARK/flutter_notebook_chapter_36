@@ -293,7 +293,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         icon: const Icon(
                           Icons.home_filled,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            pageIndex = 0;
+                          });
+                        },
                       ),
                     ),
                     CircleAvatar(
@@ -303,7 +307,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         icon: const Icon(
                           Icons.explore_outlined,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            pageIndex = 1;
+                          });
+                        },
                       ),
                     ),
                     CircleAvatar(
@@ -313,7 +321,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         icon: const Icon(
                           Icons.favorite_border,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            pageIndex = 2;
+                          });
+                        },
                       ),
                     ),
                     CircleAvatar(
@@ -323,7 +335,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                         icon: const Icon(
                           Icons.chat_outlined,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            pageIndex = 3;
+                          });
+                        },
                       ),
                     ),
                   ],
