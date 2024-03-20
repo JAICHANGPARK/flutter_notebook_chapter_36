@@ -100,172 +100,180 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                       ],
                     ),
                   ),
-                  Container(
-                    height: 72,
-                    margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey,
-                      ),
-                      borderRadius: BorderRadius.circular(36),
-                    ),
-                    child: const Row(
+
+                  Expanded(child: IndexedStack(
+                    children: [Column(
                       children: [
-                        Expanded(
-                            child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CircleAvatar(
-                              radius: 4,
+                        Container(
+                          height: 72,
+                          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
                             ),
-                            Text(
-                              "Nearby",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                              ),
-                            ),
-                          ],
-                        )),
-                        Expanded(
-                            child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CircleAvatar(
-                              radius: 4,
-                              backgroundColor: Colors.transparent,
-                            ),
-                            Text(
-                              "Recommend",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                                color: Colors.grey,
-                              ),
-                            ),
-                          ],
-                        )),
-                        Expanded(
-                            child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            CircleAvatar(
-                              radius: 4,
-                              backgroundColor: Colors.transparent,
-                            ),
-                            Text(
-                              "Upcoming",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16,
-                                color: Colors.grey,
-                              ),
-                            ),
-                          ],
-                        )),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
-                      child: ListView.builder(
-                        itemBuilder: (context, index) {
-                          return GestureDetector(
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (context) => const RealEstateDetailPage(),
-                                ),
-                              );
-                            },
-                            child: Container(
-                              margin: const EdgeInsets.only(bottom: 12),
-                              height: 320,
-                              decoration: BoxDecoration(
-                                image: const DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
-                                  ),
-                                  fit: BoxFit.cover,
-                                ),
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                      right: 12,
-                                      top: 12,
-                                      child: Container(
-                                        child: const Row(
-                                          children: [
-                                            Icon(
-                                              Icons.backpack_rounded,
-                                            ),
-                                            Text(
-                                              "360",
-                                            )
-                                          ],
+                            borderRadius: BorderRadius.circular(36),
+                          ),
+                          child: const Row(
+                            children: [
+                              Expanded(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 4,
+                                      ),
+                                      Text(
+                                        "Nearby",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
                                         ),
-                                      )),
-                                  Positioned(
-                                    left: 12,
-                                    right: 12,
-                                    bottom: 12,
-                                    child: Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(12),
                                       ),
-                                      padding: const EdgeInsets.all(16),
-                                      child: const Column(
-                                        children: [
-                                          Row(
-                                            children: [
-                                              Text(
-                                                "Lakeshouse Vivd West",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 16,
-                                                ),
+                                    ],
+                                  )),
+                              Expanded(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 4,
+                                        backgroundColor: Colors.transparent,
+                                      ),
+                                      Text(
+                                        "Recommend",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
+                                  )),
+                              Expanded(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 4,
+                                        backgroundColor: Colors.transparent,
+                                      ),
+                                      Text(
+                                        "Upcoming",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 16,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
+                                    ],
+                                  )),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: ListView.builder(
+                              itemBuilder: (context, index) {
+                                return GestureDetector(
+                                  onTap: () {
+                                    Navigator.of(context).push(
+                                      MaterialPageRoute(
+                                        builder: (context) => const RealEstateDetailPage(),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    margin: const EdgeInsets.only(bottom: 12),
+                                    height: 320,
+                                    decoration: BoxDecoration(
+                                      image: const DecorationImage(
+                                        image: NetworkImage(
+                                          "https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg",
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                      borderRadius: BorderRadius.circular(16),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        Positioned(
+                                            right: 12,
+                                            top: 12,
+                                            child: Container(
+                                              child: const Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.backpack_rounded,
+                                                  ),
+                                                  Text(
+                                                    "360",
+                                                  )
+                                                ],
                                               ),
-                                              Spacer(),
-                                              Text(
-                                                "\$1,680",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 16,
+                                            )),
+                                        Positioned(
+                                          left: 12,
+                                          right: 12,
+                                          bottom: 12,
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.white,
+                                              borderRadius: BorderRadius.circular(12),
+                                            ),
+                                            padding: const EdgeInsets.all(16),
+                                            child: const Column(
+                                              children: [
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      "Lakeshouse Vivd West",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                        fontSize: 16,
+                                                      ),
+                                                    ),
+                                                    Spacer(),
+                                                    Text(
+                                                      "\$1,680",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                        fontSize: 16,
+                                                      ),
+                                                    ),
+                                                  ],
                                                 ),
-                                              ),
-                                            ],
+                                                Gap(8),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.apartment,
+                                                      size: 16,
+                                                    ),
+                                                    Gap(8),
+                                                    Text("4bd 2ba 1493m"),
+                                                    Spacer(),
+                                                    Text(
+                                                      "Month",
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            ),
                                           ),
-                                          Gap(8),
-                                          Row(
-                                            children: [
-                                              Icon(
-                                                Icons.apartment,
-                                                size: 16,
-                                              ),
-                                              Gap(8),
-                                              Text("4bd 2ba 1493m"),
-                                              Spacer(),
-                                              Text(
-                                                "Month",
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                ],
-                              ),
+                                );
+                              },
                             ),
-                          );
-                        },
-                      ),
-                    ),
-                  ),
+                          ),
+                        ),
+                      ],
+                    )],
+                  )),
+
                 ],
               ),
             ),
