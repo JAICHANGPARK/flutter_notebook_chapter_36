@@ -291,6 +291,11 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                                     decoration: BoxDecoration(
                                       color: Colors.grey,
                                       borderRadius: BorderRadius.circular(12),
+                                      image: DecorationImage(
+                                        image: NetworkImage(
+                                            "https://cdn.pixabay.com/photo/2016/11/18/13/18/architecture-1834420_1280.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
                                     ),
                                   ),
                                 ),
