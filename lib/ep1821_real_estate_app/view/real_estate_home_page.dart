@@ -302,7 +302,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     CircleAvatar(
                       radius: 26,
-                      backgroundColor: Colors.transparent,
+                      backgroundColor: pageIndex ==1 ? Colors.black : Colors.transparent,
+                      foregroundColor:  pageIndex == 1 ? Colors.white : Colors.grey,
                       child: IconButton(
                         icon: const Icon(
                           Icons.explore_outlined,
@@ -316,7 +317,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     CircleAvatar(
                       radius: 26,
-                      backgroundColor: Colors.transparent,
+                      backgroundColor: pageIndex == 2 ? Colors.black : Colors.transparent,
+                      foregroundColor:  pageIndex == 2 ? Colors.white : Colors.grey,
                       child: IconButton(
                         icon: const Icon(
                           Icons.favorite_border,
@@ -330,7 +332,8 @@ class _RealEstateHomePageState extends State<RealEstateHomePage> {
                     ),
                     CircleAvatar(
                       radius: 26,
-                      backgroundColor: Colors.transparent,
+                      backgroundColor: pageIndex == 3 ? Colors.black : Colors.transparent,
+                      foregroundColor:  pageIndex == 3 ? Colors.white : Colors.grey,
                       child: IconButton(
                         icon: const Icon(
                           Icons.chat_outlined,
