@@ -31,6 +31,13 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
               height: 82,
               child: Placeholder(),
             ),
+            Expanded(
+                child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [],
+              ),
+            ))
           ],
         ),
       ),
