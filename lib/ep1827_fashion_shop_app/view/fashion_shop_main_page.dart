@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -28,7 +29,8 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                 ],
               ),
             ),
-            SizedBox(
+            Container(
+              margin: EdgeInsets.only(left: 16),
               height: 82,
               child: Placeholder(),
             ),
