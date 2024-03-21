@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FashionShopMainPage extends StatefulWidget {
   const FashionShopMainPage({super.key});
 
@@ -16,11 +15,25 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Text("WOMAN"),
+                  Text("MAN"),
+                  Text("HOME"),
+                  Spacer(),
+                  CircleAvatar(),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 62,
+              child: Placeholder(),
+            ),
           ],
         ),
       ),
-
     );
   }
 }
