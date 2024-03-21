@@ -35,7 +35,16 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                 child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(16),
+                    height: 420,
+                    decoration: BoxDecoration(
+                      color: Colors.grey,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  )
+                ],
               ),
             ))
           ],
