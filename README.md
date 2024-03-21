@@ -1,14 +1,12 @@
 # flutter_notebook_chapter_36
 
-## EP1821-1826
+## EP1827
 
-- Homeco Real Estate App.
-- by Sajon
+- Lyst Mobile App - UI/UX Exploration
+- by Vlad Tyzun for Radiant Studio
 - https://dribbble.com/shots/23776379-Lyst-Mobile-App-UI-UX-Exploration
 
-<img src="https://cdn.dribbble.com/userupload/13499563/file/original-1825d99205055206b6bea6fb3b418fe4.png?resize=1905x1429"/>
-
-
+<img src="https://cdn.dribbble.com/userupload/13437875/file/original-a9ffca933a5c922bb6468bbb7de26723.jpg?resize=1905x1429"/>
 
 ## EP1821-1826
 
