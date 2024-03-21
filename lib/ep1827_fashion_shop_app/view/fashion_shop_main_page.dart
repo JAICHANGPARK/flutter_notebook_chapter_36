@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class FashionShopMainPage extends StatefulWidget {
   const FashionShopMainPage({super.key});
@@ -32,21 +33,44 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
               child: Placeholder(),
             ),
             Expanded(
-                child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    margin: EdgeInsets.all(16),
-                    height: 420,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(8),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      margin: EdgeInsets.all(16),
+                      height: 420,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                     ),
-                  )
-                ],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Column(
+                        children: [
+                          Text("NEW ARRIVAL"),
+                          Gap(16),
+                          GridView.builder(
+                            shrinkWrap: true,
+                            itemCount: 10,
+                            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                              mainAxisSpacing: 16,
+                              crossAxisSpacing: 16,
+                            ),
+                            itemBuilder: (context, index) {
+                              return Placeholder();
+                            },
+                          )
+                        ],
+                      ),
+                    )
+
+                  ],
+                ),
               ),
-            ))
+            )
           ],
         ),
       ),
