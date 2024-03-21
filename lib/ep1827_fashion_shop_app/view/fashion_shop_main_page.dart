@@ -28,7 +28,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
               ),
             ),
             SizedBox(
-              height: 62,
+              height: 82,
               child: Placeholder(),
             ),
           ],
