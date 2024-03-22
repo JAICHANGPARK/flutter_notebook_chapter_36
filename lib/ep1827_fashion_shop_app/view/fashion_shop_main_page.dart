@@ -28,6 +28,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                       fontSize: 18,
                     ),
                   ),
+                  Gap(12),
                   Text(
                     "MAN",
                     style: TextStyle(
@@ -36,6 +37,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                       color: Colors.grey,
                     ),
                   ),
+                  Gap(12),
                   Text(
                     "HOME",
                     style: TextStyle(
