@@ -104,8 +104,17 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                           Container(
                             height: 100,
                             width: 80,
-                            color: Colors.blue,
-                            
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Center(
+                              child: CircleAvatar(
+                                backgroundColor: Colors.white.withOpacity(.2),
+                                child: Icon(Icons.play_arrow),
+                                foregroundColor: Colors.white,
+                              ),
+                            ),
                           ),
                           Gap(8),
                           Text(
