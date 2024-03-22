@@ -41,6 +41,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
+                      color: Colors.grey,
                     ),
                   ),
                   Spacer(),
