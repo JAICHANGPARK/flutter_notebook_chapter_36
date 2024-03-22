@@ -97,13 +97,17 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                           fit: BoxFit.cover,
                         ),
                       ),
+                      padding: EdgeInsets.all(24),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
                             height: 100,
-                            width: 52,
+                            width: 80,
                             color: Colors.blue,
+                            
                           ),
+                          Gap(8),
                           Text("Previous"),
                           Text("Video"),
                           Spacer(),
@@ -111,7 +115,8 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                           Text("COLLECTION"),
                           Row(
                             children: [
-                              Text("")
+                              Text("FOR HER"),
+                              Text("FOR HIM")
                             ],
                           )
                         ],
