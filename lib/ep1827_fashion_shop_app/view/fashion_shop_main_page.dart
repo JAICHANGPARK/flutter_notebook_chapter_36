@@ -105,6 +105,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                             height: 100,
                             width: 80,
                             color: Colors.blue,
+                            
                           ),
                           Gap(8),
                           Text(
@@ -164,7 +165,13 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("NEW ARRIVAL"),
+                          Text(
+                            "NEW ARRIVAL",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16,
+                            ),
+                          ),
                           Gap(16),
                           GridView.builder(
                             shrinkWrap: true,
