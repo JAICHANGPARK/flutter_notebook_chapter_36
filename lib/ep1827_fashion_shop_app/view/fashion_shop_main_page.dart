@@ -21,9 +21,28 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  Text("WOMAN"),
-                  Text("MAN"),
-                  Text("HOME"),
+                  Text(
+                    "WOMAN",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  Text(
+                    "MAN",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Text(
+                    "HOME",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                   Spacer(),
                   CircleAvatar(),
                 ],
@@ -70,7 +89,6 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                         ],
                       ),
                     )
-
                   ],
                 ),
               ),
