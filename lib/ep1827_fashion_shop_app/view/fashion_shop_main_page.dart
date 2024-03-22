@@ -105,19 +105,38 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                             height: 100,
                             width: 80,
                             color: Colors.blue,
-                            
                           ),
                           Gap(8),
-                          Text("Previous"),
-                          Text("Video"),
+                          Text(
+                            "Previous",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                          Text(
+                            "Video",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
                           Spacer(),
-                          Text("RE-NYLON"),
-                          Text("COLLECTION"),
+                          Text(
+                            "RE-NYLON",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 28,
+                            ),
+                          ),
+                          Text(
+                            "COLLECTION",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 28,
+                            ),
+                          ),
+                          Gap(8),
                           Row(
-                            children: [
-                              Text("FOR HER"),
-                              Text("FOR HIM")
-                            ],
+                            children: [Text("FOR HER"), Gap(8), Text("FOR HIM")],
                           )
                         ],
                       ),
