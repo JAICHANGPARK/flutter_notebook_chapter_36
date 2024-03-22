@@ -56,7 +56,10 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
             Container(
               margin: EdgeInsets.only(left: 16),
               height: 82,
-              child: Placeholder(),
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) {},
+              ),
             ),
             Expanded(
               child: SingleChildScrollView(
