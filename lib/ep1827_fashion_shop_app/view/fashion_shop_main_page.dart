@@ -58,7 +58,18 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
               height: 82,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {},
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      Expanded(
+                        child: CircleAvatar(),
+                      ),
+                      Text(
+                        "BAGS",
+                      )
+                    ],
+                  );
+                },
               ),
             ),
             Expanded(
