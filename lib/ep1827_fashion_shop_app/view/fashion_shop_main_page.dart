@@ -25,7 +25,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                     "WOMAN",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 22,
                     ),
                   ),
                   Gap(12),
@@ -33,7 +33,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                     "MAN",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 22,
                       color: Colors.grey,
                     ),
                   ),
@@ -42,12 +42,14 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                     "HOME",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,
+                      fontSize: 22,
                       color: Colors.grey,
                     ),
                   ),
                   Spacer(),
-                  CircleAvatar(),
+                  CircleAvatar(
+                    child: Icon(Icons.search),
+                  ),
                 ],
               ),
             ),
