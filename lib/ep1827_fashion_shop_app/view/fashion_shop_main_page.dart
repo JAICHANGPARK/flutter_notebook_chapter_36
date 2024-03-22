@@ -92,6 +92,29 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey,
                         borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                          image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/29/06/46/adult-1867889_1280.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 52,
+                            color: Colors.blue,
+                          ),
+                          Text("Previous"),
+                          Text("Video"),
+                          Spacer(),
+                          Text("RE-NYLON"),
+                          Text("COLLECTION"),
+                          Row(
+                            children: [
+                              Text("")
+                            ],
+                          )
+                        ],
                       ),
                     ),
                     Padding(
