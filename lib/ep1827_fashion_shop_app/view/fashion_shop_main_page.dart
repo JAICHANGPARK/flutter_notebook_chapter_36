@@ -18,7 +18,12 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.only(
+                top: 32,
+                left: 16,
+                right: 16,
+                bottom: 16,
+              ),
               child: Row(
                 children: [
                   Text(
@@ -55,19 +60,23 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
             ),
             Container(
               margin: EdgeInsets.only(left: 16),
-              height: 82,
+              height: 100,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return Column(
-                    children: [
-                      Expanded(
-                        child: CircleAvatar(),
-                      ),
-                      Text(
-                        "BAGS",
-                      )
-                    ],
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Column(
+                      children: [
+                        Expanded(
+                          child: CircleAvatar(radius: 30),
+                        ),
+                        Gap(8),
+                        Text(
+                          "BAGS",
+                        )
+                      ],
+                    ),
                   );
                 },
               ),
