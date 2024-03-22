@@ -136,7 +136,25 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                           ),
                           Gap(8),
                           Row(
-                            children: [Text("FOR HER"), Gap(8), Text("FOR HIM")],
+                            children: [
+                              Text(
+                                "FOR HER",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.white,
+                                ),
+                              ),
+                              Gap(8),
+                              Text(
+                                "FOR HIM",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  decoration: TextDecoration.underline,
+                                  decorationColor: Colors.white,
+                                ),
+                              ),
+                            ],
                           )
                         ],
                       ),
