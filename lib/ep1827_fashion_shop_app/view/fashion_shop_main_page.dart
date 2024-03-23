@@ -197,13 +197,22 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                                     BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                                 child: Stack(
                                   children: [
-                                    Positioned(
+                                    if (index == 0)
+                                      Positioned(
                                         top: 0,
                                         left: 24,
                                         child: Container(
                                           height: 52,
-                                          width: 32,
-                                        ))
+                                          width: 28,
+                                          decoration: BoxDecoration(
+                                            color: Colors.blue,
+                                            borderRadius: BorderRadius.only(
+                                              bottomLeft: Radius.circular(8),
+                                              bottomRight: Radius.circular(8),
+                                            ),
+                                          ),
+                                        ),
+                                      )
                                   ],
                                 ),
                               );
