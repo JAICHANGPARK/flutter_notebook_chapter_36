@@ -211,6 +211,18 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                                               bottomRight: Radius.circular(8),
                                             ),
                                           ),
+                                          child: RotatedBox(
+                                            quarterTurns: -1,
+                                            child: Center(
+                                              child: Text(
+                                                "NEW",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       )
                                   ],
