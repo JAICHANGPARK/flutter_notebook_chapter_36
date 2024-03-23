@@ -210,7 +210,9 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
         showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOme"),
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOme"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined),label: "bag"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border),label: "bag"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined),label: "bag"),
         ],
       ),
     );
