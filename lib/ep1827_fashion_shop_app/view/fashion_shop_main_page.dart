@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import '../widget/fashion_home_widget.dart';
+import '../widget/fashion_shop_cart_widget.dart';
 
 class FashionShopMainPage extends StatefulWidget {
   const FashionShopMainPage({super.key});
@@ -23,6 +24,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
           index: pageIndex,
           children: [
             FashionHomeWidget(),
+            FashionShopCartWidget(),
           ],
         ),
       ),
