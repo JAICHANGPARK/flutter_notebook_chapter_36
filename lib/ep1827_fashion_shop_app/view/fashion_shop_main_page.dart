@@ -207,8 +207,8 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                                           decoration: BoxDecoration(
                                             color: Colors.blue,
                                             borderRadius: BorderRadius.only(
-                                              bottomLeft: Radius.circular(8),
-                                              bottomRight: Radius.circular(8),
+                                              bottomLeft: Radius.circular(4),
+                                              bottomRight: Radius.circular(4),
                                             ),
                                           ),
                                           child: RotatedBox(
