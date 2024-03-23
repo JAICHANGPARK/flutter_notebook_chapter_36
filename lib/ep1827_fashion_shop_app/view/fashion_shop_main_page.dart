@@ -206,8 +206,11 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: [
-          
+          BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOme"),
+          BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOme"),
         ],
       ),
     );
