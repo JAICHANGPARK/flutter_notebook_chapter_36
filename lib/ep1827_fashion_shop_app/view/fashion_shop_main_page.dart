@@ -197,7 +197,7 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                                     BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
                                 child: Stack(
                                   children: [
-                                    if (index == 0)
+                                    if (index % 2 == 0)
                                       Positioned(
                                         top: 0,
                                         left: 24,
@@ -244,6 +244,9 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "HOme"),
           BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "bag"),
