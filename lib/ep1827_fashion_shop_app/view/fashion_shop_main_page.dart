@@ -192,7 +192,21 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                               crossAxisSpacing: 16,
                             ),
                             itemBuilder: (context, index) {
-                              return Placeholder();
+                              return Container(
+                                decoration:
+                                    BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                        top: 0,
+                                        left: 24,
+                                        child: Container(
+                                          height: 52,
+                                          width: 32,
+                                        ))
+                                  ],
+                                ),
+                              );
                             },
                           )
                         ],
@@ -208,11 +222,12 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
       bottomNavigationBar: BottomNavigationBar(
         showSelectedLabels: false,
         showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: "HOme"),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined),label: "bag"),
-          BottomNavigationBarItem(icon: Icon(Icons.favorite_border),label: "bag"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined),label: "bag"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "HOme"),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined), label: "bag"),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border), label: "bag"),
+          BottomNavigationBarItem(icon: Icon(Icons.person_2_outlined), label: "bag"),
         ],
       ),
     );
