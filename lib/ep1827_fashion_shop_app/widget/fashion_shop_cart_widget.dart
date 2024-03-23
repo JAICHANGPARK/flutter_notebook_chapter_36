@@ -11,6 +11,11 @@ class FashionShopCartWidget extends StatefulWidget {
 class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("CART"),
+      ),
+    );
   }
 }
