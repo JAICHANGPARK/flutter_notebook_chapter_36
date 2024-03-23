@@ -10,8 +10,8 @@ class FashionShopMainPage extends StatefulWidget {
 }
 
 class _FashionShopMainPageState extends State<FashionShopMainPage> {
-
   int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -98,7 +98,8 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
                             color: Colors.grey,
                             borderRadius: BorderRadius.circular(8),
                             image: DecorationImage(
-                              image: NetworkImage("https://cdn.pixabay.com/photo/2016/11/29/06/46/adult-1867889_1280.jpg"),
+                              image:
+                                  NetworkImage("https://cdn.pixabay.com/photo/2016/11/29/06/46/adult-1867889_1280.jpg"),
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -254,6 +255,12 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
         backgroundColor: Colors.white,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
+        currentIndex: pageIndex,
+        onTap: (idx) {
+          setState(() {
+            pageIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
