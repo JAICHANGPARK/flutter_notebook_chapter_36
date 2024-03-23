@@ -205,6 +205,11 @@ class _FashionShopMainPageState extends State<FashionShopMainPage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          
+        ],
+      ),
     );
   }
 }
