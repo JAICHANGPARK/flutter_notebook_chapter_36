@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ShopCart {
   String? title;
@@ -65,7 +66,9 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                       ),
                       Expanded(
                           child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -86,7 +89,9 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                                   child: Row(
                                     children: [
                                       Icon(Icons.remove_circle_outline),
+                                      Gap(4),
                                       Text("${e.count}"),
+                                      Gap(4),
                                       Icon(
                                         Icons.add_circle,
                                       ),
@@ -95,6 +100,7 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                                 )
                               ],
                             ),
+                            Gap(16),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
