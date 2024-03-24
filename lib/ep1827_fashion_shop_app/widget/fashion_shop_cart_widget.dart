@@ -23,7 +23,6 @@ class FashionShopCartWidget extends StatefulWidget {
 }
 
 class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
-
   List<ShopCart> carts = [];
 
   @override
@@ -31,19 +30,43 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
     // TODO: implement initState
     super.initState();
 
-    carts.add(ShopCart(
-      title: "Brushed Leather",
-      subtitle: "Black/LP/37",
-      count: 1,
-    ));
-
+    carts.add(
+      ShopCart(
+        title: "Brushed Leather",
+        subtitle: "Black/LP/37",
+        price: 1270,
+      ),
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text("CART"),
+      ),
+      body: Column(
+        children: [
+          Divider(),
+          ...carts.map(
+            (e) => Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
