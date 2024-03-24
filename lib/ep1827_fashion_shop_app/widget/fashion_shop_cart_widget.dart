@@ -177,7 +177,8 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                     Text("\$"),
                   ],
                 ),
-                Divider(),
+
+                Divider(height: 32,),
                 Row(
                   children: [
                     Text("Delivery Fee:"),
