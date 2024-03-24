@@ -46,6 +46,20 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
         price: 1270,
       ),
     );
+    carts.add(
+      ShopCart(
+        title: "Brushed Leather",
+        subtitle: "Black/LP/37",
+        price: 1270,
+      ),
+    );
+    carts.add(
+      ShopCart(
+        title: "Brushed Leather",
+        subtitle: "Black/LP/37",
+        price: 1270,
+      ),
+    );
   }
 
   @override
