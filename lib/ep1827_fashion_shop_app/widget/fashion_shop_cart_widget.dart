@@ -160,11 +160,34 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
             ),
           ),
           Divider(),
-          Row(
-            children: [
-              Text("Subtotal")
-            ],
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("Subtotal:"),
+                    Text("\$"),
+                  ],
+                ),
+                Gap(12),
+                Row(
+                  children: [
+                    Text("Delivery Fee:"),
+                    Text("\$"),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  children: [
+                    Text("Delivery Fee:"),
+                    Text("\$"),
+                  ],
+                ),
+              ],
+            ),
           )
+
         ],
       ),
     );
