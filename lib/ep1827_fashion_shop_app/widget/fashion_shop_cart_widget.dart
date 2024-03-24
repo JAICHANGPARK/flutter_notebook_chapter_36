@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -131,8 +132,9 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
               ],
             ),
           ),
-          SizedBox(
+          Container(
             height: 120,
+            margin: EdgeInsets.all(12),
             child: Row(
               children: [
                 Expanded(
@@ -144,6 +146,7 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                     ),
                   ),
                 )),
+                Gap(12),
                 Expanded(
                     child: Container(
                   decoration: BoxDecoration(
@@ -155,6 +158,12 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                 )),
               ],
             ),
+          ),
+          Divider(),
+          Row(
+            children: [
+              Text("Subtotal")
+            ],
           )
         ],
       ),
