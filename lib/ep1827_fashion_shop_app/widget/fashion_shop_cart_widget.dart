@@ -64,39 +64,51 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                         ),
                       ),
                       Expanded(
-                          child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Column(
-                                children: [
-                                  Text(e.title ?? "?"),
-                                  Text(e.subtitle ?? "??"),
-                                ],
-                              ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200]!,
-                                ),
-                                child: Row(
+                          child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Icon(Icons.remove_circle_outline),
-                                    Text("${e.count}"),
-                                    Icon(
-                                      Icons.add_circle,
-                                    ),
+                                    Text(e.title ?? "?"),
+                                    Text(e.subtitle ?? "??"),
                                   ],
                                 ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text("${e.price * e.count}"),
-                            ],
-                          ),
-                        ],
+                                Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[200]!,
+                                  ),
+                                  child: Row(
+                                    children: [
+                                      Icon(Icons.remove_circle_outline),
+                                      Text("${e.count}"),
+                                      Icon(
+                                        Icons.add_circle,
+                                      ),
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("\$${e.price * e.count}"),
+                                Text(
+                                  "REMOVE",
+                                  style: TextStyle(
+                                    decoration: TextDecoration.underline,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ))
                     ],
                   ),
