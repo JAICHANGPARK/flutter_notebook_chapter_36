@@ -61,6 +61,26 @@ class _FashionShopCartWidgetState extends State<FashionShopCartWidget> {
                         color: Colors.grey,
                       ),
                     ),
+                    Expanded(
+                        child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text(e.title ?? "?"),
+                                Text(e.subtitle ?? "??"),
+                              ],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200]!,
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    ))
                   ],
                 )
               ],
