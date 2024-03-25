@@ -20,8 +20,24 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
           Expanded(
             child: Column(
               children: [
-                Text("Smart Conversations"),
-                Text("Smarter Connections"),
+                Text(
+                  "Smart Conversations",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Smarter Connections",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  "Unlock meaningful connections through AI-driven conversations tailoared to your needs",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                )
               ],
             ),
           ),
