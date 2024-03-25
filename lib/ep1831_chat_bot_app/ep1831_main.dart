@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'views/chat_bot_login_page.dart';
+
 void main() {
   runApp(AiChatBotApp());
 }
@@ -10,7 +12,7 @@ class AiChatBotApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: ChatBotLoginPage(),
     );
   }
 }
