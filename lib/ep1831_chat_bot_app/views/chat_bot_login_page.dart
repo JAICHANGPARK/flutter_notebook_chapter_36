@@ -36,7 +36,7 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                     fontSize: 24,
                   ),
                 ),
-                Gap(16),
+                Gap(24),
                 Text(
                   "Unlock meaningful connections through AI-driven conversations tailoared to your needs",
                   style: TextStyle(
@@ -44,14 +44,16 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Gap(42),
+                Gap(62),
                 Container(
                   height: 62,
                   margin: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(32)
-
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: Center(
+                    child: Text("Sign Up with Google"),
                   ),
                 )
               ],
