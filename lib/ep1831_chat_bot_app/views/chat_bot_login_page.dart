@@ -76,6 +76,7 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16,
+                        color: Colors.white,
                       ),
                     ),
                   ),
