@@ -53,9 +53,40 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                     borderRadius: BorderRadius.circular(32),
                   ),
                   child: Center(
-                    child: Text("Sign Up with Google"),
+                    child: Text(
+                      "Sign Up with Google",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
                   ),
-                )
+                ),
+                Gap(16),
+                Container(
+                  height: 62,
+                  margin: EdgeInsets.symmetric(horizontal: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Sign Up with Apple",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+                Gap(24),
+                Text(
+                  "Already have an account? Log in",
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                ),
               ],
             ),
           ),
