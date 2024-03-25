@@ -19,17 +19,20 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
           ),
           Expanded(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   "Smart Conversations",
                   style: TextStyle(
                     color: Colors.white,
+                    fontSize: 24,
                   ),
                 ),
                 Text(
                   "Smarter Connections",
                   style: TextStyle(
                     color: Colors.white,
+                    fontSize: 24,
                   ),
                 ),
                 Text(
@@ -37,6 +40,7 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                   style: TextStyle(
                     color: Colors.white,
                   ),
+                  textAlign: TextAlign.center,
                 )
               ],
             ),
