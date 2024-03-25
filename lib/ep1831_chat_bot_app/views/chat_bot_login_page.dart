@@ -10,6 +10,23 @@ class ChatBotLoginPage extends StatefulWidget {
 class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                Text("Smart Conversations"),
+                Text("Smarter Connections"),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
