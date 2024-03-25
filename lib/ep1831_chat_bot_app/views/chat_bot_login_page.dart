@@ -46,10 +46,12 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                 ),
                 Gap(42),
                 Container(
-                  height: 42,
+                  height: 62,
+                  margin: EdgeInsets.symmetric(horizontal: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    
+                    borderRadius: BorderRadius.circular(32)
+
                   ),
                 )
               ],
