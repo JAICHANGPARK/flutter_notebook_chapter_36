@@ -1,6 +1,15 @@
 # flutter_notebook_chapter_36
 
-## EP1827
+
+## EP1831
+
+- Lyst Mobile App - UI/UX Exploration
+- by Vlad Tyzun for Radiant Studio
+- https://dribbble.com/shots/23776379-Lyst-Mobile-App-UI-UX-Exploration
+
+<img src="https://cdn.dribbble.com/userupload/13437875/file/original-a9ffca933a5c922bb6468bbb7de26723.jpg?resize=1905x1429"/>
+
+## EP1827-1830
 
 - Lyst Mobile App - UI/UX Exploration
 - by Vlad Tyzun for Radiant Studio
