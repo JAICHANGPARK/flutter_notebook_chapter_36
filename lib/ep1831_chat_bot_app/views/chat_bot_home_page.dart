@@ -17,24 +17,32 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
           children: [
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: Row(
+              child: Column(
                 children: [
-                  CircleAvatar(
-                    child: Icon(
-                      Icons.menu,
-                    ),
-                  ),
-                  Expanded(
-                      child: Column(
+                  Row(
                     children: [
-                      Text("Wednesday."),
-                      Text("13 March 2024"),
+                      CircleAvatar(
+                        child: Icon(
+                          Icons.menu,
+                        ),
+                      ),
+                      Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Wednesday."),
+                          Text("13 March 2024"),
+                        ],
+                      )),
+                      CircleAvatar(),
                     ],
-                  )),
-                  CircleAvatar(),
+                  ),
+                  Text("Good Morning Dream"),
+                  Text("How can I help you?")
                 ],
               ),
-            )
+            ),
+
           ],
         ),
       ),
