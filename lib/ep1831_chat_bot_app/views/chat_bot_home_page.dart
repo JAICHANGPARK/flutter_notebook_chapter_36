@@ -47,6 +47,16 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     "How can I help you?",
                     style: TextStyle(
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 62,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(32),
                     ),
                   )
                 ],
