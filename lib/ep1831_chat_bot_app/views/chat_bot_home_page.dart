@@ -28,7 +28,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ),
                       Expanded(
                           child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("Wednesday."),
                           Text("13 March 2024"),
@@ -37,12 +37,21 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       CircleAvatar(),
                     ],
                   ),
-                  Text("Good Morning Dream"),
-                  Text("How can I help you?")
+                  Text(
+                    "Good Morning Dream",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    "How can I help you?",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  )
                 ],
               ),
             ),
-
           ],
         ),
       ),
