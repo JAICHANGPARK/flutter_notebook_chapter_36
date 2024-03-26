@@ -100,14 +100,50 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ],
                   ),
                   SizedBox(
+                    height: 140,
                     child: Row(
                       children: [
-                        Expanded(child: Container()),
-                        Expanded(child: Container()),
-                        Expanded(child: Container()),
-
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                        )),
+                        Gap(12),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                        )),
+                        Gap(12),
+                        Expanded(
+                            child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                        )),
                       ],
                     ),
+                  ),
+                  Row(
+                    children: [
+                      Text("Categories"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      ),
+                    ],
+                  ),
+                  Wrap(
+                    children: [
+                      Chip(
+                        label: Text("Artificial Intelligence"),
+                      ),
+                      Chip(
+                        label: Text("UI/UX"),
+                      ),
+                    ],
                   )
                 ],
               ),
