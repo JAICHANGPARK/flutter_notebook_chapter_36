@@ -144,7 +144,16 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         label: Text("UI/UX"),
                       ),
                     ],
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Text("Chat History"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
