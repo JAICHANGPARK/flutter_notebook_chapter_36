@@ -59,6 +59,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     "Good Morning Dream",
                     style: TextStyle(
                       color: Colors.white,
+                      fontSize: 28,
                     ),
                   ),
                   Text(
@@ -66,6 +67,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 28,
                     ),
                   ),
                   Container(
