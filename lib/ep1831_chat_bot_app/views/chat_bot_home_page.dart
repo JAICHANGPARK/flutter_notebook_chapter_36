@@ -78,6 +78,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       borderRadius: BorderRadius.circular(32),
                     ),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.star,
@@ -86,6 +87,25 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         Text(
                           "Generate New Prompt",
                         )
+                      ],
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Text("Categories"),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text("See All"),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    child: Row(
+                      children: [
+                        Expanded(child: Container()),
+                        Expanded(child: Container()),
+                        Expanded(child: Container()),
+
                       ],
                     ),
                   )
