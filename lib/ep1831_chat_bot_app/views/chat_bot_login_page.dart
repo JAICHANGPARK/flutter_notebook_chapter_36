@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_36/ep1831_chat_bot_app/views/chat_bot_home_page.dart';
 import 'package:gap/gap.dart';
 
 class ChatBotLoginPage extends StatefulWidget {
@@ -47,11 +48,14 @@ class _ChatBotLoginPageState extends State<ChatBotLoginPage> {
                 ),
                 Gap(62),
                 GestureDetector(
-                  onTap: (){
-                    
+                  onTap: () {
+                    Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(
+                        builder: (context) => ChatBotHomePage(),
+                      ),
+                    );
                   },
                   child: Container(
-
                     height: 62,
                     margin: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
