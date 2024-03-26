@@ -71,11 +71,22 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: EdgeInsets.symmetric(vertical: 24),
                     height: 62,
                     decoration: BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.circular(32),
+                    ),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.star,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          "Generate New Prompt",
+                        )
+                      ],
                     ),
                   )
                 ],
