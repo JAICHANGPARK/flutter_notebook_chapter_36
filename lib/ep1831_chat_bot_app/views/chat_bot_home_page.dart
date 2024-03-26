@@ -137,7 +137,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Categories",
+                        "Trending Keywords",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
