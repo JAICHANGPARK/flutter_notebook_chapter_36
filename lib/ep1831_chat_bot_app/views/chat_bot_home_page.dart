@@ -91,8 +91,15 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ),
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Categories"),
+                      Text(
+                        "Categories",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: Text("See All"),
