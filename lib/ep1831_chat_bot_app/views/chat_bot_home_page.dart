@@ -95,6 +95,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ],
                     ),
                   ),
+
+                ],
+              ),
+            ),
+            Expanded(child: SingleChildScrollView(
+              child: Column(
+                children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -281,22 +288,24 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ),
                     ],
                   ),
+                  Gap(12),
+                  Container(
+                    height: 160,
+                    child: ListView.builder(
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 200,
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                        );
+                      },
+                    ),
+                  )
                 ],
               ),
-            ),
-            Container(
-              height: 160,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 200,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(.2),
-                    ),
-                  );
-                },
-              ),
-            )
+            )),
+
           ],
         ),
       ),
