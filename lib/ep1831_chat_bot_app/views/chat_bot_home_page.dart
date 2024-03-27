@@ -151,18 +151,72 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         ),
                         Gap(12),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.2),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 24,
+                                ),
+                                Gap(8),
+                                Text(
+                                  "Education",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Gap(4),
+                                Text(
+                                  "80 prompts",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        )),
+                        ),
                         Gap(12),
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.2),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 24,
+                                ),
+                                Gap(8),
+                                Text(
+                                  "Marketing",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Gap(4),
+                                Text(
+                                  "16 prompts",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                        )),
+                        ),
                       ],
                     ),
                   ),
