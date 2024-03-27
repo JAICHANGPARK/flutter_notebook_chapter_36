@@ -220,6 +220,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ],
                     ),
                   ),
+                  Gap(24),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -227,7 +228,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         "Trending Keywords",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                       TextButton(
