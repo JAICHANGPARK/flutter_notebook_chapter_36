@@ -124,9 +124,19 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                                   radius: 24,
                                 ),
                                 Gap(8),
-                                Text("Technology"),
-                                Gap(8),
-                                Text("122 prompts"),
+                                Text(
+                                  "Technology",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Gap(4),
+                                Text(
+                                  "122 prompts",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
