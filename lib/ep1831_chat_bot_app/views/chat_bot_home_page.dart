@@ -264,7 +264,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ),
                     ],
                   ),
-                  Gap(12),
+                  Gap(24),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
