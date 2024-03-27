@@ -238,6 +238,8 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ],
                   ),
                   Wrap(
+                    spacing: 8,
+                    runSpacing: 8,
                     children: [
                       Chip(
                         label: Text("Artificial Intelligence"),
@@ -245,8 +247,24 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       Chip(
                         label: Text("UI/UX"),
                       ),
+                      Chip(
+                        label: Text("Crypto"),
+                      ),
+                      Chip(
+                        label: Text("Manchester"),
+                      ),
+                      Chip(
+                        label: Text("Trading"),
+                      ),
+                      Chip(
+                        label: Text("Y2K"),
+                      ),
+                      Chip(
+                        label: Text("Flutter"),
+                      ),
                     ],
                   ),
+                  Gap(12),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -254,7 +272,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         "Chat History",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 20,
                         ),
                       ),
                       TextButton(
