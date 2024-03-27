@@ -128,13 +128,15 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                                   "Technology",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
+                                    color: Colors.white,
                                   ),
                                 ),
                                 Gap(4),
                                 Text(
                                   "122 prompts",
                                   style: TextStyle(
-                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 12,
                                   ),
                                 ),
                               ],
