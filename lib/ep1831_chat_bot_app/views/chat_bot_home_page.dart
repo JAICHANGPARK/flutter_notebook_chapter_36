@@ -95,11 +95,11 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ],
                     ),
                   ),
-
                 ],
               ),
             ),
-            Expanded(child: SingleChildScrollView(
+            Expanded(
+                child: SingleChildScrollView(
               child: Column(
                 children: [
                   Row(
@@ -297,6 +297,17 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                           width: 200,
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Row(
+                            children: [
+                              CircleAvatar(),
+                              Expanded(
+                                child: Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                                ),
+                              )
+                            ],
                           ),
                         );
                       },
@@ -305,7 +316,6 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                 ],
               ),
             )),
-
           ],
         ),
       ),
