@@ -84,8 +84,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                           Icons.star,
                           color: Colors.white,
                         ),
+                        Gap(12),
                         Text(
                           "Generate New Prompt",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         )
                       ],
                     ),
@@ -97,7 +102,8 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         "Categories",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       TextButton(
