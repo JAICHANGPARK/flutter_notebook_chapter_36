@@ -284,6 +284,19 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                 ],
               ),
             ),
+            Container(
+              height: 160,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.2),
+                    ),
+                  );
+                },
+              ),
+            )
           ],
         ),
       ),
