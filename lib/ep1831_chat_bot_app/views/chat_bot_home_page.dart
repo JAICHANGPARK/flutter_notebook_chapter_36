@@ -111,11 +111,26 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     child: Row(
                       children: [
                         Expanded(
-                            child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.2),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 24,
+                                ),
+                                Gap(8),
+                                Text("Technology"),
+                                Gap(8),
+                                Text("122 prompts"),
+                              ],
+                            ),
                           ),
-                        )),
+                        ),
                         Gap(12),
                         Expanded(
                             child: Container(
