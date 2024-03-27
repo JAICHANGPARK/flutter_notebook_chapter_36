@@ -299,9 +299,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(8),
                           ),
+                          padding: EdgeInsets.all(16),
+                          margin: EdgeInsets.only(right: 12),
                           child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               CircleAvatar(),
+                              Gap(12),
                               Expanded(
                                 child: Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
