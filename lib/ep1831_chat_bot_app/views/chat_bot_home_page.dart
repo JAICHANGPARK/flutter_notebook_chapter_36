@@ -311,7 +311,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
-                          width: 200,
+                          width: 260,
                           decoration: BoxDecoration(
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(8),
