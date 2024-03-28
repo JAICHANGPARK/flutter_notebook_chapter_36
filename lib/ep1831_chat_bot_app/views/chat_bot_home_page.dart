@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:flutter_notebook_chapter_36/ep1831_chat_bot_app/views/chat_bot_chat_page.dart';
 import 'package:gap/gap.dart';
 
 class ChatBotHomePage extends StatefulWidget {
@@ -23,7 +25,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
+                  const Row(
                     children: [
                       CircleAvatar(
                         child: Icon(
@@ -55,15 +57,15 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       CircleAvatar(),
                     ],
                   ),
-                  Gap(24),
-                  Text(
+                  const Gap(24),
+                  const Text(
                     "Good Morning Dream",
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 28,
                     ),
                   ),
-                  Text(
+                  const Text(
                     "How can I help you?",
                     style: TextStyle(
                       color: Colors.white,
@@ -71,29 +73,38 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       fontSize: 28,
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.symmetric(vertical: 24),
-                    height: 62,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      borderRadius: BorderRadius.circular(32),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.star,
-                          color: Colors.white,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ChatBotChatPage(),
                         ),
-                        Gap(12),
-                        Text(
-                          "Generate New Prompt",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
+                      );
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.symmetric(vertical: 24),
+                      height: 62,
+                      decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(32),
+                      ),
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.star,
                             color: Colors.white,
                           ),
-                        )
-                      ],
+                          Gap(12),
+                          Text(
+                            "Generate New Prompt",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 ],
@@ -109,7 +120,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Categories",
                           style: TextStyle(
                             color: Colors.white,
@@ -119,7 +130,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See All"),
+                          child: const Text("See All"),
                         ),
                       ],
                     ),
@@ -135,7 +146,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(
@@ -162,14 +173,14 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                             ),
                           ),
                         ),
-                        Gap(12),
+                        const Gap(12),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(
@@ -196,14 +207,14 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                             ),
                           ),
                         ),
-                        Gap(12),
+                        const Gap(12),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 CircleAvatar(
@@ -233,13 +244,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ],
                     ),
                   ),
-                  Gap(24),
+                  const Gap(24),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Trending Keywords",
                           style: TextStyle(
                             color: Colors.white,
@@ -248,13 +259,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See All"),
+                          child: const Text("See All"),
                         ),
                       ],
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Wrap(
                       spacing: 8,
                       runSpacing: 8,
@@ -283,13 +294,13 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                       ],
                     ),
                   ),
-                  Gap(24),
+                  const Gap(24),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           "Chat History",
                           style: TextStyle(
                             color: Colors.white,
@@ -298,15 +309,15 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: Text("See All"),
+                          child: const Text("See All"),
                         ),
                       ],
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Container(
                     height: 160,
-                    margin: EdgeInsets.only(left: 16),
+                    margin: const EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -316,8 +327,8 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                             color: Colors.white.withOpacity(.2),
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          padding: EdgeInsets.all(16),
-                          margin: EdgeInsets.only(right: 12),
+                          padding: const EdgeInsets.all(16),
+                          margin: const EdgeInsets.only(right: 12),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -325,8 +336,8 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                                 radius: 18,
                                 backgroundColor: Colors.white.withOpacity(.3),
                               ),
-                              Gap(12),
-                              Expanded(
+                              const Gap(12),
+                              const Expanded(
                                 child: Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                                   style: TextStyle(
