@@ -292,6 +292,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                   Container(
                     height: 160,
                     child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 200,
