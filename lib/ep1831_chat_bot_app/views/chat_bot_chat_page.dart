@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class ChatBotChatPage extends StatefulWidget {
   const ChatBotChatPage({super.key});
@@ -24,20 +25,29 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   ),
                   Expanded(
                     child: Center(
-                      child: Text("The Best Foot...",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                        color: Colors.white,
-                      ),),
+                      child: Text(
+                        "The Best Foot...",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                   CircleAvatar(
                     radius: 26,
-
                   ),
                 ],
               ),
+              Expanded(child: Placeholder()),
+              Row(
+                children: [
+                  Expanded(child: Container()),
+                  Gap(12),
+                  CircleAvatar(),
+                ],
+              )
             ],
           ),
         ),
