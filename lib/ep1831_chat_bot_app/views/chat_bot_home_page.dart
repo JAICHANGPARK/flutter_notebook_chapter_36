@@ -124,7 +124,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ),
                   ),
                   Container(
-                    margin:    const EdgeInsets.symmetric(horizontal: 12),
+                    margin: const EdgeInsets.symmetric(horizontal: 12),
                     height: 140,
                     child: Row(
                       children: [
