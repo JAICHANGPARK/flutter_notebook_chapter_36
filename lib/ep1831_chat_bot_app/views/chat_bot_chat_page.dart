@@ -40,12 +40,21 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   ),
                 ],
               ),
+              Gap(16),
               Expanded(child: Placeholder()),
+              Gap(16),
               Row(
                 children: [
-                  Expanded(child: Container()),
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(.1),
+                    ),
+                  )),
                   Gap(12),
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
                 ],
               )
             ],
