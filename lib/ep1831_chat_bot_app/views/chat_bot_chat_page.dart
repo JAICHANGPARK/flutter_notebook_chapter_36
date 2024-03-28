@@ -27,8 +27,8 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                       child: Text("The Best Foot...",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                        color: Colors.white
+                        fontSize: 20,
+                        color: Colors.white,
                       ),),
                     ),
                   ),
