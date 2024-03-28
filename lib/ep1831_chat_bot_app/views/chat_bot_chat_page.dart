@@ -66,6 +66,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
+                                Gap(8),
                                 Text(
                                   "09:00 AM",
                                   style: TextStyle(
