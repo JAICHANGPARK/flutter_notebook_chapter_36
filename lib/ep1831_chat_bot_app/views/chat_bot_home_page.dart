@@ -321,7 +321,10 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              CircleAvatar(),
+                              CircleAvatar(
+                                radius: 18,
+                                backgroundColor: Colors.white.withOpacity(.3),
+                              ),
                               Gap(12),
                               Expanded(
                                 child: Text(
