@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -102,24 +103,28 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                 child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Categories",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Categories",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See All"),
-                      ),
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                        ),
+                      ],
+                    ),
                   ),
-                  SizedBox(
+                  Container(
+                    margin:    const EdgeInsets.symmetric(horizontal: 12),
                     height: 140,
                     child: Row(
                       children: [
