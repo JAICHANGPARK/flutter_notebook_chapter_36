@@ -11,21 +11,30 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Center(
-                    child: Text("The Best Foot..."),
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 26,
                   ),
-                ),
-                CircleAvatar(),
-              ],
-            )
-          ],
+                  Expanded(
+                    child: Center(
+                      child: Text("The Best Foot..."),
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 26,
+                    
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );
