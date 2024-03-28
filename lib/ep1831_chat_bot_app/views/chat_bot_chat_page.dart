@@ -45,39 +45,41 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CircleAvatar(
-
-                        ),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Container(
-                                padding: EdgeInsets.all(16),
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(.1),
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          CircleAvatar(),
+                          Gap(12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Container(
+                                  padding: EdgeInsets.all(16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(.1),
+                                  ),
+                                  child: Text(
+                                    "Hello Hello Hello Hello Hello Hello Hello ",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                 ),
-                                child: Text(
-                                  "Hello Hello Hello Hello Hello Hello Hello ",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ),
-                              Text(
-                                "09:00 AM",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
-                              )
-                            ],
+                                Text(
+                                  "09:00 AM",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 64,
-                        )
-                      ],
+                          SizedBox(
+                            width: 64,
+                          )
+                        ],
+                      ),
                     );
                   },
                 ),
