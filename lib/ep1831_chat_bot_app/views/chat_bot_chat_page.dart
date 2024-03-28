@@ -24,12 +24,17 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   ),
                   Expanded(
                     child: Center(
-                      child: Text("The Best Foot..."),
+                      child: Text("The Best Foot...",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        color: Colors.white
+                      ),),
                     ),
                   ),
                   CircleAvatar(
                     radius: 26,
-                    
+
                   ),
                 ],
               ),
