@@ -284,25 +284,29 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ),
                   ),
                   Gap(24),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Chat History",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Chat History",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See All"),
-                      ),
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                        ),
+                      ],
+                    ),
                   ),
                   Gap(12),
                   Container(
                     height: 160,
+                    margin: EdgeInsets.only(left: 16),
                     child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
@@ -322,6 +326,9 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                               Expanded(
                                 child: Text(
                                   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
                                 ),
                               )
                             ],
