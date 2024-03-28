@@ -102,6 +102,7 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
             Expanded(
                 child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -233,48 +234,54 @@ class _ChatBotHomePageState extends State<ChatBotHomePage> {
                     ),
                   ),
                   Gap(24),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Trending Keywords",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Trending Keywords",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      TextButton(
-                        onPressed: () {},
-                        child: Text("See All"),
-                      ),
-                    ],
+                        TextButton(
+                          onPressed: () {},
+                          child: Text("See All"),
+                        ),
+                      ],
+                    ),
                   ),
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 8,
-                    children: [
-                      Chip(
-                        label: Text("Artificial Intelligence"),
-                      ),
-                      Chip(
-                        label: Text("UI/UX"),
-                      ),
-                      Chip(
-                        label: Text("Crypto"),
-                      ),
-                      Chip(
-                        label: Text("Manchester"),
-                      ),
-                      Chip(
-                        label: Text("Trading"),
-                      ),
-                      Chip(
-                        label: Text("Y2K"),
-                      ),
-                      Chip(
-                        label: Text("Flutter"),
-                      ),
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: [
+                        Chip(
+                          label: Text("Artificial Intelligence"),
+                        ),
+                        Chip(
+                          label: Text("UI/UX"),
+                        ),
+                        Chip(
+                          label: Text("Crypto"),
+                        ),
+                        Chip(
+                          label: Text("Manchester"),
+                        ),
+                        Chip(
+                          label: Text("Trading"),
+                        ),
+                        Chip(
+                          label: Text("Y2K"),
+                        ),
+                        Chip(
+                          label: Text("Flutter"),
+                        ),
+                      ],
+                    ),
                   ),
                   Gap(24),
                   Row(
