@@ -46,17 +46,24 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                 child: ListView.builder(
                   itemBuilder: (context, index) {
                     return Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+
+                        ),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Container(
-                                child: Text("Hello Hello Hello Hello Hello Hello Hello ",
-                                style: TextStyle(
-                                  color: Colors.white
-                                ),),
+                                padding: EdgeInsets.all(16),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withOpacity(.1),
+                                ),
+                                child: Text(
+                                  "Hello Hello Hello Hello Hello Hello Hello ",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                               Text(
                                 "09:00 AM",
