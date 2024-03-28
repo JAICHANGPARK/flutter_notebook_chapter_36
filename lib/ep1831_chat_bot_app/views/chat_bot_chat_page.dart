@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -41,16 +42,50 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                 ],
               ),
               Gap(16),
-              Expanded(child: Placeholder()),
+              Expanded(
+                child: ListView.builder(
+                  itemBuilder: (context, index) {
+                    return Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Container(
+                                child: Text("Hello Hello Hello Hello Hello Hello Hello ",
+                                style: TextStyle(
+                                  color: Colors.white
+                                ),),
+                              ),
+                              Text(
+                                "09:00 AM",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 64,
+                        )
+                      ],
+                    );
+                  },
+                ),
+              ),
               Gap(16),
               Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(.1),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(.1),
+                      ),
+                      child: TextField(),
                     ),
-                  )),
+                  ),
                   Gap(12),
                   CircleAvatar(
                     radius: 24,
