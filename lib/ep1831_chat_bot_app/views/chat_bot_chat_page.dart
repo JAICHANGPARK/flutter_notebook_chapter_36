@@ -76,8 +76,8 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                           CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.white.withOpacity(.2),
-                            child: Icon(Icons.flutter_dash),
                             foregroundColor: Colors.white,
+                            child: Icon(Icons.flutter_dash),
                           ),
                           const Gap(12),
                           Expanded(
