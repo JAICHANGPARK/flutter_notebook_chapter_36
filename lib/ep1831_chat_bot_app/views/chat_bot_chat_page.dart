@@ -100,8 +100,15 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(.1),
+                        borderRadius: BorderRadius.circular(24),
                       ),
-                      child: TextField(),
+                      padding: EdgeInsets.symmetric(horizontal: 24),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.add),
+                          hintText: "Enter your prompt",
+                        ),
+                      ),
                     ),
                   ),
                   Gap(12),
