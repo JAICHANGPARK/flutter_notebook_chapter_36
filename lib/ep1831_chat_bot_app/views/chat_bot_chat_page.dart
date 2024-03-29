@@ -89,9 +89,10 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                                     padding: const EdgeInsets.all(16),
                                     decoration: BoxDecoration(
                                       color: Colors.white.withOpacity(.1),
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
-                                    child: const Text(
-                                      "Hello Hello Hello Hello Hello Hello Hello ",
+                                    child: Text(
+                                      "${chat.text}",
                                       style: TextStyle(color: Colors.white),
                                     ),
                                   ),
@@ -126,10 +127,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                               children: [
                                 Container(
                                   padding: const EdgeInsets.all(16),
-                                  decoration: BoxDecoration(
-                                    color: Colors.red,
-                                    borderRadius: BorderRadius.circular(8)
-                                  ),
+                                  decoration: BoxDecoration(color: Colors.red, borderRadius: BorderRadius.circular(8)),
                                   child: Text(
                                     "${chat.text}",
                                     style: TextStyle(color: Colors.white),
