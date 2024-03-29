@@ -113,6 +113,9 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                           ),
                           border: InputBorder.none,
                         ),
+                        style: TextStyle(
+                          color: Colors.grey,
+                        ),
                       ),
                     ),
                   ),
