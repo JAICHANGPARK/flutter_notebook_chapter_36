@@ -49,7 +49,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   ),
                 ],
               ),
-              Gap(16),
+              Gap(24),
               Expanded(
                 child: ListView.builder(
                   itemBuilder: (context, index) {
