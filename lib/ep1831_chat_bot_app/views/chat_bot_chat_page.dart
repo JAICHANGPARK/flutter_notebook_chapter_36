@@ -23,6 +23,10 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                 children: [
                   CircleAvatar(
                     radius: 26,
+                    backgroundColor: Colors.white,
+                    child: Icon(
+                      Icons.arrow_back,
+                    ),
                   ),
                   Expanded(
                     child: Center(
