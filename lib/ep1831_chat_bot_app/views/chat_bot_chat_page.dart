@@ -24,8 +24,13 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   CircleAvatar(
                     radius: 26,
                     backgroundColor: Colors.white,
-                    child: Icon(
-                      Icons.arrow_back,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.arrow_back,
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).pop();
+                      },
                     ),
                   ),
                   Expanded(
