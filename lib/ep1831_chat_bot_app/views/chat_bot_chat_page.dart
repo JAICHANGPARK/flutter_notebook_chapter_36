@@ -68,18 +68,58 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   itemCount: chats.length,
                   itemBuilder: (context, index) {
                     final chat = chats[index];
+                    if(chat.chatType == ChatType.system){
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 16),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            CircleAvatar(
+                              radius: 20,
+                              backgroundColor: Colors.white.withOpacity(.2),
+                              foregroundColor: Colors.white,
+                              child: Icon(Icons.flutter_dash),
+                            ),
+                            const Gap(12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.all(16),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(.1),
+                                    ),
+                                    child: const Text(
+                                      "Hello Hello Hello Hello Hello Hello Hello ",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  const Gap(8),
+                                  const Text(
+                                    "09:00 AM",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 64,
+                            )
+                          ],
+                        ),
+                      );
+                    }
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 16),
                       child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
-                          CircleAvatar(
-                            radius: 20,
-                            backgroundColor: Colors.white.withOpacity(.2),
-                            foregroundColor: Colors.white,
-                            child: Icon(Icons.flutter_dash),
+                          const SizedBox(
+                            width: 64,
                           ),
-                          const Gap(12),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
@@ -104,12 +144,11 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                               ],
                             ),
                           ),
-                          const SizedBox(
-                            width: 64,
-                          )
+
                         ],
                       ),
                     );
+
                   },
                 ),
               ),
