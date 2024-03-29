@@ -1,8 +1,11 @@
-
-enum ChatType{
+enum ChatType {
   user,
   system,
 }
 
-class ChatModel{
+class ChatModel {
+  ChatType? chatType;
+  String? text;
+
+  ChatModel({this.chatType, this.text});
 }
