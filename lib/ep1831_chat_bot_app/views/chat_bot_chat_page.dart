@@ -107,6 +107,10 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                         decoration: InputDecoration(
                           icon: Icon(Icons.add),
                           hintText: "Enter your prompt",
+                          hintStyle: TextStyle(
+                            color: Colors.white,
+                          ),
+                          border: InputBorder.none,
                         ),
                       ),
                     ),
