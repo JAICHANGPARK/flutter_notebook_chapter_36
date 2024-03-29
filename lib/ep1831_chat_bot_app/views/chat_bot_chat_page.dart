@@ -196,6 +196,17 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                             ),
                           );
                         });
+                        Future.delayed(Duration(seconds: 1),(){
+                          setState(() {
+                            chats.add(
+                              ChatModel(
+                                chatType: ChatType.system,
+                                text: "Sorry ",
+                              ),
+                            );
+                          });
+
+                        });
 
                       },
                     ),
