@@ -83,7 +83,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                             const Gap(12),
                             Expanded(
                               child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
                                     padding: const EdgeInsets.all(16),
@@ -182,7 +182,17 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                     foregroundColor: Colors.white,
                     child: IconButton(
                       icon: const Icon(Icons.send),
-                      onPressed: () {},
+                      onPressed: () {
+                        setState(() {
+                          chats.add(
+                            ChatModel(
+                              chatType: ChatType.user,
+                              text: "Can you name the best football",
+                            ),
+                          );
+                        });
+
+                      },
                     ),
                   ),
                 ],
