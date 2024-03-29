@@ -122,6 +122,12 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   Gap(12),
                   CircleAvatar(
                     radius: 24,
+                    backgroundColor: Colors.white.withOpacity(.2),
+                    foregroundColor: Colors.white,
+                    child: IconButton(
+                      icon: Icon(Icons.send),
+                      onPressed: () {},
+                    ),
                   ),
                 ],
               )
