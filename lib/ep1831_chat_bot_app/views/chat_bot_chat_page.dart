@@ -68,7 +68,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                   itemCount: chats.length,
                   itemBuilder: (context, index) {
                     final chat = chats[index];
-                    if(chat.chatType == ChatType.system){
+                    if (chat.chatType == ChatType.system) {
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 16),
                         child: Row(
@@ -127,10 +127,11 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                                 Container(
                                   padding: const EdgeInsets.all(16),
                                   decoration: BoxDecoration(
-                                    color: Colors.white.withOpacity(.1),
+                                    color: Colors.red,
+                                    borderRadius: BorderRadius.circular(8)
                                   ),
-                                  child: const Text(
-                                    "Hello Hello Hello Hello Hello Hello Hello ",
+                                  child: Text(
+                                    "${chat.text}",
                                     style: TextStyle(color: Colors.white),
                                   ),
                                 ),
@@ -144,11 +145,9 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                               ],
                             ),
                           ),
-
                         ],
                       ),
                     );
-
                   },
                 ),
               ),
