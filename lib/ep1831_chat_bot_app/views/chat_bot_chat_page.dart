@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_notebook_chapter_36/ep1831_chat_bot_app/model/chat_bot_model.dart';
 import 'package:gap/gap.dart';
 
@@ -86,6 +87,7 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
+                                    width: double.infinity,
                                     padding: const EdgeInsets.all(16),
                                     decoration: BoxDecoration(
                                       color: Colors.white.withOpacity(.1),
@@ -97,10 +99,13 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                                     ),
                                   ),
                                   const Gap(8),
-                                  const Text(
-                                    "09:00 AM",
-                                    style: TextStyle(
-                                      color: Colors.grey,
+                                  Align(
+                                    alignment: Alignment.centerRight,
+                                    child: const Text(
+                                      "09:00 AM",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                      ),
                                     ),
                                   )
                                 ],
