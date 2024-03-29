@@ -106,10 +106,10 @@ class _ChatBotChatPageState extends State<ChatBotChatPage> {
                       child: TextField(
                         decoration: InputDecoration(
                           icon: Icon(Icons.add),
-                          iconColor: Colors.white,
+                          iconColor: Colors.grey,
                           hintText: "Enter your prompt",
                           hintStyle: TextStyle(
-                            color: Colors.white,
+                            color: Colors.grey,
                           ),
                           border: InputBorder.none,
                         ),
