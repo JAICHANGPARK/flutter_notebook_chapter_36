@@ -33,6 +33,14 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                 Text(
                   "Enjoy the comforts of affordable rental, booking with our app",
                 ),
+                Spacer(),
+                Container(
+                  height: 62,
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurpleAccent,
+                  ),
+                  
+                )
               ],
             ),
           )
