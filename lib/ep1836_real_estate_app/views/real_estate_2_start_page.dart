@@ -37,7 +37,8 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
-                    color: Colors.deepPurpleAccent,
+                    color: Color(0xff775cff),
+                    borderRadius: BorderRadius.circular(32),
                   ),
                   child: Center(
                     child: Text(
