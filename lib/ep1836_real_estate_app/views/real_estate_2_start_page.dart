@@ -39,7 +39,16 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                   decoration: BoxDecoration(
                     color: Colors.deepPurpleAccent,
                   ),
-                  
+                  child: Center(
+                    child: Text(
+                      "Get Started",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
                 )
               ],
             ),
