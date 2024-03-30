@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class RealEstate2StartPage extends StatefulWidget {
   const RealEstate2StartPage({super.key});
@@ -23,15 +24,28 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
           Positioned(
             left: 24,
             right: 24,
-            top: 64,
+            top: 120,
             bottom: 32,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "Discover your dream Homestay",
+                  "Discover your\ndream Homestay",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 32,
+                    color: Colors.white,
+                  ),
+                  textAlign: TextAlign.center,
                 ),
+                Gap(16),
                 Text(
                   "Enjoy the comforts of affordable rental, booking with our app",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+
+                    color: Colors.white,
+                  ),
                 ),
                 Spacer(),
                 Container(
