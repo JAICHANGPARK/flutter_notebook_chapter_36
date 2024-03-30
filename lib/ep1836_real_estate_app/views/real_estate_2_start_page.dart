@@ -40,12 +40,15 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                 ),
                 Gap(16),
                 Text(
-                  "Enjoy the comforts of affordable rental, booking with our app",
+                  "Enjoy the comforts of affordable\nrental, booking with our app",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-
+                    height: 2,
+                    letterSpacing: 1.5,
+                    wordSpacing: 1.5,
                     color: Colors.white,
                   ),
+                  textAlign: TextAlign.center,
                 ),
                 Spacer(),
                 Container(
