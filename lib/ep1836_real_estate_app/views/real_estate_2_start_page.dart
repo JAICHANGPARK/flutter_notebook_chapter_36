@@ -26,7 +26,14 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
             top: 64,
             bottom: 32,
             child: Column(
-              children: [],
+              children: [
+                Text(
+                  "Discover your dream Homestay",
+                ),
+                Text(
+                  "Enjoy the comforts of affordable rental, booking with our app",
+                ),
+              ],
             ),
           )
         ],
