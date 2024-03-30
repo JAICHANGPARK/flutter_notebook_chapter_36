@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'views/real_estate_2_start_page.dart';
 
@@ -12,6 +13,9 @@ class RealEstateApp2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: GoogleFonts.montserrat().fontFamily,
+      ),
       home: RealEstate2StartPage(),
     );
   }
