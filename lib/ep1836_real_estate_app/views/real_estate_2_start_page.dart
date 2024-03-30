@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,7 +13,19 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: Stack(
+        children: [
+          Positioned(
+            left: 24,
+            right: 24,
+            top: 64,
+            bottom: 32,
+            child: Column(children: [
+
+            ],),
+          )
+        ],
+      ),
     );
   }
 }
