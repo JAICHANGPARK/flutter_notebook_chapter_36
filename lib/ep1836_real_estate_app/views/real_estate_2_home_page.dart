@@ -25,7 +25,21 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     child: Column(
                       children: [
                         Row(
-                          children: [],
+                          children: [
+                            CircleAvatar(
+                              child: Icon(
+                                Icons.menu,
+                              ),
+                            ),
+                            Expanded(
+                              child: Column(
+                                children: [],
+                              ),
+                            ),
+                            CircleAvatar(
+                              child: Badge(),
+                            ),
+                          ],
                         )
                       ],
                     ),
