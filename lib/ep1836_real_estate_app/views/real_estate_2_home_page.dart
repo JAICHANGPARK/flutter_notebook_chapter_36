@@ -12,7 +12,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
