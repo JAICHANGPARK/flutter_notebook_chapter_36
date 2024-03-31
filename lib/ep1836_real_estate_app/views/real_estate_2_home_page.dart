@@ -54,10 +54,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                           ],
                         ),
                         Container(
-                          decoration: BoxDecoration(
-
+                          decoration: BoxDecoration(),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: "Search for your homestay",
+                            ),
                           ),
-                          child: TextField(),
                         )
                       ],
                     ),
@@ -67,9 +69,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     height: 42,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      children: [
-
-                      ],
+                      children: [],
                     ),
                   ),
                   Gap(16),
