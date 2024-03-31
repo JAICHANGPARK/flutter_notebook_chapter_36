@@ -18,7 +18,7 @@ class RealEstateApp2 extends StatelessWidget {
       theme: ThemeData(
         fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
-      initialRoute: "/start",
+      initialRoute: "/",
       routes: {
         "/": (context) => RealEstate2HomePage(),
         "/start": (context) => RealEstate2StartPage(),
