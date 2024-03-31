@@ -92,32 +92,40 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                   ),
                   Gap(16),
                   Expanded(
-                    child: ListView.builder(
-                      itemBuilder: (context, index) {
-                        return Container();
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            height: 320,
+                            margin: EdgeInsets.only(bottom: 16),
+                            child: Placeholder(),
+                          );
+                        },
+                      ),
                     ),
                   )
                 ],
               ),
             ),
             Positioned(
-                bottom: 24,
-                left: 24,
-                right: 24,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                  ),
-                  child: Row(
-                    children: [
-                      CircleAvatar(),
-                      CircleAvatar(),
-                      CircleAvatar(),
-                      CircleAvatar(),
-                    ],
-                  ),
-                ))
+              bottom: 24,
+              left: 24,
+              right: 24,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                ),
+                child: Row(
+                  children: [
+                    CircleAvatar(),
+                    CircleAvatar(),
+                    CircleAvatar(),
+                    CircleAvatar(),
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),
