@@ -21,7 +21,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
                         Row(
@@ -53,6 +53,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             ),
                           ],
                         ),
+                        Gap(16),
                         Container(
                           decoration: BoxDecoration(),
                           child: TextField(
@@ -86,7 +87,6 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             ],
                           ),
                         ),
-
                       ],
                     ),
                   ),
