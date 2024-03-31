@@ -69,7 +69,25 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     height: 42,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      children: [],
+                      children: [
+                        Container(
+                          child: Row(
+                            children: [
+                              Icon(Icons.local_fire_department_outlined),
+                              Text("Trending"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          child: Row(
+                            children: [
+                              Icon(Icons.home_outlined),
+                              Text("House"),
+                            ],
+                          ),
+                        ),
+
+                      ],
                     ),
                   ),
                   Gap(16),
