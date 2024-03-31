@@ -18,11 +18,11 @@ class RealEstateApp2 extends StatelessWidget {
       theme: ThemeData(
         fontFamily: GoogleFonts.montserrat().fontFamily,
       ),
+      initialRoute: "/start",
       routes: {
-        "/start": (context) => RealEstate2StartPage(),
         "/": (context) => RealEstate2HomePage(),
+        "/start": (context) => RealEstate2StartPage(),
       },
-     
     );
   }
 }
