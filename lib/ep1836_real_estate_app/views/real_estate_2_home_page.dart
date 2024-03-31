@@ -33,11 +33,23 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             ),
                             Expanded(
                               child: Column(
-                                children: [],
+                                children: [
+                                  Text("Current Location"),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.location_on),
+                                      Text("Seoul, Republic of Korea"),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                             CircleAvatar(
-                              child: Badge(),
+                              child: Badge(
+                                child: Icon(
+                                  Icons.notifications_none,
+                                ),
+                              ),
                             ),
                           ],
                         )
