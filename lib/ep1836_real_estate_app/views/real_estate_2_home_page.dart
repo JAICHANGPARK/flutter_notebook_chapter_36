@@ -52,6 +52,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ),
                             ),
                           ],
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+
+                          ),
+                          child: TextField(),
                         )
                       ],
                     ),
@@ -59,6 +65,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                   Gap(16),
                   SizedBox(
                     height: 42,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+
+                      ],
+                    ),
                   ),
                   Gap(16),
                   Expanded(
