@@ -29,7 +29,7 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Discover your\ndream Homestay",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -38,8 +38,8 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Gap(16),
-                Text(
+                const Gap(16),
+                const Text(
                   "Enjoy the comforts of affordable\nrental, booking with our app",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -50,14 +50,14 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                Spacer(),
+                const Spacer(),
                 Container(
                   height: 62,
                   decoration: BoxDecoration(
-                    color: Color(0xff775cff),
+                    color: const Color(0xff775cff),
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Get Started",
                       style: TextStyle(
