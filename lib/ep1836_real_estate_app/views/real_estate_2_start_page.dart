@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class RealEstate2StartPage extends StatefulWidget {
@@ -51,19 +52,24 @@ class _RealEstate2StartPageState extends State<RealEstate2StartPage> {
                   textAlign: TextAlign.center,
                 ),
                 const Spacer(),
-                Container(
-                  height: 62,
-                  decoration: BoxDecoration(
-                    color: const Color(0xff775cff),
-                    borderRadius: BorderRadius.circular(32),
-                  ),
-                  child: const Center(
-                    child: Text(
-                      "Get Started",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                        color: Colors.white,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed("/");
+                  },
+                  child: Container(
+                    height: 62,
+                    decoration: BoxDecoration(
+                      color: const Color(0xff775cff),
+                      borderRadius: BorderRadius.circular(32),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        "Get Started",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
