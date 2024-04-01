@@ -134,7 +134,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
                         foregroundColor: Colors.white,
                         child: Icon(
-                          Icons.home_filled,   size: 32,
+                          Icons.home_filled, size: 30,
                         ),
                       ),
                     ),
@@ -150,7 +150,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         foregroundColor: Colors.white,
                         child: Icon(
                           Icons.list_alt,
-                          size: 32,
+                          size: 30,
                         ),
                       ),
                     ),
@@ -165,7 +165,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         backgroundColor: pageIndex == 2 ? Colors.white : Colors.transparent,
                         foregroundColor: Colors.white,
                         child: Icon(
-                          Icons.favorite_border,   size: 32,
+                          Icons.favorite_border,   size: 30,
                         ),
                       ),
                     ),
