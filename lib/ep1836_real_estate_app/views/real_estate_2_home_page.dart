@@ -113,7 +113,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
               left: 24,
               right: 24,
               child: Container(
-                decoration: BoxDecoration(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
                   color: Colors.black,
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
