@@ -112,8 +112,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
             ),
             Positioned(
               bottom: 24,
-              left: 24,
-              right: 24,
+              left: 32,
+              right: 32,
               child: Container(
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
@@ -150,6 +150,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         foregroundColor: Colors.white,
                         child: Icon(
                           Icons.list_alt,
+                          size: 28,
                         ),
                       ),
                     ),
@@ -170,13 +171,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     ),
                     InkWell(
                       onTap: () {
-                        setState(() {
-                          pageIndex = 3;
-                        });
+
                       },
                       child: CircleAvatar(
-                        radius: 28,
-                        backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
+                        radius: 24,
+                        backgroundColor: Colors.blue,
+                        // backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
                       ),
                     ),
                   ],
