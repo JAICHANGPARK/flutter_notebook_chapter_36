@@ -132,6 +132,10 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
+                        child: Icon(
+                          Icons.home_filled,
+                        ),
+                        foregroundColor: Colors.white,
                       ),
                     ),
                     InkWell(
@@ -152,7 +156,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         });
                       },
                       child: CircleAvatar(
-                        radius: 28,backgroundColor: pageIndex ==2 ? Colors.white : Colors.transparent,
+                        radius: 28,
+                        backgroundColor: pageIndex == 2 ? Colors.white : Colors.transparent,
                       ),
                     ),
                     InkWell(
@@ -162,7 +167,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         });
                       },
                       child: CircleAvatar(
-                        radius: 28,backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
+                        radius: 28,
+                        backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
                       ),
                     ),
                   ],
