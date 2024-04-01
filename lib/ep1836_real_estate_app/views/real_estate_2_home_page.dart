@@ -39,7 +39,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Text("Current Location"),
+                                  Text(
+                                    "Current Location",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
@@ -51,6 +56,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                         "Seoul, Republic of Korea",
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          color: Colors.white,
                                         ),
                                       ),
                                     ],
