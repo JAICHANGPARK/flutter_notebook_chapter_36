@@ -32,15 +32,27 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               child: Icon(
                                 Icons.menu,
                               ),
+                              backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
                             ),
                             Expanded(
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Text("Current Location"),
                                   Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Icon(Icons.location_on),
-                                      Text("Seoul, Republic of Korea"),
+                                      Icon(
+                                        Icons.location_on,
+                                        size: 20,
+                                      ),
+                                      Text(
+                                        "Seoul, Republic of Korea",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ],
@@ -134,7 +146,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
                         foregroundColor: Colors.white,
                         child: Icon(
-                          Icons.home_filled, size: 30,
+                          Icons.home_filled,
+                          size: 30,
                         ),
                       ),
                     ),
@@ -165,14 +178,13 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         backgroundColor: pageIndex == 2 ? Colors.white : Colors.transparent,
                         foregroundColor: Colors.white,
                         child: Icon(
-                          Icons.favorite_border,   size: 30,
+                          Icons.favorite_border,
+                          size: 30,
                         ),
                       ),
                     ),
                     InkWell(
-                      onTap: () {
-
-                      },
+                      onTap: () {},
                       child: CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.blue,
