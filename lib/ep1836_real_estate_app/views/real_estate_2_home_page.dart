@@ -101,7 +101,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                   ),
                   Gap(8),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
                       height: 42,
                       child: ListView(
