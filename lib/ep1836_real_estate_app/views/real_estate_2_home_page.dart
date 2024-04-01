@@ -65,6 +65,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ),
                             ),
                             CircleAvatar(
+                              backgroundColor: Colors.white,
                               child: Badge(
                                 child: Icon(
                                   Icons.notifications_none,
@@ -75,10 +76,15 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         ),
                         Gap(16),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: ShapeDecoration(
+                            shape: StadiumBorder(),
+                            color: Colors.white.withOpacity(.2),
+                          ),
+                          padding: EdgeInsets.symmetric(horizontal: 16),
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: "Search for your homestay",
+                              border: InputBorder.none,
                             ),
                           ),
                         )
