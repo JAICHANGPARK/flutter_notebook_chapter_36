@@ -132,10 +132,10 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
+                        foregroundColor: Colors.white,
                         child: Icon(
                           Icons.home_filled,
                         ),
-                        foregroundColor: Colors.white,
                       ),
                     ),
                     InkWell(
