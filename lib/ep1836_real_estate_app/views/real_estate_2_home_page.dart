@@ -217,8 +217,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: ListView.builder(
                         itemBuilder: (context, index) {
                           return Container(
-                            height: 320,
-                            margin: EdgeInsets.only(bottom: 16),
+                            height: 400,
+                            margin: EdgeInsets.only(bottom: 24),
                             decoration: BoxDecoration(
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(16)
