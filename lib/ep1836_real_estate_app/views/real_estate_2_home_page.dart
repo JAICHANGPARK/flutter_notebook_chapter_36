@@ -116,12 +116,22 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                 decoration: BoxDecoration(
                   color: Colors.black,
                 ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CircleAvatar(),
-                    CircleAvatar(),
-                    CircleAvatar(),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      radius: 28,
+                    ),
+                    CircleAvatar(
+                      radius: 28,
+                    ),
+                    CircleAvatar(
+                      radius: 28,
+                    ),
+                    CircleAvatar(
+                      radius: 28,
+                    ),
                   ],
                 ),
               ),
