@@ -80,16 +80,16 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             shape: StadiumBorder(),
                             color: Colors.white.withOpacity(.2),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                           child: TextField(
                             decoration: InputDecoration(
                               icon: Icon(
                                 Icons.search,
                               ),
-                              iconColor: Colors.white,
+                              iconColor: Colors.grey,
                               hintText: "Search for your homestay",
                               hintStyle: TextStyle(
-                                color: Colors.white,
+                                color: Colors.grey,
                                 fontWeight: FontWeight.bold,
                               ),
                               border: InputBorder.none,
@@ -106,6 +106,9 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       scrollDirection: Axis.horizontal,
                       children: [
                         Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white.withOpacity(.2),
+                          ),
                           child: Row(
                             children: [
                               Icon(Icons.local_fire_department_outlined),
