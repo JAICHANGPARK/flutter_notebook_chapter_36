@@ -131,11 +131,78 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ],
                             ),
                           ),
+                          Gap(12),
                           Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 8,
+                            ),
                             child: Row(
                               children: [
-                                Icon(Icons.home_outlined),
-                                Text("House"),
+                                Icon(
+                                  Icons.home_outlined,
+                                  color: Colors.white,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "House",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Gap(12),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 8,
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.apartment_rounded,
+                                  color: Colors.white,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "Apartment",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Gap(12),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 8,
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.apartment_rounded,
+                                  color: Colors.white,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "Apartment",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
