@@ -74,16 +74,24 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             ),
                           ],
                         ),
-                        Gap(16),
+                        Gap(24),
                         Container(
                           decoration: ShapeDecoration(
                             shape: StadiumBorder(),
                             color: Colors.white.withOpacity(.2),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                           child: TextField(
                             decoration: InputDecoration(
+                              icon: Icon(
+                                Icons.search,
+                              ),
+                              iconColor: Colors.white,
                               hintText: "Search for your homestay",
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
                               border: InputBorder.none,
                             ),
                           ),
