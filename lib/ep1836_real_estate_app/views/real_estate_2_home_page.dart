@@ -9,7 +9,6 @@ class RealEstate2HomePage extends StatefulWidget {
 }
 
 class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
-
   int pageIndex = 0;
 
   @override
@@ -125,43 +124,45 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           pageIndex = 0;
                         });
                       },
                       child: CircleAvatar(
                         radius: 28,
+                        backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
                       ),
                     ),
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           pageIndex = 1;
                         });
                       },
                       child: CircleAvatar(
                         radius: 28,
+                        backgroundColor: pageIndex == 1 ? Colors.white : Colors.transparent,
                       ),
                     ),
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           pageIndex = 2;
                         });
                       },
                       child: CircleAvatar(
-                        radius: 28,
+                        radius: 28,backgroundColor: pageIndex ==2 ? Colors.white : Colors.transparent,
                       ),
                     ),
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           pageIndex = 3;
                         });
                       },
                       child: CircleAvatar(
-                        radius: 28,
+                        radius: 28,backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
                       ),
                     ),
                   ],
