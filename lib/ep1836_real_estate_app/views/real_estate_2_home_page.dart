@@ -9,6 +9,9 @@ class RealEstate2HomePage extends StatefulWidget {
 }
 
 class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
+
+  int pageIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,21 +120,49 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CircleAvatar(
-                      radius: 28,
+                    InkWell(
+                      onTap: (){
+                        setState(() {
+                          pageIndex = 0;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                      ),
                     ),
-                    CircleAvatar(
-                      radius: 28,
+                    InkWell(
+                      onTap: (){
+                        setState(() {
+                          pageIndex = 1;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                      ),
                     ),
-                    CircleAvatar(
-                      radius: 28,
+                    InkWell(
+                      onTap: (){
+                        setState(() {
+                          pageIndex = 2;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                      ),
                     ),
-                    CircleAvatar(
-                      radius: 28,
+                    InkWell(
+                      onTap: (){
+                        setState(() {
+                          pageIndex = 3;
+                        });
+                      },
+                      child: CircleAvatar(
+                        radius: 28,
+                      ),
                     ),
                   ],
                 ),
