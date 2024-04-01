@@ -99,32 +99,48 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       ],
                     ),
                   ),
-                  Gap(16),
-                  SizedBox(
-                    height: 42,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(.2),
+                  Gap(8),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: SizedBox(
+                      height: 42,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(.2),
+                              borderRadius: BorderRadius.circular(24),
+                            ),
+                            padding: EdgeInsets.symmetric(
+                              horizontal: 8,
+                            ),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.local_fire_department_outlined,
+                                  color: Colors.white,
+                                ),
+                                Gap(4),
+                                Text(
+                                  "Trending",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
-                          child: Row(
-                            children: [
-                              Icon(Icons.local_fire_department_outlined),
-                              Text("Trending"),
-                            ],
+                          Container(
+                            child: Row(
+                              children: [
+                                Icon(Icons.home_outlined),
+                                Text("House"),
+                              ],
+                            ),
                           ),
-                        ),
-                        Container(
-                          child: Row(
-                            children: [
-                              Icon(Icons.home_outlined),
-                              Text("House"),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                   Gap(16),
