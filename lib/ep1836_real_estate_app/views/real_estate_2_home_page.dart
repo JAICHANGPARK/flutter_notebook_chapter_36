@@ -253,6 +253,14 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                           )
                                         ],
                                       ),
+                                    ),
+                                    Spacer(),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.red,
+                                      foregroundColor: Colors.white,
+                                      child: Icon(
+                                        Icons.favorite,
+                                      ),
                                     )
                                   ],
                                 )
