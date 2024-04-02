@@ -274,9 +274,9 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                 Spacer(),
                                 ClipRRect(
                                   child: Container(
-                                    height: 140,
+                                   padding: EdgeInsets.all(16),
                                     decoration: BoxDecoration(
-                                      color: Colors.white.withOpacity(.5),
+                                      color: Colors.black.withOpacity(.2),
                                     ),
                                     child: BackdropFilter(
                                       filter: ImageFilter.blur(
