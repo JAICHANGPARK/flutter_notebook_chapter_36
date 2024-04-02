@@ -301,27 +301,37 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                                 "\$1,200",
                                                 style: TextStyle(
                                                   color: Colors.white,
+                                                  fontSize: 16,
                                                 ),
                                               ),
                                               Text("/Night"),
                                             ],
                                           ),
+                                          Gap(6),
                                           Row(
                                             children: [
                                               Icon(
                                                 Icons.location_on,
                                                 color: Colors.white,
+                                                size: 18,
                                               ),
-                                              Text("South Korea"),
+                                              Gap(6),
+                                              Text("South Korea",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 13,
+                                                ),
+                                              ),
                                             ],
                                           ),
+                                          Gap(6),
                                           Row(
                                             children: [
-                                              Icon(Icons.bed),
-                                              Text("2 bad"),
-                                              Icon(Icons.bathtub_outlined),
-                                              Text("1 bath"),
-                                              Icon(Icons.expand),
+                                              Icon(Icons.bed), Gap(6),
+                                              Text("2 bad"), Gap(12),
+                                              Icon(Icons.bathtub_outlined), Gap(6),
+                                              Text("1 bath"),Gap(12),
+                                              Icon(Icons.expand), Gap(6),
                                               Text("250.00 m2"),
                                             ],
                                           )
