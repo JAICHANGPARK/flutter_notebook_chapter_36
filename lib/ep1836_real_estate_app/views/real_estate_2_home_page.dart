@@ -277,7 +277,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                   child: Container(
                                     padding: EdgeInsets.all(16),
                                     decoration: BoxDecoration(
-                                      color: Colors.black.withOpacity(.2),
+                                      color: Colors.black.withOpacity(.3),
                                     ),
                                     child: BackdropFilter(
                                       filter: ImageFilter.blur(
