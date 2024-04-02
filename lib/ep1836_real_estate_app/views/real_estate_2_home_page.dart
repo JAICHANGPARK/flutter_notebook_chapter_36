@@ -267,7 +267,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: pageIndex == 1 ? Colors.white : Colors.transparent,
-                        foregroundColor: Colors.white,
+                        foregroundColor: pageIndex == 1 ? Colors.black : Colors.white,
                         child: Icon(
                           Icons.list_alt,
                           size: 30,
@@ -283,7 +283,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: pageIndex == 2 ? Colors.white : Colors.transparent,
-                        foregroundColor: Colors.white,
+                        foregroundColor: pageIndex == 2 ? Colors.black : Colors.white,
                         child: Icon(
                           Icons.favorite_border,
                           size: 30,
