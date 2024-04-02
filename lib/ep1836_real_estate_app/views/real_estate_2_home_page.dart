@@ -223,6 +223,12 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             decoration: BoxDecoration(
                               color: Colors.purple,
                               borderRadius: BorderRadius.circular(16),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2021/08/23/01/03/cubic-house-6566412_1280.jpg",
+                                ),
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             child: Column(
                               children: [
