@@ -219,8 +219,30 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                           return Container(
                             height: 400,
                             margin: const EdgeInsets.only(bottom: 24),
-                            decoration: BoxDecoration(color: Colors.purple, borderRadius: BorderRadius.circular(16)),
-                            child: const Placeholder(),
+                            padding: EdgeInsets.all(16),
+                            decoration: BoxDecoration(
+                              color: Colors.purple,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Container(
+                                      child: Row(
+                                        children: [
+                                          Icon(
+                                            Icons.star,
+                                            size: 18,
+                                            color: Colors.orange,
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
                           );
                         },
                       ),
