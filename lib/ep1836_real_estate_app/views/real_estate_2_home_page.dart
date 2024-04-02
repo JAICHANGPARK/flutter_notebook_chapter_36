@@ -235,6 +235,11 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                 Row(
                                   children: [
                                     Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(24),
+                                      ),
+                                      padding: EdgeInsets.all(8),
                                       child: Row(
                                         children: [
                                           Icon(
@@ -242,6 +247,10 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                             size: 18,
                                             color: Colors.orange,
                                           ),
+                                          Gap(8),
+                                          Text(
+                                            "5.0",
+                                          )
                                         ],
                                       ),
                                     )
