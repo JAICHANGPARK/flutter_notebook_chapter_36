@@ -26,7 +26,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       children: [
-                        Row(
+                        const Row(
                           children: [
                             CircleAvatar(
                               child: Icon(
@@ -74,14 +74,14 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                             ),
                           ],
                         ),
-                        Gap(24),
+                        const Gap(24),
                         Container(
                           decoration: ShapeDecoration(
-                            shape: StadiumBorder(),
+                            shape: const StadiumBorder(),
                             color: Colors.white.withOpacity(.2),
                           ),
-                          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                          child: TextField(
+                          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                          child: const TextField(
                             decoration: InputDecoration(
                               icon: Icon(
                                 Icons.search,
@@ -99,7 +99,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       ],
                     ),
                   ),
-                  Gap(8),
+                  const Gap(8),
                   Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: SizedBox(
@@ -112,10 +112,10 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 8,
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.local_fire_department_outlined,
@@ -131,16 +131,16 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ],
                             ),
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 8,
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.home_outlined,
@@ -156,16 +156,16 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ],
                             ),
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 8,
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.apartment_rounded,
@@ -181,16 +181,16 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                               ],
                             ),
                           ),
-                          Gap(12),
+                          const Gap(12),
                           Container(
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(.2),
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               horizontal: 8,
                             ),
-                            child: Row(
+                            child: const Row(
                               children: [
                                 Icon(
                                   Icons.apartment_rounded,
@@ -210,7 +210,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       ),
                     ),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   Expanded(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -218,9 +218,9 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         itemBuilder: (context, index) {
                           return Container(
                             height: 400,
-                            margin: EdgeInsets.only(bottom: 24),
+                            margin: const EdgeInsets.only(bottom: 24),
                             decoration: BoxDecoration(color: Colors.purple, borderRadius: BorderRadius.circular(16)),
-                            child: Placeholder(),
+                            child: const Placeholder(),
                           );
                         },
                       ),
@@ -234,11 +234,11 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
               left: 32,
               right: 32,
               child: Container(
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -252,7 +252,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         radius: 28,
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
                         foregroundColor: pageIndex == 0 ? Colors.black : Colors.white,
-                        child: Icon(
+                        child: const Icon(
                           Icons.home_filled,
                           size: 30,
                         ),
@@ -268,7 +268,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         radius: 28,
                         backgroundColor: pageIndex == 1 ? Colors.white : Colors.transparent,
                         foregroundColor: pageIndex == 1 ? Colors.black : Colors.white,
-                        child: Icon(
+                        child: const Icon(
                           Icons.list_alt,
                           size: 30,
                         ),
@@ -284,7 +284,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                         radius: 28,
                         backgroundColor: pageIndex == 2 ? Colors.white : Colors.transparent,
                         foregroundColor: pageIndex == 2 ? Colors.black : Colors.white,
-                        child: Icon(
+                        child: const Icon(
                           Icons.favorite_border,
                           size: 30,
                         ),
@@ -292,7 +292,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                     ),
                     InkWell(
                       onTap: () {},
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         radius: 24,
                         backgroundColor: Colors.blue,
                         // backgroundColor: pageIndex == 3 ? Colors.white : Colors.transparent,
