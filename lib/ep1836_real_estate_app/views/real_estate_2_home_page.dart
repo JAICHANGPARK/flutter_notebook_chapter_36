@@ -316,7 +316,8 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                                 size: 18,
                                               ),
                                               Gap(6),
-                                              Text("South Korea",
+                                              Text(
+                                                "South Korea",
                                                 style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 13,
@@ -327,11 +328,25 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                           Gap(6),
                                           Row(
                                             children: [
-                                              Icon(Icons.bed), Gap(6),
-                                              Text("2 bad"), Gap(12),
-                                              Icon(Icons.bathtub_outlined), Gap(6),
-                                              Text("1 bath"),Gap(12),
-                                              Icon(Icons.expand), Gap(6),
+                                              Icon(
+                                                Icons.bed,
+                                                color: Colors.white,
+                                              ),
+                                              Gap(6),
+                                              Text("2 bad"),
+                                              Gap(12),
+                                              Icon(
+                                                Icons.bathtub_outlined,
+                                                color: Colors.white,
+                                              ),
+                                              Gap(6),
+                                              Text("1 bath"),
+                                              Gap(12),
+                                              Icon(
+                                                Icons.expand,
+                                                color: Colors.white,
+                                              ),
+                                              Gap(6),
                                               Text("250.00 m2"),
                                             ],
                                           )
