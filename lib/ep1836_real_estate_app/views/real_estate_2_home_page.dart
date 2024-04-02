@@ -331,23 +331,33 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                               Icon(
                                                 Icons.bed,
                                                 color: Colors.white,
+                                                size: 18,
                                               ),
                                               Gap(6),
-                                              Text("2 bad"),
+                                              Text("2 bad",  style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                              ),),
                                               Gap(12),
                                               Icon(
                                                 Icons.bathtub_outlined,
-                                                color: Colors.white,
+                                                color: Colors.white,size: 18,
                                               ),
                                               Gap(6),
-                                              Text("1 bath"),
+                                              Text("1 bath",  style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                              ),),
                                               Gap(12),
                                               Icon(
                                                 Icons.expand,
-                                                color: Colors.white,
+                                                color: Colors.white,size: 18,
                                               ),
                                               Gap(6),
-                                              Text("250.00 m2"),
+                                              Text("250.00 m2",  style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 13,
+                                              ),),
                                             ],
                                           )
                                         ],
