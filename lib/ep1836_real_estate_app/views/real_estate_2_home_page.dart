@@ -250,6 +250,9 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                           Gap(8),
                                           Text(
                                             "5.0",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           )
                                         ],
                                       ),
