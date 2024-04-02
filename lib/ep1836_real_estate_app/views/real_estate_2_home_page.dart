@@ -1,4 +1,8 @@
+import 'dart:ui';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class RealEstate2HomePage extends StatefulWidget {
@@ -266,6 +270,21 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                       ),
                                     )
                                   ],
+                                ),
+                                Spacer(),
+                                ClipRRect(
+                                  child: BackdropFilter(
+                                    filter: ImageFilter.blur(
+                                      sigmaX: 6,
+                                      sigmaY: 8,
+                                    ),
+                                    child: Container(
+                                      height: 140,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                  ),
                                 )
                               ],
                             ),
