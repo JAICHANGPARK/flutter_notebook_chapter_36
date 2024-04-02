@@ -273,6 +273,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                 ),
                                 Spacer(),
                                 ClipRRect(
+                                  borderRadius: BorderRadius.circular(16),
                                   child: Container(
                                     padding: EdgeInsets.all(16),
                                     decoration: BoxDecoration(
@@ -295,7 +296,13 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                                   color: Colors.white,
                                                 ),
                                               ),
-                                              Text("\$1,200"),
+                                              Spacer(),
+                                              Text(
+                                                "\$1,200",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
                                               Text("/Night"),
                                             ],
                                           ),
