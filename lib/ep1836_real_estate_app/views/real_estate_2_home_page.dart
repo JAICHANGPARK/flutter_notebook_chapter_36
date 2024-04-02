@@ -219,10 +219,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                           return Container(
                             height: 400,
                             margin: EdgeInsets.only(bottom: 24),
-                            decoration: BoxDecoration(
-                              color: Colors.purple,
-                              borderRadius: BorderRadius.circular(16)
-                            ),
+                            decoration: BoxDecoration(color: Colors.purple, borderRadius: BorderRadius.circular(16)),
                             child: Placeholder(),
                           );
                         },
@@ -254,7 +251,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       child: CircleAvatar(
                         radius: 28,
                         backgroundColor: pageIndex == 0 ? Colors.white : Colors.transparent,
-                        foregroundColor: Colors.white,
+                        foregroundColor: pageIndex == 0 ? Colors.black : Colors.white,
                         child: Icon(
                           Icons.home_filled,
                           size: 30,
