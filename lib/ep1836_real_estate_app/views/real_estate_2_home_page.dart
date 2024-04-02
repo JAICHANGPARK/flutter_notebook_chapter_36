@@ -274,7 +274,7 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                 Spacer(),
                                 ClipRRect(
                                   child: Container(
-                                   padding: EdgeInsets.all(16),
+                                    padding: EdgeInsets.all(16),
                                     decoration: BoxDecoration(
                                       color: Colors.black.withOpacity(.2),
                                     ),
@@ -289,7 +289,33 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                                             children: [
                                               Text(
                                                 "The Elements",
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18,
+                                                  color: Colors.white,
+                                                ),
                                               ),
+                                              Text("\$1,200"),
+                                              Text("/Night"),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(
+                                                Icons.location_on,
+                                                color: Colors.white,
+                                              ),
+                                              Text("South Korea"),
+                                            ],
+                                          ),
+                                          Row(
+                                            children: [
+                                              Icon(Icons.bed),
+                                              Text("2 bad"),
+                                              Icon(Icons.bathtub_outlined),
+                                              Text("1 bath"),
+                                              Icon(Icons.expand),
+                                              Text("250.00 m2"),
                                             ],
                                           )
                                         ],
