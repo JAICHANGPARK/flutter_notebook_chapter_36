@@ -220,152 +220,157 @@ class _RealEstate2HomePageState extends State<RealEstate2HomePage> {
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: ListView.builder(
                         itemBuilder: (context, index) {
-                          return Container(
-                            height: 400,
-                            margin: const EdgeInsets.only(bottom: 24),
-                            padding: EdgeInsets.all(16),
-                            decoration: BoxDecoration(
-                              color: Colors.purple,
-                              borderRadius: BorderRadius.circular(16),
-                              image: DecorationImage(
-                                image: NetworkImage(
-                                  "https://cdn.pixabay.com/photo/2021/08/23/01/03/cubic-house-6566412_1280.jpg",
+                          return InkWell(
+                            onTap: (){
+                              Navigator.of(context).pushNamed("/detail");
+                            },
+                            child: Container(
+                              height: 400,
+                              margin: const EdgeInsets.only(bottom: 24),
+                              padding: EdgeInsets.all(16),
+                              decoration: BoxDecoration(
+                                color: Colors.purple,
+                                borderRadius: BorderRadius.circular(16),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2021/08/23/01/03/cubic-house-6566412_1280.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
                                 ),
-                                fit: BoxFit.cover,
                               ),
-                            ),
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(24),
-                                      ),
-                                      padding: EdgeInsets.all(8),
-                                      child: Row(
-                                        children: [
-                                          Icon(
-                                            Icons.star,
-                                            size: 18,
-                                            color: Colors.orange,
-                                          ),
-                                          Gap(8),
-                                          Text(
-                                            "5.0",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius: BorderRadius.circular(24),
+                                        ),
+                                        padding: EdgeInsets.all(8),
+                                        child: Row(
+                                          children: [
+                                            Icon(
+                                              Icons.star,
+                                              size: 18,
+                                              color: Colors.orange,
                                             ),
-                                          )
-                                        ],
+                                            Gap(8),
+                                            Text(
+                                              "5.0",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                              ),
+                                            )
+                                          ],
+                                        ),
                                       ),
-                                    ),
-                                    Spacer(),
-                                    CircleAvatar(
-                                      backgroundColor: Colors.red,
-                                      foregroundColor: Colors.white,
-                                      child: Icon(
-                                        Icons.favorite,
+                                      Spacer(),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.red,
+                                        foregroundColor: Colors.white,
+                                        child: Icon(
+                                          Icons.favorite,
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(16),
+                                    child: Container(
+                                      padding: EdgeInsets.all(16),
+                                      decoration: BoxDecoration(
+                                        color: Colors.black.withOpacity(.3),
                                       ),
-                                    )
-                                  ],
-                                ),
-                                Spacer(),
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(16),
-                                  child: Container(
-                                    padding: EdgeInsets.all(16),
-                                    decoration: BoxDecoration(
-                                      color: Colors.black.withOpacity(.3),
-                                    ),
-                                    child: BackdropFilter(
-                                      filter: ImageFilter.blur(
-                                        sigmaX: 6,
-                                        sigmaY: 8,
-                                      ),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            children: [
-                                              Text(
-                                                "The Elements",
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 18,
-                                                  color: Colors.white,
+                                      child: BackdropFilter(
+                                        filter: ImageFilter.blur(
+                                          sigmaX: 6,
+                                          sigmaY: 8,
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Text(
+                                                  "The Elements",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 18,
+                                                    color: Colors.white,
+                                                  ),
                                                 ),
-                                              ),
-                                              Spacer(),
-                                              Text(
-                                                "\$1,200",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontSize: 16,
+                                                Spacer(),
+                                                Text(
+                                                  "\$1,200",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 16,
+                                                  ),
                                                 ),
-                                              ),
-                                              Text("/Night"),
-                                            ],
-                                          ),
-                                          Gap(6),
-                                          Row(
-                                            children: [
-                                              Icon(
-                                                Icons.location_on,
-                                                color: Colors.white,
-                                                size: 18,
-                                              ),
-                                              Gap(6),
-                                              Text(
-                                                "South Korea",
-                                                style: TextStyle(
+                                                Text("/Night"),
+                                              ],
+                                            ),
+                                            Gap(6),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.location_on,
+                                                  color: Colors.white,
+                                                  size: 18,
+                                                ),
+                                                Gap(6),
+                                                Text(
+                                                  "South Korea",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontSize: 13,
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                            Gap(6),
+                                            Row(
+                                              children: [
+                                                Icon(
+                                                  Icons.bed,
+                                                  color: Colors.white,
+                                                  size: 18,
+                                                ),
+                                                Gap(6),
+                                                Text("2 bad",  style: TextStyle(
                                                   color: Colors.white,
                                                   fontSize: 13,
+                                                ),),
+                                                Gap(12),
+                                                Icon(
+                                                  Icons.bathtub_outlined,
+                                                  color: Colors.white,size: 18,
                                                 ),
-                                              ),
-                                            ],
-                                          ),
-                                          Gap(6),
-                                          Row(
-                                            children: [
-                                              Icon(
-                                                Icons.bed,
-                                                color: Colors.white,
-                                                size: 18,
-                                              ),
-                                              Gap(6),
-                                              Text("2 bad",  style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 13,
-                                              ),),
-                                              Gap(12),
-                                              Icon(
-                                                Icons.bathtub_outlined,
-                                                color: Colors.white,size: 18,
-                                              ),
-                                              Gap(6),
-                                              Text("1 bath",  style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 13,
-                                              ),),
-                                              Gap(12),
-                                              Icon(
-                                                Icons.expand,
-                                                color: Colors.white,size: 18,
-                                              ),
-                                              Gap(6),
-                                              Text("250.00 m2",  style: TextStyle(
-                                                color: Colors.white,
-                                                fontSize: 13,
-                                              ),),
-                                            ],
-                                          )
-                                        ],
+                                                Gap(6),
+                                                Text("1 bath",  style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 13,
+                                                ),),
+                                                Gap(12),
+                                                Icon(
+                                                  Icons.expand,
+                                                  color: Colors.white,size: 18,
+                                                ),
+                                                Gap(6),
+                                                Text("250.00 m2",  style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: 13,
+                                                ),),
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                )
-                              ],
+                                  )
+                                ],
+                              ),
                             ),
                           );
                         },
