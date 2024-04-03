@@ -27,6 +27,7 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
             child: Container(
               decoration: BoxDecoration(
                 color: Color.fromRGBO(34, 34, 34, 1),
+                borderRadius: BorderRadius.circular(32),
               ),
               padding: EdgeInsets.all(8),
               height: 72,
@@ -34,6 +35,7 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
                 children: [
                   Text("\$1.200"),
                   Text(" / Night"),
+                  Spacer(),
                   Container(
                     decoration: BoxDecoration(
                       color: const Color(0xff775cff),
