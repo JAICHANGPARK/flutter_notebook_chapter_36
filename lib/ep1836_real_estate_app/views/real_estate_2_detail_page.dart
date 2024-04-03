@@ -33,7 +33,14 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
               height: 72,
               child: Row(
                 children: [
-                  Text("\$1.200"),
+                  Text(
+                    "\$1.200",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
                   Text(" / Night"),
                   Spacer(),
                   Container(
