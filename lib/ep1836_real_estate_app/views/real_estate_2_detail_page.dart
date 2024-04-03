@@ -35,21 +35,45 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
             ),
           ),
           Positioned.fill(
-            child: Column(
-              children: [
-                SizedBox(height: 400, child: Column()),
-                Expanded(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16),
-                        topRight: Radius.circular(16),
-                      ),
+            child: SafeArea(
+              child: Column(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(24),
+                    height: 320,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            CircleAvatar(
+                              backgroundColor: Colors.red,
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
-                )
-              ],
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(24),
+                          topRight: Radius.circular(24),
+                        ),
+                      ),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Positioned(
