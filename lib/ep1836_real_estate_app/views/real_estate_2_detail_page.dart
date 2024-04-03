@@ -44,10 +44,28 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
                     child: Column(
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            CircleAvatar(),
+                            CircleAvatar(
+                              radius: 24,
+                              backgroundColor: Colors.white,
+                              foregroundColor: Colors.black,
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_back,
+                                ),
+                              ),
+                            ),
                             CircleAvatar(
                               backgroundColor: Colors.red,
+                              foregroundColor: Colors.white,
+                              child: IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.favorite,
+                                ),
+                              ),
                             )
                           ],
                         )
