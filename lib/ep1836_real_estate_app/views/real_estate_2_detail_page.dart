@@ -11,9 +11,21 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
-
+          Column(
+            children: [],
+          ),
+          Positioned(
+            child: Container(
+              child: Row(
+                children: [
+                  Text("\$1.200"),
+                  Text(" / Night"),
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
