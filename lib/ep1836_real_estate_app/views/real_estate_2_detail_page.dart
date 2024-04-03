@@ -58,6 +58,7 @@ class _RealEstate2DetailPageState extends State<RealEstate2DetailPage> {
                               ),
                             ),
                             CircleAvatar(
+                              radius: 24,
                               backgroundColor: Colors.red,
                               foregroundColor: Colors.white,
                               child: IconButton(
