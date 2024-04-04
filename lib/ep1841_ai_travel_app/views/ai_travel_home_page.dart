@@ -104,9 +104,12 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 fontSize: 20,
               ),
             ),
-            Expanded(child: ListView.builder(itemBuilder: (context, index) {
-              return Placeholder();
-            }))
+            Expanded(child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: ListView.builder(itemBuilder: (context, index) {
+                return Placeholder();
+              }),
+            ))
           ],
         ),
       ),
