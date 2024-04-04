@@ -26,10 +26,10 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                      ),
-                    ),
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        shape: BoxShape.circle),
                     child: Badge(
                       child: Icon(
                         Icons.notifications_none,
@@ -37,6 +37,14 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                     ),
                   )
                 ],
+              ),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.grey[200]!,
+                ),
+                color: Colors.grey[100],
               ),
             )
           ],
