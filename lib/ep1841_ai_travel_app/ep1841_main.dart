@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
-
+  runApp(AITravelApp());
 }
 
 class AITravelApp extends StatelessWidget {
