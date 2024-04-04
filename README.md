@@ -1,12 +1,12 @@
 # flutter_notebook_chapter_36
 
-## EP1836-1840
+## EP1841
 
-- Mobile App - Real Estate🏡
-- by Devia Anggraeni
-- https://dribbble.com/shots/23891660-Mobile-App-Real-Estate
+- Gotravel - AI Mobile Travel App✈️
+- by Nurul Fitriani 🌻 for Caraka
+- https://dribbble.com/shots/23913552-Gotravel-AI-Mobile-Travel-App
 
-<img src="https://cdn.dribbble.com/userupload/13768878/file/original-d920f7cc56c4c73f7b16fca68aa4deb9.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/13831468/file/original-a21cfa2844bf8ee2eacf60903561f0fa.png?resize=1905x1429"/>
 
 ## EP1836-1840
 
