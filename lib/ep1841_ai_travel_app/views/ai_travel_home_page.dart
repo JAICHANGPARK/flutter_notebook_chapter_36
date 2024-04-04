@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AiTravelHomePage extends StatefulWidget {
   const AiTravelHomePage({super.key});
 
@@ -15,12 +14,29 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-                Row(
-                  children: [
-                    
-                  ],
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                  child: Center(
+                    child: Text("Hallo, Dreamwalker"),
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.grey[300]!,
+                    ),
+                  ),
+                  child: Badge(
+                    child: Icon(
+                      Icons.notifications_none,
+                    ),
+                  ),
                 )
-            ],
+              ],
+            )
+          ],
         ),
       ),
     );
