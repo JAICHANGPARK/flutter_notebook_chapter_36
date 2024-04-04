@@ -14,27 +14,30 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                  child: Center(
-                    child: Text("Hallo, Dreamwalker"),
-                  ),
-                ),
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300]!,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Expanded(
+                    child: Center(
+                      child: Text("Hallo, Dreamwalker"),
                     ),
                   ),
-                  child: Badge(
-                    child: Icon(
-                      Icons.notifications_none,
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
                     ),
-                  ),
-                )
-              ],
+                    child: Badge(
+                      child: Icon(
+                        Icons.notifications_none,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
