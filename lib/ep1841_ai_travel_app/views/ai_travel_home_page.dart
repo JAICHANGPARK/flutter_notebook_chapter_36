@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -67,23 +68,45 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
               ),
             ),
             Gap(16),
-            SizedBox(
-              height: 52,
+            Container(
+              padding: EdgeInsets.only(left: 16),
+              height: 36,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
+                    margin: EdgeInsets.only(right: 12),
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                      borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                    child: Text(
-                      "Asia",
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 4,
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Asia",
+                      ),
                     ),
                   );
                 },
               ),
             ),
+            Gap(16),
+            Text(
+              "Top Rated Destination",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+            ),
+            Expanded(child: ListView.builder(itemBuilder: (context, index) {
+              return Placeholder();
+            }))
           ],
         ),
       ),
