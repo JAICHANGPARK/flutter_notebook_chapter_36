@@ -56,15 +56,17 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
               ),
               decoration: BoxDecoration(
                 border: Border.all(
-                  color: Colors.grey[200]!,
+                  color: Colors.grey[300]!,
                 ),
-                color: Colors.grey[100],
+                color: Colors.grey[50],
+                borderRadius: BorderRadius.circular(32),
               ),
               padding: EdgeInsets.symmetric(horizontal: 12),
               child: TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.search),
                   hintText: "Seoul, Republic of Korea",
+                  border: InputBorder.none,
                 ),
               ),
             ),
@@ -105,7 +107,8 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 fontSize: 20,
               ),
             ),
-            Expanded(child: Padding(
+            Expanded(
+                child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: ListView.builder(itemBuilder: (context, index) {
                 return Placeholder();
