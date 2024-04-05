@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'views/ai_travel_home_page.dart';
 
 void main() {
-  runApp(AITravelApp());
+  runApp(const AITravelApp());
 }
 
 class AITravelApp extends StatelessWidget {
@@ -11,7 +11,7 @@ class AITravelApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: AiTravelHomePage(),
     );
   }
