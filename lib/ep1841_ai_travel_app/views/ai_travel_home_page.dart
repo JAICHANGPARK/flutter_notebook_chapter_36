@@ -193,7 +193,9 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(width: 12,),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
                                     Icon(
                                       Icons.timelapse,
                                       size: 18,
@@ -205,7 +207,9 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                                         fontSize: 14,
                                       ),
                                     ),
-                                    SizedBox(width: 12,),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
                                     Text(
                                       "\$1.536",
                                       style: TextStyle(
@@ -228,6 +232,25 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ),
+            label: ""
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ), label: ""
+          ),BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+            ), label: ""
+          )
+        ],
       ),
     );
   }
