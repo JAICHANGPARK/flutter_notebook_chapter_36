@@ -21,8 +21,8 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
-                  Expanded(
+                  const CircleAvatar(),
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Hallo, Dreamwalker",
@@ -34,13 +34,13 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                     ),
                   ),
                   Container(
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                         border: Border.all(
                           color: Colors.grey[300]!,
                         ),
                         shape: BoxShape.circle),
-                    child: Badge(
+                    child: const Badge(
                       child: Icon(
                         Icons.notifications_none,
                       ),
@@ -49,9 +49,9 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 ],
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Container(
-              margin: EdgeInsets.symmetric(
+              margin: const EdgeInsets.symmetric(
                 horizontal: 16,
               ),
               decoration: BoxDecoration(
@@ -61,8 +61,8 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 color: Colors.grey[50],
                 borderRadius: BorderRadius.circular(32),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 12),
-              child: TextField(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: const TextField(
                 decoration: InputDecoration(
                   icon: Icon(Icons.search),
                   hintText: "Seoul, Republic of Korea",
@@ -70,15 +70,15 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 ),
               ),
             ),
-            Gap(16),
+            const Gap(16),
             Container(
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               height: 36,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
                   return Container(
-                    margin: EdgeInsets.only(right: 12),
+                    margin: const EdgeInsets.only(right: 12),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
@@ -86,11 +86,11 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                       ),
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 4,
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Text(
                         "Asia",
                       ),
@@ -99,19 +99,24 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 },
               ),
             ),
-            Gap(16),
-            Text(
-              "Top Rated Destination",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 20,
+            const Gap(16),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+              ),
+              child: const Text(
+                "Top Rated Destination",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
             ),
             Expanded(
                 child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: ListView.builder(itemBuilder: (context, index) {
-                return Placeholder();
+                return const Placeholder();
               }),
             ))
           ],
