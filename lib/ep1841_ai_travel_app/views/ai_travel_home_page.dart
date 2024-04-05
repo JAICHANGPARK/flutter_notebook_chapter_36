@@ -117,7 +117,46 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return const Placeholder();
+                    return Container(
+                      height: 380,
+                      margin: EdgeInsets.only(bottom: 16),
+                      decoration: BoxDecoration(
+                        color: Colors.grey,
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                child: Text(
+                                  "London",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 8,
+                                ),
+                              ),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: IconButton(
+                                  icon: Icon(
+                                    Icons.bookmark_border,
+                                  ),
+                                  onPressed: () {},
+                                ),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    );
                   },
                 ),
               ),
