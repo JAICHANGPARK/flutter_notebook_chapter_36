@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:gap/gap.dart';
 
 class AiTravelHomePage extends StatefulWidget {
@@ -100,11 +101,11 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
               ),
             ),
             const Gap(16),
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                 horizontal: 16,
               ),
-              child: const Text(
+              child: Text(
                 "Top Rated Destination",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -119,26 +120,29 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                   itemBuilder: (context, index) {
                     return Container(
                       height: 380,
-                      margin: EdgeInsets.only(bottom: 16),
+                      margin: const EdgeInsets.only(bottom: 16),
                       decoration: BoxDecoration(
                         color: Colors.grey,
+                        borderRadius: BorderRadius.circular(16),
                       ),
+                      padding: const EdgeInsets.all(16),
                       child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Container(
                                 decoration: BoxDecoration(
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(24),
                                 ),
-                                child: Text(
+                                child: const Text(
                                   "London",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
                                 ),
-                                padding: EdgeInsets.symmetric(
+                                padding: const EdgeInsets.symmetric(
                                   horizontal: 12,
                                   vertical: 8,
                                 ),
@@ -146,13 +150,74 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                               CircleAvatar(
                                 backgroundColor: Colors.white,
                                 child: IconButton(
-                                  icon: Icon(
+                                  icon: const Icon(
                                     Icons.bookmark_border,
                                   ),
                                   onPressed: () {},
                                 ),
                               )
                             ],
+                          ),
+                          Spacer(),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            padding: EdgeInsets.all(8),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Tower Bridge London",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Gap(8),
+                                Text(
+                                  "Tower Bridge, located in London, ENgland, is an iconic",
+                                ),
+                                Gap(8),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.star_border,
+                                      size: 18,
+                                    ),
+                                    Text(
+                                      "4.8 Rating",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(width: 12,),
+                                    Icon(
+                                      Icons.timelapse,
+                                      size: 18,
+                                    ),
+                                    Text(
+                                      "6 hours",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                      ),
+                                    ),
+                                    SizedBox(width: 12,),
+                                    Text(
+                                      "\$1.536",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 20,
+                                      ),
+                                    ),
+                                    Text("/persion"),
+                                  ],
+                                ),
+                              ],
+                            ),
                           )
                         ],
                       ),
