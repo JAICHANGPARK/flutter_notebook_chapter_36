@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class AiTravelChatPage extends StatefulWidget {
   const AiTravelChatPage({super.key});
@@ -81,6 +82,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                     ),
                     child: TextField(),
                   )),
+                  Gap(12),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blueAccent,
