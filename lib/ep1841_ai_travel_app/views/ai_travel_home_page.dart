@@ -235,11 +235,17 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blue,
+
         selectedLabelStyle: TextStyle(
           color: Colors.black,
         ),
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
+        onTap: (idx){
+          if(idx == 3){
+            
+          }
+        },
         items: [
           BottomNavigationBarItem(
               icon: Icon(
