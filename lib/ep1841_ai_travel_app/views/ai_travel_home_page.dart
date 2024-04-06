@@ -243,7 +243,7 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
         backgroundColor: Colors.white,
         onTap: (idx){
           if(idx == 3){
-            
+
           }
         },
         items: [
