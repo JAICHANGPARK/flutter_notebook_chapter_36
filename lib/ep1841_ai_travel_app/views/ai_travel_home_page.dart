@@ -237,19 +237,29 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
         items: [
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.home_filled,
               ),
-              label: ""),
+              label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.calendar_month,
               ),
-              label: ""),
+              label: "Booking"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.videogame_asset,
               ),
-              label: "")
+              label: "AI Mode"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.bookmark_border,
+              ),
+              label: "Save"),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_2_outlined,
+              ),
+              label: "Profile")
         ],
       ),
     );
