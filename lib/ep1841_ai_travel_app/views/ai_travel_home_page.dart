@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter_notebook_chapter_36/ep1841_ai_travel_app/views/ai_travel_chat_page.dart';
 import 'package:gap/gap.dart';
 
 class AiTravelHomePage extends StatefulWidget {
@@ -235,15 +236,18 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blue,
-
         selectedLabelStyle: TextStyle(
           color: Colors.black,
         ),
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
-        onTap: (idx){
-          if(idx == 3){
-
+        onTap: (idx) {
+          if (idx == 2) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => AiTravelChatPage(),
+              ),
+            );
           }
         },
         items: [
