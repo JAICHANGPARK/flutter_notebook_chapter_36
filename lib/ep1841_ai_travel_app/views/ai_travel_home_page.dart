@@ -238,6 +238,8 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
         selectedLabelStyle: TextStyle(
           color: Colors.black,
         ),
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
         items: [
           BottomNavigationBarItem(
               icon: Icon(
