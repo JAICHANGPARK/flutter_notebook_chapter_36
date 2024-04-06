@@ -60,6 +60,38 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                   ),
                 ],
               ),
+            ),
+            Expanded(child: Placeholder()),
+            Divider(),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+              ),
+              padding: EdgeInsets.all(12),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                    ),
+                  )),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.mic_none,
+                      ),
+                      onPressed: () {},
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
