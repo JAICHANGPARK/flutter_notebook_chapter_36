@@ -21,13 +21,14 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                     border: Border.all(),
                     shape: BoxShape.circle,
                   ),
-                  child: IconButton(
-                    icon: Icon(
-                      Icons.arrow_back_ios_new,
-                    ),
-                    onPressed: (){},
+                  child: Icon(
+                    Icons.arrow_back_ios_new,
                   ),
-                )
+                  padding: EdgeInsets.all(8),
+                ),
+                Expanded(
+                  child: Center(child: Text("AI mode")),
+                ),
               ],
             )
           ],
