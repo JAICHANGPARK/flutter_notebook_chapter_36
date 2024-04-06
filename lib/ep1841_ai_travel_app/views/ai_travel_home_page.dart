@@ -236,20 +236,20 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ),
-            label: ""
-          ),
+              icon: Icon(
+                Icons.home,
+              ),
+              label: ""),
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ), label: ""
-          ),BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home,
-            ), label: ""
-          )
+              icon: Icon(
+                Icons.home,
+              ),
+              label: ""),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: "")
         ],
       ),
     );
