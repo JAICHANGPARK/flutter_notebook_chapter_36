@@ -76,7 +76,10 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                       border: Border.all(
                         color: Colors.grey[300]!,
                       ),
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(4),
                     ),
+                    child: TextField(),
                   )),
                   Container(
                     decoration: BoxDecoration(
