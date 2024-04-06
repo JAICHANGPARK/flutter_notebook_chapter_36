@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AiTravelChatPage extends StatefulWidget {
   const AiTravelChatPage({super.key});
 
@@ -21,6 +20,12 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                   decoration: BoxDecoration(
                     border: Border.all(),
                     shape: BoxShape.circle,
+                  ),
+                  child: IconButton(
+                    icon: Icon(
+                      Icons.arrow_back_ios_new,
+                    ),
+                    onPressed: (){},
                   ),
                 )
               ],
