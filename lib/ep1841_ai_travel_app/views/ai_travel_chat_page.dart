@@ -85,6 +85,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         fontSize: 16,
                       ),
                     ),
+                    Gap(24),
                     Row(
                       children: [
                         Container(
@@ -104,7 +105,30 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         //   child: Container(),
                         // ),
                       ],
-                    )
+                    ),
+                    Gap(24),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          width: 240,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[100]!,
+                          ),
+
+                          padding: EdgeInsets.all(16),
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+                            style: TextStyle(
+                              // color: Colors.whit
+                            ),
+                          ),
+                        ),
+                        // Expanded(
+                        //   child: Container(),
+                        // ),
+                      ],
+                    ),
                   ],
                 ),
               ),
