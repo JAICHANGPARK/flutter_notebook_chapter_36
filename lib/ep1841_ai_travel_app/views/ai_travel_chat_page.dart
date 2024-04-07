@@ -129,6 +129,27 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         // ),
                       ],
                     ),
+                    Gap(24),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+
+                          padding: EdgeInsets.all(16),
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, ",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
