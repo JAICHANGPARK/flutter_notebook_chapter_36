@@ -36,6 +36,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                     ),
                     child: Icon(
                       Icons.arrow_back_ios_new,
+                      size: 18,
                     ),
                     padding: EdgeInsets.all(8),
                   ),
