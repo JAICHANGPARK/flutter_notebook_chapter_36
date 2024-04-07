@@ -112,6 +112,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                       children: [
                         Container(
                           width: 240,
+                          margin: EdgeInsets.only(right: 16),
                           padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
                             color: Colors.grey[100]!,
