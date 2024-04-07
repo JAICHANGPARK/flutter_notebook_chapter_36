@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
+import 'ai_travel_card_widget.dart';
+
 class AiTravelChatPage extends StatefulWidget {
   const AiTravelChatPage({super.key});
 
@@ -159,6 +161,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(12),
                             ),
+                            child: AITravelCardWidget(),
 
                           );
                         },
