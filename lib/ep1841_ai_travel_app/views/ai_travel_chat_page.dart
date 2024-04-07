@@ -146,6 +146,20 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 320,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return Container(
+                            width: 320,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                          );
+                        },
+                      ),
+                    )
                   ],
                 ),
               ),
