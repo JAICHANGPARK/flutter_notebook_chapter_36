@@ -70,10 +70,40 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
               ),
             ),
             Expanded(
-              child: ListView(
-                children: [
-                  Text("15 February 2024"),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  left: 16,
+                  top: 24,
+                ),
+                child: ListView(
+                  children: [
+                    Text(
+                      "15 February 2024",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey,
+                        fontSize: 16,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                          ),
+              
+                          child: Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+                            style: TextStyle(
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                        Expanded(child: Container(),),
+                      ],
+                    )
+                  ],
+                ),
               ),
             ),
             Divider(),
