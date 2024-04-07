@@ -146,6 +146,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         ),
                       ],
                     ),
+                    Gap(16),
                     SizedBox(
                       height: 320,
                       child: ListView.builder(
@@ -153,9 +154,12 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         itemBuilder: (context, index) {
                           return Container(
                             width: 320,
+                            margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.blue,
+                              borderRadius: BorderRadius.circular(12),
                             ),
+
                           );
                         },
                       ),
