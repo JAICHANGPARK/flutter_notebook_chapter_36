@@ -17,14 +17,14 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey[200]!,
                     blurRadius: 8,
-                    offset: Offset(0, 4),
+                    offset: const Offset(0, 4),
                   )
                 ],
               ),
@@ -39,14 +39,14 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         border: Border.all(),
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.arrow_back_ios_new,
                         size: 18,
                       ),
-                      padding: EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                         child: Text(
                       "AI mode",
@@ -61,23 +61,20 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                       border: Border.all(),
                       shape: BoxShape.circle,
                     ),
-                    child: Icon(
+                    child: const Icon(
                       Icons.more_horiz,
                     ),
-                    padding: EdgeInsets.all(8),
+                    padding: const EdgeInsets.all(8),
                   ),
                 ],
               ),
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 16,
-                  top: 24,
-                ),
+                padding: const EdgeInsets.only(left: 16, top: 24),
                 child: ListView(
                   children: [
-                    Text(
+                    const Text(
                       "15 February 2024",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -85,16 +82,16 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         fontSize: 16,
                       ),
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Row(
                       children: [
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.black,
                           ),
                           width: 240,
-                          padding: EdgeInsets.all(16),
-                          child: Text(
+                          padding: const EdgeInsets.all(16),
+                          child: const Text(
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
                             style: TextStyle(
                               color: Colors.white,
@@ -106,23 +103,22 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         // ),
                       ],
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Container(
                           width: 240,
+                          padding: const EdgeInsets.all(16),
                           decoration: BoxDecoration(
-                              color: Colors.grey[100]!,
-                              border: Border.all(
-                                color: Colors.grey[300]!,
-                              )),
-                          padding: EdgeInsets.all(16),
-                          child: Text(
+                            color: Colors.grey[100]!,
+                            border: Border.all(
+                              color: Colors.grey[300]!,
+                            ),
+                          ),
+                          child: const Text(
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-                            style: TextStyle(
-                                // color: Colors.whit
-                                ),
+                            style: TextStyle(),
                           ),
                         ),
                         // Expanded(
@@ -130,15 +126,15 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         // ),
                       ],
                     ),
-                    Gap(24),
+                    const Gap(24),
                     Row(
                       children: [
                         Container(
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             color: Colors.black,
                           ),
-                          padding: EdgeInsets.all(16),
-                          child: Text(
+                          padding: const EdgeInsets.all(16),
+                          child: const Text(
                             "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, ",
                             style: TextStyle(
                               color: Colors.white,
@@ -154,12 +150,12 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                 ),
               ),
             ),
-            Divider(),
+            const Divider(),
             Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
               ),
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(12),
               child: Row(
                 children: [
                   Expanded(
@@ -171,8 +167,8 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.circular(4),
                       ),
-                      padding: EdgeInsets.symmetric(horizontal: 12),
-                      child: TextField(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: const TextField(
                         decoration: InputDecoration(
                           hintText: "What do you want to ask ?",
                           border: InputBorder.none,
@@ -180,14 +176,14 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                       ),
                     ),
                   ),
-                  Gap(12),
+                  const Gap(12),
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.blueAccent,
                       borderRadius: BorderRadius.circular(8),
                     ),
                     child: IconButton(
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.mic_none,
                       ),
                       onPressed: () {},
