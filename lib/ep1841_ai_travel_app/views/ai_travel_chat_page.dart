@@ -31,7 +31,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
               child: Row(
                 children: [
                   GestureDetector(
-                    onTap: (){
+                    onTap: () {
                       Navigator.of(context).pop();
                     },
                     child: Container(
@@ -69,7 +69,13 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                 ],
               ),
             ),
-            Expanded(child: Placeholder()),
+            Expanded(
+              child: ListView(
+                children: [
+                  Text("15 February 2024"),
+                ],
+              ),
+            ),
             Divider(),
             Container(
               decoration: BoxDecoration(
@@ -79,16 +85,23 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
               child: Row(
                 children: [
                   Expanded(
-                      child: Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: Colors.grey[300]!,
+                        ),
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.circular(4),
                       ),
-                      color: Colors.grey[200],
-                      borderRadius: BorderRadius.circular(4),
+                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "What do you want to ask ?",
+                          border: InputBorder.none,
+                        ),
+                      ),
                     ),
-                    child: TextField(),
-                  )),
+                  ),
                   Gap(12),
                   Container(
                     decoration: BoxDecoration(
@@ -100,6 +113,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         Icons.mic_none,
                       ),
                       onPressed: () {},
+                      color: Colors.white,
                     ),
                   )
                 ],
