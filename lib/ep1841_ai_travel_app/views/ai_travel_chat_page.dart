@@ -113,15 +113,16 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         Container(
                           width: 240,
                           decoration: BoxDecoration(
-                            color: Colors.grey[100]!,
-                          ),
-
+                              color: Colors.grey[100]!,
+                              border: Border.all(
+                                color: Colors.grey[300]!,
+                              )),
                           padding: EdgeInsets.all(16),
                           child: Text(
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
                             style: TextStyle(
-                              // color: Colors.whit
-                            ),
+                                // color: Colors.whit
+                                ),
                           ),
                         ),
                         // Expanded(
@@ -136,7 +137,6 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                           decoration: BoxDecoration(
                             color: Colors.black,
                           ),
-
                           padding: EdgeInsets.all(16),
                           child: Text(
                             "Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, ",
