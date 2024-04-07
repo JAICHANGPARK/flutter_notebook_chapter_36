@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AiTravelChatPage extends StatefulWidget {
@@ -29,16 +30,21 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
               ),
               child: Row(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      border: Border.all(),
-                      shape: BoxShape.circle,
+                  GestureDetector(
+                    onTap: (){
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Icon(
+                        Icons.arrow_back_ios_new,
+                        size: 18,
+                      ),
+                      padding: EdgeInsets.all(8),
                     ),
-                    child: Icon(
-                      Icons.arrow_back_ios_new,
-                      size: 18,
-                    ),
-                    padding: EdgeInsets.all(8),
                   ),
                   Expanded(
                     child: Center(
