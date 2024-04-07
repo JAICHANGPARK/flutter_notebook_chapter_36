@@ -155,7 +155,8 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (context, index) {
                           return Container(
-                            width: 320,
+                            width: 340,
+                            padding: EdgeInsets.all(12),
                             margin: EdgeInsets.only(right: 16),
                             decoration: BoxDecoration(
                               color: Colors.blue,
