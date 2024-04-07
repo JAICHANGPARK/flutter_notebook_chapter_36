@@ -65,6 +65,7 @@ class _AiTravelChatPageState extends State<AiTravelChatPage> {
                     ),
                     child: const Icon(
                       Icons.more_horiz,
+                      size: 18,
                     ),
                     padding: const EdgeInsets.all(8),
                   ),
