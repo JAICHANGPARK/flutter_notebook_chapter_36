@@ -11,6 +11,12 @@ class AiTravelDetailPage extends StatefulWidget {
 class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+
+        ],
+      ),
+    );
   }
 }
