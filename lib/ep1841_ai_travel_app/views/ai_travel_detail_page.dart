@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class AiTravelDetailPage extends StatefulWidget {
   const AiTravelDetailPage({super.key});
 
@@ -14,7 +13,14 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
     return Scaffold(
       body: Column(
         children: [
-
+          Container(
+            height: 320,
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.white,
+            ),
+          )
         ],
       ),
     );
