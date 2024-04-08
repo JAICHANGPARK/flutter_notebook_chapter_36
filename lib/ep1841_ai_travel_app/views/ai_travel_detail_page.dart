@@ -104,7 +104,36 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                   Text("Gyeongbokgung "),
                   Text(
                     "Gyeongbokgung palace was one of the Joseon dynasty's palaces and main palace of the era. ",
-                  )
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.star_border,
+                      ),
+                      Text("4.8 Rating"),
+                      Icon(
+                        Icons.timelapse,
+                      ),
+                      Text("6 hours"),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 52,
+                    child: Placeholder(),
+                  ),
+                  SizedBox(
+                    height: 72,
+                    child: Placeholder(),
+                  ),
+                  SizedBox(
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+                  SizedBox(
+                    height: 42,
+                    child: Placeholder(),
+                  ),
+
                 ],
               ),
             ),
