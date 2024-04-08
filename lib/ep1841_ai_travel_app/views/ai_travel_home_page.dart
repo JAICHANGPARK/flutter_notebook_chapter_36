@@ -128,7 +128,7 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                         borderRadius: BorderRadius.circular(16),
                       ),
                       padding: const EdgeInsets.all(16),
-                      child: AITravelCardWidget(),
+                      child: const AITravelCardWidget(),
                     );
                   },
                 ),
@@ -139,7 +139,7 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blue,
-        selectedLabelStyle: TextStyle(
+        selectedLabelStyle: const TextStyle(
           color: Colors.black,
         ),
         type: BottomNavigationBarType.fixed,
@@ -148,33 +148,33 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
           if (idx == 2) {
             Navigator.of(context).push(
               MaterialPageRoute(
-                builder: (context) => AiTravelChatPage(),
+                builder: (context) => const AiTravelChatPage(),
               ),
             );
           }
         },
         items: [
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
               ),
               label: "Home"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.calendar_month,
               ),
               label: "Booking"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.videogame_asset,
               ),
               label: "AI Mode"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.bookmark_border,
               ),
               label: "Save"),
-          BottomNavigationBarItem(
+          const BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_2_outlined,
               ),
