@@ -27,11 +27,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(
-                    top: 72,
-                    left: 16,
-                    right: 16,
-                  ),
+                  padding: const EdgeInsets.only(top: 62, left: 16, right: 16),
                   child: Row(
                     children: [
                       CircleAvatar(
@@ -56,6 +52,23 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           Icons.bookmark_border,
                         ),
                       ),
+                    ],
+                  ),
+                ),
+                Spacer(),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    children: [
+                      Spacer(),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                        ),
+                        child: Text(
+                          "1/12",
+                        ),
+                      )
                     ],
                   ),
                 )
