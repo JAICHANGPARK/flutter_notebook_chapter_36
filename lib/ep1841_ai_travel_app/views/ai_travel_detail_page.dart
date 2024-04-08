@@ -126,11 +126,11 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     child: Placeholder(),
                   ),
                   SizedBox(
-                    height: 42,
+                    height: 46,
                     child: Placeholder(),
                   ),
                   SizedBox(
-                    height: 42,
+                    height: 46,
                     child: Placeholder(),
                   ),
 
