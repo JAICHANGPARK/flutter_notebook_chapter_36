@@ -5,6 +5,8 @@ import 'package:flutter_notebook_chapter_36/ep1841_ai_travel_app/views/ai_travel
 import 'package:flutter_notebook_chapter_36/ep1841_ai_travel_app/views/ai_travel_chat_page.dart';
 import 'package:gap/gap.dart';
 
+import 'ai_travel_detail_page.dart';
+
 class AiTravelHomePage extends StatefulWidget {
   const AiTravelHomePage({super.key});
 
@@ -120,15 +122,24 @@ class _AiTravelHomePageState extends State<AiTravelHomePage> {
                 padding: const EdgeInsets.all(16.0),
                 child: ListView.builder(
                   itemBuilder: (context, index) {
-                    return Container(
-                      height: 380,
-                      margin: const EdgeInsets.only(bottom: 16),
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(16),
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => const AiTravelDetailPage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: 380,
+                        margin: const EdgeInsets.only(bottom: 16),
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(16),
+                        ),
+                        padding: const EdgeInsets.all(16),
+                        child: const AITravelCardWidget(),
                       ),
-                      padding: const EdgeInsets.all(16),
-                      child: const AITravelCardWidget(),
                     );
                   },
                 ),
