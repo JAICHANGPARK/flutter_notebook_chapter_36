@@ -86,6 +86,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
           Expanded(
             child: Container(
               color: Colors.white,
+              padding: EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
