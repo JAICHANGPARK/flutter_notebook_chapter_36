@@ -87,6 +87,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             child: Container(
               color: Colors.white,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     decoration: BoxDecoration(
@@ -98,6 +99,10 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                         color: Colors.white,
                       ),
                     ),
+                  ),
+                  Text("Gyeongbokgung "),
+                  Text(
+                    "Gyeongbokgung palace was one of the Joseon dynasty's palaces and main palace of the era. ",
                   )
                 ],
               ),
