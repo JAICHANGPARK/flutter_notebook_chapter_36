@@ -62,11 +62,19 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     children: [
                       Spacer(),
                       Container(
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 16,
+                          vertical: 6,
+                        ),
                         decoration: BoxDecoration(
                           color: Colors.white,
+                          borderRadius: BorderRadius.circular(32),
                         ),
                         child: Text(
                           "1/12",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       )
                     ],
@@ -79,8 +87,16 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             child: Container(
               color: Colors.white,
             ),
-          )
+          ),
+
         ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            
+          ],
+        ),
       ),
     );
   }
