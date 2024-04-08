@@ -96,35 +96,45 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
       bottomNavigationBar: BottomAppBar(
         color: Colors.white,
         surfaceTintColor: Colors.white,
-        child: Padding(
-          padding: const EdgeInsets.all(12.0),
-          child: Row(
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text("From"),
-                  Text.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                          text: "\$1.536",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
-                          ),
+        child: Row(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("From"),
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "\$1.536",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
                         ),
-                        TextSpan(
-                          text: "/person",
-                        )
-                      ],
-                    ),
+                      ),
+                      TextSpan(
+                        text: "/person",
+                      )
+                    ],
                   ),
-                ],
+                ),
+              ],
+            ),
+            Spacer(),
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.blueAccent,
+                borderRadius: BorderRadius.circular(24),
               ),
-
-            ],
-          ),
+              padding: EdgeInsets.symmetric(horizontal: 36, vertical: 12),
+              child: Text(
+                "Reserve",
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+            )
+          ],
         ),
       ),
     );
