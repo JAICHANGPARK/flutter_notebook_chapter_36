@@ -50,7 +50,12 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           ),
                         ),
                       ),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        child: Icon(
+                          Icons.bookmark_border,
+                        ),
+                      ),
                     ],
                   ),
                 )
