@@ -15,7 +15,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
         children: [
           Container(
             height: 360,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.blue,
               image: DecorationImage(
                 image: NetworkImage(
@@ -26,8 +26,8 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             ),
             child: Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(top: 62, left: 16, right: 16),
+                const Padding(
+                  padding: EdgeInsets.only(top: 62, left: 16, right: 16),
                   child: Row(
                     children: [
                       CircleAvatar(
@@ -55,14 +55,14 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     ],
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
                     children: [
-                      Spacer(),
+                      const Spacer(),
                       Container(
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           horizontal: 16,
                           vertical: 6,
                         ),
@@ -70,7 +70,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(32),
                         ),
-                        child: Text(
+                        child: const Text(
                           "1/12",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
@@ -86,9 +86,24 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
           Expanded(
             child: Container(
               color: Colors.white,
+              child: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                    ),
+                    child: Text(
+                      "Seoul",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
-          Divider(
+          const Divider(
             height: 0,
           ),
         ],
@@ -98,7 +113,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
         surfaceTintColor: Colors.white,
         child: Row(
           children: [
-            Column(
+            const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("From"),
@@ -120,14 +135,14 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                 ),
               ],
             ),
-            Spacer(),
+            const Spacer(),
             Container(
               decoration: BoxDecoration(
                 color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(24),
               ),
-              padding: EdgeInsets.symmetric(horizontal: 36, vertical: 12),
-              child: Text(
+              padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 12),
+              child: const Text(
                 "Reserve",
                 style: TextStyle(
                   color: Colors.white,
