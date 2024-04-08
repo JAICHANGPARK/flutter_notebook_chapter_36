@@ -88,13 +88,33 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
               color: Colors.white,
             ),
           ),
-
         ],
       ),
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("From"),
+                Text.rich(
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "\$1.536",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
+                        ),
+                      ),
+                      TextSpan(
+                        text: "/person",
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
