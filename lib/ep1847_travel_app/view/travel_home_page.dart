@@ -99,6 +99,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
             SizedBox(
               height: 360,
               child: Placeholder(),
+            ),
+            Row(
+              children: [
+                Text("Favorites"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    "See all",
+                  ),
+                )
+              ],
             )
           ],
         ),
