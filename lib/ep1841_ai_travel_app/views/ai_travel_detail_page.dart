@@ -127,13 +127,14 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     children: [
                       Icon(
                         Icons.star_border,
-                        
+                        size: 16,
                       ),
                       Gap(4),
                       Text("4.8 Rating"),
                       Gap(12),
                       Icon(
                         Icons.timelapse,
+                        size: 16,
                       ),
                       Gap(4),
                       Text("6 hours"),
