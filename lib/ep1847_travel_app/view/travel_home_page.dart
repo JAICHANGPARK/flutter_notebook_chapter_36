@@ -41,7 +41,8 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Text("Experience Your Summer in",)
           ],
         ),
       ),
