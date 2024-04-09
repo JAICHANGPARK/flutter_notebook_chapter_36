@@ -22,18 +22,23 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   CircleAvatar(),
                   Gap(12),
                   Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Dreamwalker",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Dreamwalker",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      Text("@dreamwalker"),
-                    ],
-                  ))
+                        Text("@dreamwalker"),
+                      ],
+                    ),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.menu),
+                  )
                 ],
               ),
             )
