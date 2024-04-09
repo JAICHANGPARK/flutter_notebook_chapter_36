@@ -89,13 +89,13 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             child: Container(
               color: Colors.grey[100],
               padding: EdgeInsets.all(16),
-
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.black,
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     padding: EdgeInsets.symmetric(
                       horizontal: 12,
@@ -113,7 +113,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     "Gyeongbokgung ",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 20,
+                      fontSize: 24,
                     ),
                   ),
                   Gap(8),
@@ -121,7 +121,8 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     "Gyeongbokgung palace was one of the Joseon dynasty's palaces and main palace of the era. ",
                     style: TextStyle(
                       color: Colors.grey,
-                      fontSize: 12,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                   Gap(12),
@@ -132,24 +133,35 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                         size: 16,
                       ),
                       Gap(4),
-                      Text("4.8 Rating"),
+                      Text(
+                        "4.8 Rating",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Gap(12),
                       Icon(
                         Icons.timelapse,
                         size: 16,
                       ),
                       Gap(4),
-                      Text("6 hours"),
+                      Text(
+                        "6 hours",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
                   Gap(12),
                   Container(
-                    height: 52,
+                    height: 42,
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[300]!,
                       ),
                       borderRadius: BorderRadius.circular(32),
+                      color: Colors.white,
                     ),
                     child: Row(
                       children: [
@@ -161,9 +173,17 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           ),
                         ),
                         Expanded(
-                          child: Center(
-                            child: Text(
-                              "Mini trip",
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.blueAccent,
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Mini trip",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ),
