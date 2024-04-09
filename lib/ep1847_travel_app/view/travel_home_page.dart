@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class TravelHomePage extends StatefulWidget {
   const TravelHomePage({super.key});
 
@@ -15,7 +14,24 @@ class _TravelHomePageState extends State<TravelHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            
+            Row(
+              children: [
+                CircleAvatar(),
+                Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Dreamwalker",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text("@dreamwalker"),
+                  ],
+                ))
+              ],
+            )
           ],
         ),
       ),
