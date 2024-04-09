@@ -122,15 +122,20 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       fontSize: 12,
                     ),
                   ),
+                  Gap(12),
                   Row(
                     children: [
                       Icon(
                         Icons.star_border,
+                        
                       ),
+                      Gap(4),
                       Text("4.8 Rating"),
+                      Gap(12),
                       Icon(
                         Icons.timelapse,
                       ),
+                      Gap(4),
                       Text("6 hours"),
                     ],
                   ),
