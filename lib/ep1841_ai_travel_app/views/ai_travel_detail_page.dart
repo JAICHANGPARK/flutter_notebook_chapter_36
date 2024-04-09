@@ -236,12 +236,26 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                   Gap(8),
                   Container(
                     height: 46,
-                    
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    child: Row(),
                   ),
-                  SizedBox(
+                  Gap(8),
+                  Container(
                     height: 46,
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    child: Row(),
                   ),
                 ],
               ),
