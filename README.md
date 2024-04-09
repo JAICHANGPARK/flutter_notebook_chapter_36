@@ -3,10 +3,10 @@
 ## EP1847
 
 - Travel App
-- by Nurul Fitriani 🌻 for Caraka
-- https://dribbble.com/shots/23913552-Gotravel-AI-Mobile-Travel-App
+- by Orix Creative
+- https://dribbble.com/shots/23895239-Travel-App
 
-<img src="https://cdn.dribbble.com/userupload/13831468/file/original-a21cfa2844bf8ee2eacf60903561f0fa.png?resize=1905x1429"/>
+<img src="https://cdn.dribbble.com/userupload/13778999/file/original-242398f22e4aec17a879f7f74ea3948e.png?resize=1905x1429"/>
 
 ## EP1841-1846
 
