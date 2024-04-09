@@ -43,18 +43,24 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
-            Gap(24),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Experience Your Summer in",
-                ),
-                Text("Portugal"),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Experience Your Summer in",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                  ),
+                  Text("Portugal",
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),),
+                ],
+              ),
             ),
-
-            Gap(24),
             Container(
               height: 52,
               margin: EdgeInsets.all(16),
