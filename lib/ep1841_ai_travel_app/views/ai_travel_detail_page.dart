@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
@@ -153,9 +154,9 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       ),
                     ],
                   ),
-                  Gap(12),
                   Container(
-                    height: 42,
+                    height: 36,
+                    margin: EdgeInsets.symmetric(vertical: 16),
                     decoration: BoxDecoration(
                       border: Border.all(
                         color: Colors.grey[300]!,
@@ -176,6 +177,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           child: Container(
                             decoration: BoxDecoration(
                               color: Colors.blueAccent,
+                              borderRadius: BorderRadius.circular(24),
                             ),
                             child: Center(
                               child: Text(
@@ -197,9 +199,35 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  Container(
                     height: 72,
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(6),
+                      border: Border.all(
+                        color: Colors.grey[200]!,
+                      ),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+                    child: Row(
+                      children: [
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Start at"),
+                            Text("Jakarta"),
+                          ],
+                        ),
+                        Expanded(child: Stack()),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("Ends at"),
+                            Text("Seoul"),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 46,
