@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -96,8 +97,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 360,
+            Container(
+              margin: EdgeInsets.only(left: 16),
+              height: 320,
               child: Placeholder(),
             ),
             Padding(
@@ -114,7 +116,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 62,
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey[200]!,
+                    spreadRadius: 4,
+                    blurRadius: 8,
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
