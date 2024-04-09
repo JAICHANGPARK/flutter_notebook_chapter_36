@@ -89,6 +89,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
             child: Container(
               color: Colors.grey[100],
               padding: EdgeInsets.all(16),
+
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -148,6 +149,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       border: Border.all(
                         color: Colors.grey[300]!,
                       ),
+                      borderRadius: BorderRadius.circular(32),
                     ),
                     child: Row(
                       children: [
@@ -155,6 +157,20 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           child: Center(
                             child: Text(
                               "Epic trip",
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              "Mini trip",
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              "Sailing trip",
                             ),
                           ),
                         )
