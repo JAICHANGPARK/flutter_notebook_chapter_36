@@ -14,6 +14,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -43,10 +44,16 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ),
             ),
             Gap(24),
-            Text(
-              "Experience Your Summer in",
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Experience Your Summer in",
+                ),
+                Text("Portugal"),
+              ],
             ),
-            Text("Portugal"),
+
             Gap(24),
             Container(
               height: 52,
