@@ -233,8 +233,10 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       ],
                     ),
                   ),
-                  SizedBox(
+                  Gap(8),
+                  Container(
                     height: 46,
+                    
                     child: Placeholder(),
                   ),
                   SizedBox(
