@@ -43,9 +43,25 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ),
             ),
             Gap(24),
-            Text("Experience Your Summer in",),
+            Text(
+              "Experience Your Summer in",
+            ),
             Text("Portugal"),
             Gap(24),
+            Container(
+              height: 52,
+              margin: EdgeInsets.all(16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey[200]!,
+                    spreadRadius: 4,
+                    blurRadius: 8,
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
