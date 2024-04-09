@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelHomePage extends StatefulWidget {
   const TravelHomePage({super.key});
@@ -14,23 +15,27 @@ class _TravelHomePageState extends State<TravelHomePage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(
-              children: [
-                CircleAvatar(),
-                Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Dreamwalker",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Gap(12),
+                  Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Dreamwalker",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    Text("@dreamwalker"),
-                  ],
-                ))
-              ],
+                      Text("@dreamwalker"),
+                    ],
+                  ))
+                ],
+              ),
             )
           ],
         ),
