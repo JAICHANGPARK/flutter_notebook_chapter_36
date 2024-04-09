@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class AiTravelDetailPage extends StatefulWidget {
   const AiTravelDetailPage({super.key});
@@ -105,7 +106,15 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       ),
                     ),
                   ),
-                  Text("Gyeongbokgung "),
+                  Gap(12),
+                  Text(
+                    "Gyeongbokgung ",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                  Gap(8),
                   Text(
                     "Gyeongbokgung palace was one of the Joseon dynasty's palaces and main palace of the era. ",
                   ),
