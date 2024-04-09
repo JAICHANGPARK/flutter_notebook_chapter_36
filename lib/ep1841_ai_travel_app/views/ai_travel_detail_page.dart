@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class AiTravelDetailPage extends StatefulWidget {
@@ -86,7 +87,7 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
           ),
           Expanded(
             child: Container(
-              color: Colors.white,
+              color: Colors.grey[100],
               padding: EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,9 +141,25 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                       Text("6 hours"),
                     ],
                   ),
-                  SizedBox(
+                  Gap(12),
+                  Container(
                     height: 52,
-                    child: Placeholder(),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              "Epic trip",
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                   SizedBox(
                     height: 72,
