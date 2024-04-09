@@ -94,6 +94,10 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     decoration: BoxDecoration(
                       color: Colors.black,
                     ),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 8,
+                    ),
                     child: Text(
                       "Seoul",
                       style: TextStyle(
@@ -133,7 +137,6 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                     height: 46,
                     child: Placeholder(),
                   ),
-
                 ],
               ),
             ),
