@@ -117,6 +117,10 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                   Gap(8),
                   Text(
                     "Gyeongbokgung palace was one of the Joseon dynasty's palaces and main palace of the era. ",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 12,
+                    ),
                   ),
                   Row(
                     children: [
