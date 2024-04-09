@@ -42,7 +42,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
-            Text("Experience Your Summer in",)
+            Gap(24),
+            Text("Experience Your Summer in",),
+            Text("Portugal"),
+            Gap(24),
           ],
         ),
       ),
