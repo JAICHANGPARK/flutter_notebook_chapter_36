@@ -100,16 +100,20 @@ class _TravelHomePageState extends State<TravelHomePage> {
               height: 360,
               child: Placeholder(),
             ),
-            Row(
-              children: [
-                Text("Favorites"),
-                TextButton(
-                  onPressed: () {},
-                  child: Text(
-                    "See all",
-                  ),
-                )
-              ],
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Favorites"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "See all",
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),
