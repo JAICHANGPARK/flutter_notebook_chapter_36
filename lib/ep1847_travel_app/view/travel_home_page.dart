@@ -78,20 +78,27 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    "Popular\nChoice places",
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      "Popular\nChoice places",
+                    ),
                   ),
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.more_horiz,
-                  ),
-                )
-              ],
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.more_horiz,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 360,
+              child: Placeholder(),
             )
           ],
         ),
