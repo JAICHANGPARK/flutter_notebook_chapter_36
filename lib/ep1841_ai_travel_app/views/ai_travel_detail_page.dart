@@ -215,7 +215,9 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Start at"),
-                            Text("Jakarta"),
+                            Text("Jakarta", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),),
                           ],
                         ),
                         Expanded(child: Stack()),
@@ -223,7 +225,9 @@ class _AiTravelDetailPageState extends State<AiTravelDetailPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("Ends at"),
-                            Text("Seoul"),
+                            Text("Seoul", style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),),
                           ],
                         ),
                       ],
