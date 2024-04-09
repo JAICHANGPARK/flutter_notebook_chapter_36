@@ -20,7 +20,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
               padding: const EdgeInsets.all(16.0),
               child: Row(
                 children: [
-                  CircleAvatar(),
+                  CircleAvatar(
+                    radius: 24,
+                  ),
                   Gap(12),
                   Expanded(
                     child: Column(
@@ -28,9 +30,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       children: [
                         Text(
                           "Dreamwalker",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                         ),
                         Text("@dreamwalker"),
                       ],
@@ -54,15 +54,18 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       fontSize: 20,
                     ),
                   ),
-                  Text("Portugal",
+                  Text(
+                    "Portugal",
                     style: TextStyle(
-                      fontSize: 20,
-                    ),),
+                      fontSize: 24,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
                 ],
               ),
             ),
             Container(
-              height: 52,
+              height: 64,
               margin: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -74,6 +77,21 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    "Popular\nChoice places",
+                  ),
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.more_horiz,
+                  ),
+                )
+              ],
             )
           ],
         ),
