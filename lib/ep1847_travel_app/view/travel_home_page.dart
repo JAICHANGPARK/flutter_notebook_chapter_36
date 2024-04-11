@@ -78,6 +78,33 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   )
                 ],
               ),
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Asia"),
+                      Gap(4),
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.orange,
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Asia"),
+                      Gap(4),
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.transparent,
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
