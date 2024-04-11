@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class TravelHomePage extends StatefulWidget {
@@ -253,7 +254,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       borderRadius: BorderRadius.circular(8)
                     ),
                   ),
-                  Text("")
+                  Expanded(child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Global",),
+                      Text("Odyssey Tours",)
+                    ],
+                  ))
                 ],
               ),
             ),
