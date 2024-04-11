@@ -78,8 +78,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   )
                 ],
               ),
-              padding: EdgeInsets.symmetric(horizontal: 16),
+              padding: EdgeInsets.symmetric(horizontal: 24),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -95,7 +96,29 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Asia"),
+                      Text("Europe"),
+                      Gap(4),
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.transparent,
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Africa"),
+                      Gap(4),
+                      CircleAvatar(
+                        radius: 4,
+                        backgroundColor: Colors.transparent,
+                      )
+                    ],
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Australia"),
                       Gap(4),
                       CircleAvatar(
                         radius: 4,
