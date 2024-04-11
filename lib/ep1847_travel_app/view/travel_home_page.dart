@@ -161,8 +161,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(16),
                     ),
+                    padding: EdgeInsets.all(8),
                     margin: EdgeInsets.only(right: 16),
                     child: Column(
+
                       children: [
                         Spacer(),
                         Container(
@@ -172,6 +174,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                           child: Row(
                             children: [
                               Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     "Sunstone Ridge",
