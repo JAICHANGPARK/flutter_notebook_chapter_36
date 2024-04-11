@@ -249,18 +249,27 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   Container(
                     height: 56,
                     width: 56,
-                    decoration: BoxDecoration(
-                      color: Colors.grey,
-                      borderRadius: BorderRadius.circular(8)
+                    decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Global",
+                        ),
+                        Text(
+                          "Odyssey Tours",
+                        )
+                      ],
                     ),
                   ),
-                  Expanded(child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Global",),
-                      Text("Odyssey Tours",)
-                    ],
-                  ))
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(
+                      Icons.more_horiz,
+                    ),
+                  )
                 ],
               ),
             ),
