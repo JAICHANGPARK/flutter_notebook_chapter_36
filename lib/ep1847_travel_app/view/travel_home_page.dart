@@ -66,7 +66,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ),
             ),
             Container(
-              height: 64,
+              height: 72,
               margin: EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -77,6 +77,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     blurRadius: 8,
                   )
                 ],
+                borderRadius: BorderRadius.circular(12),
               ),
               padding: EdgeInsets.symmetric(horizontal: 24),
               child: Row(
@@ -150,7 +151,17 @@ class _TravelHomePageState extends State<TravelHomePage> {
             Container(
               margin: EdgeInsets.only(left: 16),
               height: 320,
-              child: Placeholder(),
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: 240,
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  );
+                },
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
