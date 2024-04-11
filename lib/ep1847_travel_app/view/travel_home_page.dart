@@ -178,6 +178,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                     "From \$4,982",
                                   )
                                 ],
+                              ),
+                              IconButton(
+                                onPressed: () {},
+                                icon: Icon(
+                                  Icons.arrow_forward,
+                                ),
+                                color: Colors.white,
                               )
                             ],
                           ),
@@ -189,11 +196,19 @@ class _TravelHomePageState extends State<TravelHomePage> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 8,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Favorites"),
+                  Text(
+                    "Favorites",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                   TextButton(
                     onPressed: () {},
                     child: Text(
