@@ -161,8 +161,10 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(16),
                     ),
+                    margin: EdgeInsets.only(right: 16),
                     child: Column(
                       children: [
+                        Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
