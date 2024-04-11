@@ -161,6 +161,29 @@ class _TravelHomePageState extends State<TravelHomePage> {
                       color: Colors.orange,
                       borderRadius: BorderRadius.circular(16),
                     ),
+                    child: Column(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Text(
+                                    "Sunstone Ridge",
+                                  ),
+                                  Text(
+                                    "From \$4,982",
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   );
                 },
               ),
