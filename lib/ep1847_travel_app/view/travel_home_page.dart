@@ -206,6 +206,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 },
               ),
             ),
+            Gap(12),
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 16,
@@ -229,6 +230,7 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
+
             Container(
               height: 72,
               margin: EdgeInsets.symmetric(horizontal: 16),
@@ -251,9 +253,11 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     width: 56,
                     decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
                   ),
+                  Gap(12),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "Global",
