@@ -164,13 +164,14 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     padding: EdgeInsets.all(8),
                     margin: EdgeInsets.only(right: 16),
                     child: Column(
-
                       children: [
                         Spacer(),
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(16),
                           ),
+                          padding: EdgeInsets.all(12),
                           child: Row(
                             children: [
                               Column(
