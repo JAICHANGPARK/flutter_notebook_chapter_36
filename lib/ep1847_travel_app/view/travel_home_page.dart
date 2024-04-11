@@ -137,6 +137,9 @@ class _TravelHomePageState extends State<TravelHomePage> {
                   Expanded(
                     child: Text(
                       "Popular\nChoice places",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   IconButton(
@@ -185,12 +188,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                                   )
                                 ],
                               ),
+                              Spacer(),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(
                                   Icons.arrow_forward,
                                 ),
-                                color: Colors.white,
+                                color: Colors.black,
                               )
                             ],
                           ),
