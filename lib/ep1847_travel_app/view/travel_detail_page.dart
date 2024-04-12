@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class TravelDetailPage extends StatefulWidget {
   const TravelDetailPage({super.key});
@@ -37,7 +38,15 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text("Just check-in"),
-                      CircleAvatar(),
+                      Gap(4),
+                      SizedBox(
+                        child: Stack(
+                          children: [
+                            CircleAvatar(),
+                            Positioned(child: CircleAvatar()),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                 ),
