@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 class TravelDetailPage extends StatefulWidget {
@@ -30,9 +31,16 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                Container(
                   height: 400,
-                  child: Placeholder(),
+                  margin: EdgeInsets.all(16),
+                  child: Stack(
+                    children: [
+                      Positioned.fill(
+
+                          child: CircleAvatar())
+                    ],
+                  ),
                 ),
                 Gap(16),
                 Expanded(
