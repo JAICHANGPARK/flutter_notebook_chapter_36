@@ -34,8 +34,21 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   height: 400,
                   child: Placeholder(),
                 ),
+                Gap(16),
                 Text("Global Odyssey Tours"),
                 Text("Georgia"),
+                Row(
+                  children: [
+                    Container(
+                      child: Text("Travelling"),
+                    ),
+                    Container(
+                      child: Text("history"),
+                    ),
+                    Text("Starts at 10:30"),
+                  ],
+                ),
+                Text()
               ],
             ),
           ),
