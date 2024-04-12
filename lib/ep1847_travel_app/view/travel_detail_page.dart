@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -40,10 +41,21 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       Text("Just check-in"),
                       Gap(4),
                       SizedBox(
+
                         child: Stack(
                           children: [
-                            CircleAvatar(),
-                            Positioned(child: CircleAvatar()),
+                            Positioned(
+                                left: 0,
+                                child: CircleAvatar()),
+                            Positioned(
+                                left: 20,
+                                child: CircleAvatar()),
+                            Positioned(
+                                left: 40,
+                                child: CircleAvatar()),
+                            Positioned(
+                                left: 60,
+                                child: CircleAvatar()),
                           ],
                         ),
                       ),
