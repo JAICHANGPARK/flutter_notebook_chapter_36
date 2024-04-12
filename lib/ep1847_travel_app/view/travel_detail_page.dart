@@ -35,6 +35,15 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   child: Placeholder(),
                 ),
                 Gap(16),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
+                  ),
+                ),
                 Text("Global Odyssey Tours"),
                 Text("Georgia"),
                 Row(
@@ -48,7 +57,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     Text("Starts at 10:30"),
                   ],
                 ),
-                Text()
+                Gap(16),
+                Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+                Gap(16),
               ],
             ),
           ),
