@@ -18,9 +18,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
             onPressed: () {},
             icon: Icon(Icons.more_vert),
           ),
-
         ],
-        
+        centerTitle: true,
       ),
     );
   }
