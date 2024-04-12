@@ -21,6 +21,28 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         ],
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Expanded(child: Placeholder()),
+          Container(
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    children: [
+                      Text("Just check-in"),
+                      CircleAvatar(),
+                    ],
+                  ),
+                ),
+                Expanded(child: Container(child: Center(
+                  child: Text("Select dates"),
+                ),))
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
