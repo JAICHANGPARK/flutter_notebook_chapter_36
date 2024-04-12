@@ -41,21 +41,13 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       Text("Just check-in"),
                       Gap(4),
                       SizedBox(
-
+                        height: 40,
                         child: Stack(
                           children: [
-                            Positioned(
-                                left: 0,
-                                child: CircleAvatar()),
-                            Positioned(
-                                left: 20,
-                                child: CircleAvatar()),
-                            Positioned(
-                                left: 40,
-                                child: CircleAvatar()),
-                            Positioned(
-                                left: 60,
-                                child: CircleAvatar()),
+                            Positioned(left: 0, child: CircleAvatar()),
+                            Positioned(left: 20, child: CircleAvatar()),
+                            Positioned(left: 40, child: CircleAvatar()),
+                            Positioned(left: 60, child: CircleAvatar()),
                           ],
                         ),
                       ),
@@ -64,8 +56,20 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 ),
                 Expanded(
                     child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.orange[300],
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    vertical: 16,
+                  ),
                   child: Center(
-                    child: Text("Select dates"),
+                    child: Text(
+                      "Select dates",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ))
               ],
