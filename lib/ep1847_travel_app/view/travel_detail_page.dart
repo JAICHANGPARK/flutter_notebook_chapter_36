@@ -24,8 +24,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
         centerTitle: true,
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: Placeholder()),
+          Expanded(child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+
+            ],
+          )),
           Container(
             decoration: BoxDecoration(
               color: Colors.grey[200],
