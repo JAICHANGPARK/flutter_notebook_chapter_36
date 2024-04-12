@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_notebook_chapter_36/ep1847_travel_app/view/travel_detail_page.dart';
 import 'package:gap/gap.dart';
 
 class TravelHomePage extends StatefulWidget {
@@ -230,7 +231,6 @@ class _TravelHomePageState extends State<TravelHomePage> {
                 ],
               ),
             ),
-
             Container(
               height: 72,
               margin: EdgeInsets.symmetric(horizontal: 16),
@@ -269,7 +269,13 @@ class _TravelHomePageState extends State<TravelHomePage> {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => TravelDetailPage(),
+                        ),
+                      );
+                    },
                     icon: Icon(
                       Icons.more_horiz,
                     ),
