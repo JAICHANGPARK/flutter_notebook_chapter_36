@@ -32,7 +32,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 400,
+                  height: 360,
                   margin: EdgeInsets.all(16),
                   child: Stack(
                     children: [
