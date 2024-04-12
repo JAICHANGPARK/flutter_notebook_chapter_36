@@ -38,7 +38,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("Just check-in"),
+                      Text(
+                        "Just check-in",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Gap(4),
                       SizedBox(
                         height: 40,
