@@ -36,35 +36,39 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                 ),
                 Gap(16),
                 Expanded(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      children: [
-                        
-                      ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Global Odyssey Tours"),
+                          Text("Georgia"),
+                          Row(
+                            children: [
+                              Container(
+                                child: Text("Travelling"),
+                              ),
+                              Container(
+                                child: Text("history"),
+                              ),
+                              Text("Starts at 10:30"),
+                            ],
+                          ),
+                          Gap(16),
+                          Text(
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          Gap(16),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                Text("Global Odyssey Tours"),
-                Text("Georgia"),
-                Row(
-                  children: [
-                    Container(
-                      child: Text("Travelling"),
-                    ),
-                    Container(
-                      child: Text("history"),
-                    ),
-                    Text("Starts at 10:30"),
-                  ],
-                ),
-                Gap(16),
-                Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-                  style: TextStyle(
-                    color: Colors.grey,
-                  ),
-                ),
-                Gap(16),
+
               ],
             ),
           ),
