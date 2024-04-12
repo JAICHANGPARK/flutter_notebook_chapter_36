@@ -26,12 +26,19 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-
-            ],
-          )),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 400,
+                  child: Placeholder(),
+                ),
+                Text("Global Odyssey Tours"),
+                Text("Georgia"),
+              ],
+            ),
+          ),
           Container(
             decoration: BoxDecoration(
               color: Colors.grey[200],
