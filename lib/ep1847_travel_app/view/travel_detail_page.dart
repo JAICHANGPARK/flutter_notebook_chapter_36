@@ -32,10 +32,14 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  height: 360,
-                  margin: EdgeInsets.all(16),
+                  height: 340,
+                  margin: EdgeInsets.all(24),
                   child: Stack(
-                    children: [Positioned.fill(child: CircleAvatar())],
+                    children: [
+                      Positioned.fill(
+                        child: CircleAvatar(),
+                      ),
+                    ],
                   ),
                 ),
                 Gap(16),
@@ -78,9 +82,24 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                                 child: Text("Travelling"),
                               ),
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 8,
+                                ),
+                                margin: EdgeInsets.only(right: 12),
                                 child: Text("history"),
                               ),
-                              Text("Starts at 10:30"),
+                              Gap(12),
+                              Text(
+                                "Starts at 10:30",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
                             ],
                           ),
                           Gap(16),
