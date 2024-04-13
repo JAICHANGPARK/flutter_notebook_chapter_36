@@ -71,7 +71,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                         ),
                       ),
                       Positioned(
-                        right: 30,
+                        right: 34,
                         bottom: 46,
                         child: Container(
                           height: 62,
@@ -88,6 +88,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                                 color: Colors.black.withOpacity(.3),
                                 blurRadius: 10,
                                 spreadRadius: 2,
+                                offset: Offset(4, 4),
                               ),
                             ],
                           ),
