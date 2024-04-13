@@ -77,7 +77,31 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                           height: 62,
                           width: 62,
                           decoration: BoxDecoration(
-                            color: Colors.red,
+                            color: Colors.blue,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 6,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(.3),
+                                blurRadius: 10,
+                                spreadRadius: 2,
+                                offset: Offset(4, 4),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        right: 72,
+                        bottom: 8,
+                        child: Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                            color: Colors.green,
                             shape: BoxShape.circle,
                             border: Border.all(
                               color: Colors.white,
@@ -97,7 +121,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     ],
                   ),
                 ),
-                Gap(16),
+                // Gap(16),
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
@@ -117,8 +141,8 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                           Text(
                             "Georgia",
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 28,
                             ),
                           ),
                           Gap(12),
@@ -162,6 +186,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                             style: TextStyle(
                               color: Colors.grey,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                           Gap(16),
