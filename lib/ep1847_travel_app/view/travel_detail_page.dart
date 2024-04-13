@@ -50,12 +50,30 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             "Global Odyssey Tours",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              color: Colors.grey,
+                              fontSize: 16,
                             ),
                           ),
-                          Text("Georgia"),
+                          Gap(6),
+                          Text(
+                            "Georgia",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 24,
+                            ),
+                          ),
+                          Gap(6),
                           Row(
                             children: [
                               Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[100],
+                                  borderRadius: BorderRadius.circular(24),
+                                ),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: 12,
+                                  vertical: 6,
+                                ),
                                 child: Text("Travelling"),
                               ),
                               Container(
