@@ -35,11 +35,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   height: 360,
                   margin: EdgeInsets.all(16),
                   child: Stack(
-                    children: [
-                      Positioned.fill(
-
-                          child: CircleAvatar())
-                    ],
+                    children: [Positioned.fill(child: CircleAvatar())],
                   ),
                 ),
                 Gap(16),
@@ -50,7 +46,12 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Global Odyssey Tours"),
+                          Text(
+                            "Global Odyssey Tours",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                           Text("Georgia"),
                           Row(
                             children: [
@@ -76,7 +77,6 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                     ),
                   ),
                 ),
-
               ],
             ),
           ),
