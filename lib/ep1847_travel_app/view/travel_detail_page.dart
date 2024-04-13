@@ -33,12 +33,35 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
               children: [
                 Container(
                   height: 340,
-                  margin: EdgeInsets.all(24),
+                  margin: EdgeInsets.all(16),
                   child: Stack(
                     children: [
                       Positioned.fill(
-                        child: CircleAvatar(),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            "https://cdn.pixabay.com/photo/2016/03/27/19/47/water-1283963_1280.jpg",
+                          ),
+                        ),
                       ),
+                      Positioned(
+                        right: 0,
+                        bottom: 100,
+                        child: Container(
+                          height: 72,
+                          width: 72,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 4
+                            ),
+                            boxShadow: [
+                              BoxShadow(color: Colors.black.withOpacity(.3), blurRadius: 10, spreadRadius: 2),
+                            ],
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
