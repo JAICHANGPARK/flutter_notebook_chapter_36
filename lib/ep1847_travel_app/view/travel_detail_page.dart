@@ -54,7 +54,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                               fontSize: 16,
                             ),
                           ),
-                          Gap(6),
+                          Gap(12),
                           Text(
                             "Georgia",
                             style: TextStyle(
@@ -62,7 +62,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                               fontSize: 24,
                             ),
                           ),
-                          Gap(6),
+                          Gap(12),
                           Row(
                             children: [
                               Container(
@@ -72,8 +72,9 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                                 ),
                                 padding: EdgeInsets.symmetric(
                                   horizontal: 12,
-                                  vertical: 6,
+                                  vertical: 8,
                                 ),
+                                margin: EdgeInsets.only(right: 12),
                                 child: Text("Travelling"),
                               ),
                               Container(
