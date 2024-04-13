@@ -54,10 +54,37 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                             shape: BoxShape.circle,
                             border: Border.all(
                               color: Colors.white,
-                              width: 4
+                              width: 6,
                             ),
                             boxShadow: [
-                              BoxShadow(color: Colors.black.withOpacity(.3), blurRadius: 10, spreadRadius: 2),
+                              BoxShadow(
+                                color: Colors.black.withOpacity(.3),
+                                blurRadius: 10,
+                                spreadRadius: 2,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        right: 30,
+                        bottom: 48,
+                        child: Container(
+                          height: 62,
+                          width: 62,
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white,
+                              width: 6,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(.3),
+                                blurRadius: 10,
+                                spreadRadius: 2,
+                              ),
                             ],
                           ),
                         ),
