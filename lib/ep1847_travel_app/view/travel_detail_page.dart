@@ -37,6 +37,10 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                   child: Stack(
                     children: [
                       Positioned.fill(
+                        right: 8,
+                        bottom: 8,
+                        top: 8,
+                        left: 8,
                         child: CircleAvatar(
                           backgroundImage: NetworkImage(
                             "https://cdn.pixabay.com/photo/2016/03/27/19/47/water-1283963_1280.jpg",
@@ -68,7 +72,7 @@ class _TravelDetailPageState extends State<TravelDetailPage> {
                       ),
                       Positioned(
                         right: 30,
-                        bottom: 48,
+                        bottom: 46,
                         child: Container(
                           height: 62,
                           width: 62,
