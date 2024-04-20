@@ -89,7 +89,6 @@
 <img src="https://cdn.dribbble.com/userupload/13039267/file/original-5e4c232193df20bcd8b289356e21d516.png?resize=1905x1429"/>
 
 
-A new Flutter 
 
 ## Getting Started
 
